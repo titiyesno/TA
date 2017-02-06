@@ -46,6 +46,8 @@ The AODV code developed by the CMU/MONARCH group was optimized and tuned by Sami
 static int route_request = 0;
 #endif
 
+int sendfrom[200][200] = {0};
+int sendto[200][200] = {0};
 
 /*
   TCL Hooks
@@ -92,10 +94,10 @@ AODV::command(int argc, const char*const* argv) {
     if(strncasecmp(argv[1], "start", 2) == 0) {
       btimer.handle((Event*) 0);
 
-#ifndef AODV_LINK_LAYER_DETECTION
+//#ifndef AODV_LINK_LAYER_DETECTION
       htimer.handle((Event*) 0);
       ntimer.handle((Event*) 0);
-#endif // LINK LAYER DETECTION
+//#endif // LINK LAYER DETECTION
 
       rtimer.handle((Event*) 0);
       return TCL_OK;
@@ -673,8 +675,8 @@ struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
 
-printf("Node yang nerima paket request : %d\n",(int)index);
-printf("Paket request dari : %d\n",rq->record);
+/*printf("Node yang nerima paket request : %d\n",(int)index);
+printf("Paket request dari : %d\n",rq->record);*/
 
   /*
    * Drop if:
@@ -683,7 +685,7 @@ printf("Paket request dari : %d\n",rq->record);
    */
 
   if(rq->rq_src == index) {
-    printf("I am the source || recently i heard this request\n");
+    //printf("I am the source || recently i heard this request\n");
 #ifdef DEBUG
     fprintf(stderr, "%s: got my own REQUEST\n", __FUNCTION__);
 #endif // DEBUG
@@ -767,7 +769,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
  // First check if I am the destination ..
 
  if(rq->rq_dst == index) {
-  printf("I am the destination\n");
+  //printf("I am the destination\n");
 
 #ifdef DEBUG
    fprintf(stderr, "%d - %s: destination sending reply\n",
@@ -810,7 +812,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
 
  else if (rt && (rt->rt_hops != INFINITY2) && 
 	  	(rt->rt_seqno >= rq->rq_dst_seqno) ) {
-  printf("I am not the destination, but I may have a fresh enough route.\n");
+  //printf("I am not the destination, but I may have a fresh enough route.\n");
    //assert (rt->rt_flags == RTF_UP);
    assert(rq->rq_dst == rt->rt_dst);
    //assert ((rt->rt_seqno%2) == 0);	// is the seqno even?
@@ -847,7 +849,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
   * Can't reply. So forward the  Route Request
   */
  else {
-  printf("Can't reply. So forward the  Route Request\n");
+  //printf("Can't reply. So forward the  Route Request\n");
    ih->saddr() = index;
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
@@ -874,9 +876,9 @@ double delay = 0.0;
  fprintf(stderr, "%d - %s: received a REPLY\n", index, __FUNCTION__);
 #endif // DEBUG
 
-printf("Node yang nerima reply : %d\n",index);
+/*printf("Node yang nerima reply : %d\n",index);
 printf("Paket reply dari : %d\n",rp->rp_src);
-printf("origin dari : %d\n",rp->record);
+printf("origin dari : %d\n",rp->record);*/
 
  /*
   *  Got a reply. So reset the "soft state" maintained for 
@@ -962,7 +964,7 @@ aodv_rt_entry *rt0 = rtable.rt_lookup(ih->daddr());
         assert (rt0->rt_flags == RTF_UP);
      rp->rp_hop_count += 1;
      rp->rp_src = index;
-     
+
      forward(rt0, p, NO_DELAY);
      // Insert the nexthop towards the RREQ source to 
      // the precursor list of the RREQ destination
@@ -1224,8 +1226,8 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
  rq->rq_timestamp = CURRENT_TIME;
  rq->record = index;
 
- printf("Node yang request : %d\n",(int)rq->rq_src);
- printf("Node destination : %d\n",(int)rq->rq_dst);
+ /*printf("Node yang request : %d\n",(int)rq->rq_src);
+ printf("Node destination : %d\n",(int)rq->rq_dst);*/
 
  Scheduler::instance().schedule(target_, p, 0.);
 
@@ -1354,6 +1356,8 @@ fprintf(stderr, "sending Hello from %d at %.2f\n", index, Scheduler::instance().
  ih->dport() = RT_PORT;
  ih->ttl_ = 1;
 
+ printf("sending hello from %d\n",index);
+
  Scheduler::instance().schedule(target_, p, 0.0);
 }
 
@@ -1372,6 +1376,8 @@ AODV_Neighbor *nb;
    nb->nb_expire = CURRENT_TIME +
                    (1.5 * ALLOWED_HELLO_LOSS * HELLO_INTERVAL);
  }
+
+ printf("nb %d : %d\n",rp->rp_dst,index);
 
  Packet::free(p);
 }
