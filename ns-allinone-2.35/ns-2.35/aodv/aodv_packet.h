@@ -119,6 +119,7 @@ struct hdr_aodv_reply {
 
         double          rp_timestamp;           // when corresponding REQ sent;
 						// used to compute route discovery latency
+        int record;
 						
   inline int size() { 
   int sz = 0;

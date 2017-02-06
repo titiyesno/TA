@@ -4,37 +4,53 @@ Node destination : 3
 channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
 highestAntennaZ_ = 1.5,  distCST_ = 550.0
 Node yang nerima paket request : 4
-Paket forward dari : 0
+Paket request dari : 0
 Can't reply. So forward the  Route Request
 Node yang nerima paket request : 1
-Paket forward dari : 0
+Paket request dari : 0
 Can't reply. So forward the  Route Request
 Node yang nerima paket request : 0
-Paket forward dari : 4
+Paket request dari : 4
 I am the source || recently i heard this request
 Node yang nerima paket request : 1
-Paket forward dari : 4
+Paket request dari : 4
 Node yang nerima paket request : 4
-Paket forward dari : 1
+Paket request dari : 1
 Node yang nerima paket request : 2
-Paket forward dari : 1
+Paket request dari : 1
 Can't reply. So forward the  Route Request
 Node yang nerima paket request : 0
-Paket forward dari : 1
+Paket request dari : 1
 I am the source || recently i heard this request
 Node yang nerima paket request : 5
-Paket forward dari : 2
+Paket request dari : 2
+Node yang reply : 5
+Node yang di-reply : 0
 Node yang nerima paket request : 6
-Paket forward dari : 2
+Paket request dari : 2
 Can't reply. So forward the  Route Request
 Node yang nerima paket request : 1
-Paket forward dari : 2
+Paket request dari : 2
 Node yang nerima paket request : 3
-Paket forward dari : 2
+Paket request dari : 2
 I am the destination
+Node yang reply : 3
+Node yang di-reply : 0
+Node yang nerima reply : 2
+Paket reply dari : 5
+origin dari : 5
+Node yang nerima reply : 2
+Paket reply dari : 3
+origin dari : 3
 Node yang nerima paket request : 3
-Paket forward dari : 6
+Paket request dari : 6
 Node yang nerima paket request : 2
-Paket forward dari : 6
+Paket request dari : 6
 Node yang nerima paket request : 5
-Paket forward dari : 6
+Paket request dari : 6
+Node yang nerima reply : 1
+Paket reply dari : 2
+origin dari : 5
+Node yang nerima reply : 0
+Paket reply dari : 1
+origin dari : 5

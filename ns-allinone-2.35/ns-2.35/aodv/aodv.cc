@@ -674,7 +674,7 @@ struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
 
 printf("Node yang nerima paket request : %d\n",(int)index);
-printf("Paket forward dari : %d\n",rq->record);
+printf("Paket request dari : %d\n",rq->record);
 
   /*
    * Drop if:
@@ -862,6 +862,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
 
 void
 AODV::recvReply(Packet *p) {
+  //printf("recvReply\n");
 //struct hdr_cmn *ch = HDR_CMN(p);
 struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_reply *rp = HDR_AODV_REPLY(p);
@@ -873,6 +874,9 @@ double delay = 0.0;
  fprintf(stderr, "%d - %s: received a REPLY\n", index, __FUNCTION__);
 #endif // DEBUG
 
+printf("Node yang nerima reply : %d\n",index);
+printf("Paket reply dari : %d\n",rp->rp_src);
+printf("origin dari : %d\n",rp->record);
 
  /*
   *  Got a reply. So reset the "soft state" maintained for 
@@ -958,6 +962,7 @@ aodv_rt_entry *rt0 = rtable.rt_lookup(ih->daddr());
         assert (rt0->rt_flags == RTF_UP);
      rp->rp_hop_count += 1;
      rp->rp_src = index;
+     
      forward(rt0, p, NO_DELAY);
      // Insert the nexthop towards the RREQ source to 
      // the precursor list of the RREQ destination
@@ -1229,6 +1234,7 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
 void
 AODV::sendReply(nsaddr_t ipdst, u_int32_t hop_count, nsaddr_t rpdst,
                 u_int32_t rpseq, u_int32_t lifetime, double timestamp) {
+  //printf("sendReply\n");
 Packet *p = Packet::alloc();
 struct hdr_cmn *ch = HDR_CMN(p);
 struct hdr_ip *ih = HDR_IP(p);
@@ -1248,6 +1254,7 @@ fprintf(stderr, "sending Reply from %d at %.2f\n", index, Scheduler::instance().
  rp->rp_src = index;
  rp->rp_lifetime = lifetime;
  rp->rp_timestamp = timestamp;
+ rp->record = index;
    
  // ch->uid() = 0;
  ch->ptype() = PT_AODV;
@@ -1264,6 +1271,9 @@ fprintf(stderr, "sending Reply from %d at %.2f\n", index, Scheduler::instance().
  ih->sport() = RT_PORT;
  ih->dport() = RT_PORT;
  ih->ttl_ = NETWORK_DIAMETER;
+
+ printf("Node yang reply : %d\n",(int)ih->saddr());
+ printf("Node yang di-reply : %d\n",(int)ih->daddr());
 
  Scheduler::instance().schedule(target_, p, 0.);
 
