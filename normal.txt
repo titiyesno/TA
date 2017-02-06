@@ -1,0 +1,47 @@
+num_nodes is set 7
+Node yang request : 0
+Node destination : 3
+channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
+highestAntennaZ_ = 1.5,  distCST_ = 550.0
+Node yang nerima paket request : 4
+Paket forward dari : 0
+Can't reply. So forward the  Route Request
+Node yang nerima paket request : 1
+Paket forward dari : 0
+Can't reply. So forward the  Route Request
+Node yang nerima paket request : 0
+Paket forward dari : 4
+I am the source || recently i heard this request
+Node yang nerima paket request : 1
+Paket forward dari : 4
+Node yang nerima paket request : 4
+Paket forward dari : 1
+Node yang nerima paket request : 2
+Paket forward dari : 1
+Can't reply. So forward the  Route Request
+Node yang nerima paket request : 0
+Paket forward dari : 1
+I am the source || recently i heard this request
+Node yang nerima paket request : 5
+Paket forward dari : 2
+Can't reply. So forward the  Route Request
+Node yang nerima paket request : 6
+Paket forward dari : 2
+Can't reply. So forward the  Route Request
+Node yang nerima paket request : 1
+Paket forward dari : 2
+Node yang nerima paket request : 3
+Paket forward dari : 2
+I am the destination
+Node yang nerima paket request : 3
+Paket forward dari : 6
+Node yang nerima paket request : 2
+Paket forward dari : 6
+Node yang nerima paket request : 5
+Paket forward dari : 6
+Node yang nerima paket request : 2
+Paket forward dari : 5
+Node yang nerima paket request : 3
+Paket forward dari : 5
+Node yang nerima paket request : 6
+Paket forward dari : 5

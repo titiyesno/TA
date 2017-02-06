@@ -673,6 +673,9 @@ struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
 
+printf("Node yang nerima paket request : %d\n",(int)index);
+printf("Paket forward dari : %d\n",rq->record);
+
   /*
    * Drop if:
    *      - I'm the source
@@ -680,6 +683,7 @@ aodv_rt_entry *rt;
    */
 
   if(rq->rq_src == index) {
+    printf("I am the source || recently i heard this request\n");
 #ifdef DEBUG
     fprintf(stderr, "%s: got my own REQUEST\n", __FUNCTION__);
 #endif // DEBUG
@@ -763,6 +767,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
  // First check if I am the destination ..
 
  if(rq->rq_dst == index) {
+  printf("I am the destination\n");
 
 #ifdef DEBUG
    fprintf(stderr, "%d - %s: destination sending reply\n",
@@ -805,7 +810,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
 
  else if (rt && (rt->rt_hops != INFINITY2) && 
 	  	(rt->rt_seqno >= rq->rq_dst_seqno) ) {
-
+  printf("I am not the destination, but I may have a fresh enough route.\n");
    //assert (rt->rt_flags == RTF_UP);
    assert(rq->rq_dst == rt->rt_dst);
    //assert ((rt->rt_seqno%2) == 0);	// is the seqno even?
@@ -842,9 +847,11 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
   * Can't reply. So forward the  Route Request
   */
  else {
+  printf("Can't reply. So forward the  Route Request\n");
    ih->saddr() = index;
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
+   rq->record = index;
    // Maximum sequence number seen en route
    if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
    forward((aodv_rt_entry*) 0, p, DELAY);
@@ -1210,6 +1217,10 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
  assert ((seqno%2) == 0);
  rq->rq_src_seqno = seqno;
  rq->rq_timestamp = CURRENT_TIME;
+ rq->record = index;
+
+ printf("Node yang request : %d\n",(int)rq->rq_src);
+ printf("Node destination : %d\n",(int)rq->rq_dst);
 
  Scheduler::instance().schedule(target_, p, 0.);
 
