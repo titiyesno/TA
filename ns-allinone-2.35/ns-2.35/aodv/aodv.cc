@@ -35,6 +35,9 @@ The AODV code developed by the CMU/MONARCH group was optimized and tuned by Sami
 #include <random.h>
 #include <cmu-trace.h>
 //#include <energy-model.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
 #define max(a,b)        ( (a) > (b) ? (a) : (b) )
 #define CURRENT_TIME    Scheduler::instance().clock()
@@ -46,8 +49,9 @@ The AODV code developed by the CMU/MONARCH group was optimized and tuned by Sami
 static int route_request = 0;
 #endif
 
-int sendfrom[200][200] = {0};
-int sendto[200][200] = {0};
+/*int sendfrom[200][200] = {0};
+int sendto[200][200] = {0};*/
+std::vector<std::vector<int> > myneigh(7);
 
 /*
   TCL Hooks
@@ -854,6 +858,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
    rq->record = index;
+   std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
    // Maximum sequence number seen en route
    if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
    forward((aodv_rt_entry*) 0, p, DELAY);
@@ -864,7 +869,6 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
 
 void
 AODV::recvReply(Packet *p) {
-  //printf("recvReply\n");
 //struct hdr_cmn *ch = HDR_CMN(p);
 struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_reply *rp = HDR_AODV_REPLY(p);
@@ -1226,6 +1230,8 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
  rq->rq_timestamp = CURRENT_TIME;
  rq->record = index;
 
+ std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
+
  /*printf("Node yang request : %d\n",(int)rq->rq_src);
  printf("Node destination : %d\n",(int)rq->rq_dst);*/
 
@@ -1236,7 +1242,6 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
 void
 AODV::sendReply(nsaddr_t ipdst, u_int32_t hop_count, nsaddr_t rpdst,
                 u_int32_t rpseq, u_int32_t lifetime, double timestamp) {
-  //printf("sendReply\n");
 Packet *p = Packet::alloc();
 struct hdr_cmn *ch = HDR_CMN(p);
 struct hdr_ip *ih = HDR_IP(p);
@@ -1274,8 +1279,8 @@ fprintf(stderr, "sending Reply from %d at %.2f\n", index, Scheduler::instance().
  ih->dport() = RT_PORT;
  ih->ttl_ = NETWORK_DIAMETER;
 
- printf("Node yang reply : %d\n",(int)ih->saddr());
- printf("Node yang di-reply : %d\n",(int)ih->daddr());
+ /*printf("Node yang reply : %d\n",(int)ih->saddr());
+ printf("Node yang di-reply : %d\n",(int)ih->daddr());*/
 
  Scheduler::instance().schedule(target_, p, 0.);
 
@@ -1356,7 +1361,7 @@ fprintf(stderr, "sending Hello from %d at %.2f\n", index, Scheduler::instance().
  ih->dport() = RT_PORT;
  ih->ttl_ = 1;
 
- printf("sending hello from %d\n",index);
+ //printf("sending hello from %d\n",index);
 
  Scheduler::instance().schedule(target_, p, 0.0);
 }
@@ -1377,7 +1382,10 @@ AODV_Neighbor *nb;
                    (1.5 * ALLOWED_HELLO_LOSS * HELLO_INTERVAL);
  }
 
- printf("nb %d : %d\n",rp->rp_dst,index);
+ //printf("nb %d : %d\n",rp->rp_dst,index);
+  if(!(std::find(myneigh[(int)rp->rp_dst].begin(),myneigh[(int)rp->rp_dst].end(),index) != myneigh[(int)rp->rp_dst].end())){
+    myneigh[(int)rp->rp_dst].push_back(index);
+  }
 
  Packet::free(p);
 }
