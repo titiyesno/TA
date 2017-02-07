@@ -49,9 +49,9 @@ The AODV code developed by the CMU/MONARCH group was optimized and tuned by Sami
 static int route_request = 0;
 #endif
 
-/*int sendfrom[200][200] = {0};
-int sendto[200][200] = {0};*/
 std::vector<std::vector<int> > myneigh(7);
+int kirimdari[200][200] = {0};
+int kirimke[200][200] = {0};
 
 /*
   TCL Hooks
@@ -681,6 +681,7 @@ aodv_rt_entry *rt;
 
 /*printf("Node yang nerima paket request : %d\n",(int)index);
 printf("Paket request dari : %d\n",rq->record);*/
+kirimdari[rq->record][index] += 1;
 
   /*
    * Drop if:
@@ -858,7 +859,11 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
    rq->record = index;
-   std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
+   for(int i=0; i < (int)myneigh[index].size(); i++){
+    kirimke[(int)myneigh[index][i]][index] += 1;
+    //printf("kirimke[%d][%d] : %d\n",(int)myneigh[index][i],index,kirimke[(int)myneigh[index][i]][index]);
+   }
+   //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
    // Maximum sequence number seen en route
    if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
    forward((aodv_rt_entry*) 0, p, DELAY);
@@ -1230,7 +1235,7 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
  rq->rq_timestamp = CURRENT_TIME;
  rq->record = index;
 
- std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
+ //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
 
  /*printf("Node yang request : %d\n",(int)rq->rq_src);
  printf("Node destination : %d\n",(int)rq->rq_dst);*/
