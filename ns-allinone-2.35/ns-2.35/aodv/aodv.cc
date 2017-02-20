@@ -50,8 +50,10 @@ static int route_request = 0;
 #endif
 
 std::vector<std::vector<int> > myneigh(7);
-int kirimdari[200][200] = {0};
-int kirimke[200][200] = {0};
+//int counthello[7] = {0};
+int kirimdari[7][7] = {0};
+int kirimke[7][7] = {0};
+int forward_eval[7][7] = {0};
 
 /*
   TCL Hooks
@@ -679,10 +681,10 @@ struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
 
-/*printf("Node yang nerima paket request : %d\n",(int)index);
-printf("Paket request dari : %d\n",rq->record);*/
+//printf("Node yang nerima paket request : %d\n",(int)index);
+//printf("Paket request dari : %d\n",rq->record);
 kirimdari[rq->record][index] += 1;
-
+//printf("kirimdari[%d][%d] : %d\n",rq->record,index,kirimdari[rq->record][index]);
   /*
    * Drop if:
    *      - I'm the source
@@ -690,7 +692,7 @@ kirimdari[rq->record][index] += 1;
    */
 
   if(rq->rq_src == index) {
-    //printf("I am the source || recently i heard this request\n");
+    //printf("I am the source\n");
 #ifdef DEBUG
     fprintf(stderr, "%s: got my own REQUEST\n", __FUNCTION__);
 #endif // DEBUG
@@ -699,7 +701,8 @@ kirimdari[rq->record][index] += 1;
   } 
 
  if (id_lookup(rq->rq_src, rq->rq_bcast_id)) {
-
+    //printf("I recently heard this request\n");
+    
 #ifdef DEBUG
    fprintf(stderr, "%s: discarding request\n", __FUNCTION__);
 #endif // DEBUG
@@ -712,8 +715,6 @@ kirimdari[rq->record][index] += 1;
   * Cache the broadcast ID
   */
  id_insert(rq->rq_src, rq->rq_bcast_id);
-
-
 
  /* 
   * We are either going to forward the REQUEST or generate a
@@ -858,15 +859,23 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    ih->saddr() = index;
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
+   
+   //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
    rq->record = index;
    for(int i=0; i < (int)myneigh[index].size(); i++){
-    kirimke[(int)myneigh[index][i]][index] += 1;
-    //printf("kirimke[%d][%d] : %d\n",(int)myneigh[index][i],index,kirimke[(int)myneigh[index][i]][index]);
+    if((int)rq->rq_dst != (int)myneigh[index][i]){
+      kirimke[(int)myneigh[index][i]][index] += 1;  
+      forward_eval[(int)myneigh[index][i]][index] = kirimdari[(int)myneigh[index][i]][index]/kirimke[(int)myneigh[index][i]][index];
+    }
+    //printf("kirimke[%d][%d]: %d\n",(int)myneigh[index][i],index,kirimke[(int)myneigh[index][i]][index]);
+    printf("forward_eval[%d][%d]: %d\n",(int)myneigh[index][i],index,forward_eval[(int)myneigh[index][i]][index]);
+
    }
-   //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
    // Maximum sequence number seen en route
    if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
+   
    forward((aodv_rt_entry*) 0, p, DELAY);
+
  }
 
 }
@@ -885,9 +894,9 @@ double delay = 0.0;
  fprintf(stderr, "%d - %s: received a REPLY\n", index, __FUNCTION__);
 #endif // DEBUG
 
-/*printf("Node yang nerima reply : %d\n",index);
-printf("Paket reply dari : %d\n",rp->rp_src);
-printf("origin dari : %d\n",rp->record);*/
+//printf("Node yang nerima reply : %d\n",index);
+//printf("Paket reply dari : %d, request ke : %d\n",rp->rp_src,rp->rp_dst);
+//printf("origin dari : %d\n",rp->record);
 
  /*
   *  Got a reply. So reset the "soft state" maintained for 
@@ -960,6 +969,7 @@ if (ih->daddr() == index) { // If I am the original source
   */
 
 if(ih->daddr() == index || suppress_reply) {
+  //printf("source taunya dapet reply dari : %d\n",rp->rp_src);
    Packet::free(p);
  }
  /*
@@ -1239,6 +1249,12 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
 
  /*printf("Node yang request : %d\n",(int)rq->rq_src);
  printf("Node destination : %d\n",(int)rq->rq_dst);*/
+ for(int i=0; i < (int)myneigh[index].size(); i++){
+    if((int)rq->rq_dst != (int)myneigh[index][i]){
+      kirimke[(int)myneigh[index][i]][index] += 1;  
+    }
+    //printf("kirimke[%d][%d]: %d\n",(int)myneigh[index][i],index,kirimke[(int)myneigh[index][i]][index]);
+   }
 
  Scheduler::instance().schedule(target_, p, 0.);
 
@@ -1351,6 +1367,7 @@ fprintf(stderr, "sending Hello from %d at %.2f\n", index, Scheduler::instance().
  rh->rp_dst = index;
  rh->rp_dst_seqno = seqno;
  rh->rp_lifetime = (1 + ALLOWED_HELLO_LOSS) * HELLO_INTERVAL;
+ //rh->record = counthello[index];
 
  // ch->uid() = 0;
  ch->ptype() = PT_AODV;
@@ -1366,7 +1383,8 @@ fprintf(stderr, "sending Hello from %d at %.2f\n", index, Scheduler::instance().
  ih->dport() = RT_PORT;
  ih->ttl_ = 1;
 
- //printf("sending hello from %d\n",index);
+ /*counthello[index] += 1;
+ printf("send : counthello[%d]: %d\n",index,counthello[index]);*/
 
  Scheduler::instance().schedule(target_, p, 0.0);
 }
@@ -1386,8 +1404,7 @@ AODV_Neighbor *nb;
    nb->nb_expire = CURRENT_TIME +
                    (1.5 * ALLOWED_HELLO_LOSS * HELLO_INTERVAL);
  }
-
- //printf("nb %d : %d\n",rp->rp_dst,index);
+  //printf("recv : counthello[%d]: %d\n",(int)rp->rp_dst,counthello[(int)rp->rp_dst]); 
   if(!(std::find(myneigh[(int)rp->rp_dst].begin(),myneigh[(int)rp->rp_dst].end(),index) != myneigh[(int)rp->rp_dst].end())){
     myneigh[(int)rp->rp_dst].push_back(index);
   }
