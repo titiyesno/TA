@@ -1249,6 +1249,7 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
 
  /*printf("Node yang request : %d\n",(int)rq->rq_src);
  printf("Node destination : %d\n",(int)rq->rq_dst);*/
+
  for(int i=0; i < (int)myneigh[index].size(); i++){
     if((int)rq->rq_dst != (int)myneigh[index][i]){
       kirimke[(int)myneigh[index][i]][index] += 1;  
@@ -1385,6 +1386,7 @@ fprintf(stderr, "sending Hello from %d at %.2f\n", index, Scheduler::instance().
 
  /*counthello[index] += 1;
  printf("send : counthello[%d]: %d\n",index,counthello[index]);*/
+ myneigh[index].clear();
 
  Scheduler::instance().schedule(target_, p, 0.0);
 }
@@ -1405,9 +1407,9 @@ AODV_Neighbor *nb;
                    (1.5 * ALLOWED_HELLO_LOSS * HELLO_INTERVAL);
  }
   //printf("recv : counthello[%d]: %d\n",(int)rp->rp_dst,counthello[(int)rp->rp_dst]); 
-  if(!(std::find(myneigh[(int)rp->rp_dst].begin(),myneigh[(int)rp->rp_dst].end(),index) != myneigh[(int)rp->rp_dst].end())){
+  //if(!(std::find(myneigh[(int)rp->rp_dst].begin(),myneigh[(int)rp->rp_dst].end(),index) != myneigh[(int)rp->rp_dst].end())){
     myneigh[(int)rp->rp_dst].push_back(index);
-  }
+  //}
 
  Packet::free(p);
 }
