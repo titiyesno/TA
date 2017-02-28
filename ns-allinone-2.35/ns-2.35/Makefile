@@ -77,6 +77,7 @@ INCLUDES = \
 
 LIB	= \
 	-L/home/tities/Documents/TA/ns-allinone-2.35/tclcl-1.20 -ltclcl -L/home/tities/Documents/TA/ns-allinone-2.35/otcl-1.14 -lotcl -L/home/tities/Documents/TA/ns-allinone-2.35/lib -ltk8.5 -L/home/tities/Documents/TA/ns-allinone-2.35/lib -ltcl8.5 \
+	-L/usr/include/openssl -lssl -lcrypto\
 	-lXext -lX11 \
 	 -lnsl -ldl \
 	-lm -lm 

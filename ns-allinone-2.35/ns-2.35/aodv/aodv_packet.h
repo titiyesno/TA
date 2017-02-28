@@ -26,7 +26,13 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 The AODV code developed by the CMU/MONARCH group was optimized and tuned by Samir Das and Mahesh Marina, University of Cincinnati. The work was partially done in Sun Microsystems.
 */
-
+#include <stdlib.h>
+#include <string.h>
+#include <openssl/sha.h>
+#include <openssl/ec.h>
+#include <openssl/obj_mac.h>
+#include <openssl/ecdsa.h>
+#include <string>
 
 #ifndef __aodv_packet_h__
 #define __aodv_packet_h__
@@ -85,6 +91,9 @@ struct hdr_aodv_request {
         double          rq_timestamp;   // when REQUEST sent;
 					// used to compute route discovery latency
         int record;
+        char            mdString[SHA256_DIGEST_LENGTH*2+1];
+        EC_KEY          *eckey;
+        ECDSA_SIG       *signature;
   // This define turns on gratuitous replies- see aodv.cc for implementation contributed by
   // Anant Utgikar, 09/16/02.
   //#define RREQ_GRAT_RREP	0x80
