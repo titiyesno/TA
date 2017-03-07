@@ -56,14 +56,14 @@ The AODV code developed by the CMU/MONARCH group was optimized and tuned by Sami
 static int route_request = 0;
 #endif
 
-std::vector<std::vector<int> > myneigh(7);
+std::vector<std::vector<int> > myneigh(50);
 //int counthello[7] = {0};
-int kirimdari[7][7] = {0};
-int kirimke[7][7] = {0};
-int verified[7][7] = {0};
-double forward_eval[7][7] = {0.0};
-double backward_eval[7][7] = {0.0};
-double eval_value[7][7] = {0.0};
+int kirimdari[50][50] = {0};
+int kirimke[50][50] = {0};
+int verified[50][50] = {0};
+double forward_eval[50][50] = {0.0};
+double backward_eval[50][50] = {0.0};
+double eval_value[50][50] = {0.0};
 
 unsigned char hash[SHA256_DIGEST_LENGTH];
 
@@ -703,7 +703,6 @@ kirimdari[rq->record][index] += 1;
 int function_status = -1;
     char string[SHA256_DIGEST_LENGTH];
     strcpy(string,(char *)&rq->rq_type);
-    strcat(string,(char *)&rq->rq_hop_count);
     strcat(string,(char *)&rq->rq_bcast_id);
     strcat(string,(char *)&rq->rq_dst);
     strcat(string,(char *)&rq->rq_dst_seqno);
@@ -903,6 +902,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    rq->rq_hop_count += 1;
    backward_eval[rq->record][index] = (double)verified[rq->record][index]/(double)kirimdari[rq->record][index];
    //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
+   rq->record = index;
    for(int i=0; i < (int)myneigh[index].size(); i++){
     if((int)rq->rq_dst != (int)myneigh[index][i]){
       kirimke[(int)myneigh[index][i]][index] += 1;  
@@ -916,77 +916,6 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
     if(eval_value[(int)myneigh[index][i]][index] > 0.7){
       // Maximum sequence number seen en route
    if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
-
-    char string[SHA256_DIGEST_LENGTH];
-    strcpy(string,(char *)&rq->rq_type);
-    strcat(string,(char *)&rq->rq_hop_count);
-    strcat(string,(char *)&rq->rq_bcast_id);
-    strcat(string,(char *)&rq->rq_dst);
-    strcat(string,(char *)&rq->rq_dst_seqno);
-    strcat(string,(char *)&rq->rq_src);
-    strcat(string,(char *)&rq->rq_src_seqno);
-
-   SHA256((unsigned char*)&string, strlen(string), (unsigned char*)&hash);
-   char mdString[SHA256_DIGEST_LENGTH*2+1];
-   for(int i = 0; i < SHA256_DIGEST_LENGTH; i++)
-           sprintf(&mdString[i*2], "%02x", (unsigned int)hash[i]);
-   
-      //printf("SHA256 hash: %s\n", mdString);
-      strcpy(rq->mdString,mdString);
-      int function_status = -1;
-      // EC_KEY *eckey=EC_KEY_new();
-      rq->eckey = EC_KEY_new();
-      if (NULL == rq->eckey)
-      {
-          //printf("Failed to create new EC Key\n");
-          function_status = -1;
-      }
-      else{
-        //printf("EC Key created\n");
-        EC_GROUP *ecgroup= EC_GROUP_new_by_curve_name(NID_secp192k1);
-          if (NULL == ecgroup)
-          {
-              //printf("Failed to create new EC Group\n");
-              function_status = -1;
-          }
-          else{
-            //printf("EC Group created\n");
-            int set_group_status = EC_KEY_set_group(rq->eckey,ecgroup);
-              const int set_group_success = 1;
-              if (set_group_success != set_group_status)
-              {
-                  //printf("Failed to set group for EC Key\n");
-                  function_status = -1;
-              }
-              else{
-                //printf("Set Group Success\n");
-                const int gen_success = 1;
-                  int gen_status = EC_KEY_generate_key(rq->eckey);
-                  if (gen_success != gen_status)
-                  {
-                      //printf("Failed to generate EC Key\n");
-                      function_status = -1;
-                  }
-                  else{
-                    //printf("EC Key generated\n");
-                    // ECDSA_SIG *signature = ECDSA_do_sign(ucstr(mdString), strlen(mdString), eckey);
-                    rq->signature = ECDSA_do_sign(ucstr(mdString), strlen(mdString), rq->eckey);
-                      if (NULL == rq->signature)
-                      {
-                          //printf("Failed to generate EC Signature\n");
-                          function_status = -1;
-                      }
-                      else{
-                        //printf("EC Signature generated\n");
-                          function_status = 1;
-                      }
-                  }
-              }
-              EC_GROUP_free(ecgroup);
-          }
-           //EC_KEY_free(eckey);
-      }
-   rq->record = index;
    forward((aodv_rt_entry*) 0, p, DELAY);
     }
    }
@@ -1368,7 +1297,6 @@ aodv_rt_entry *rt = rtable.rt_lookup(dst);
 
  char string[SHA256_DIGEST_LENGTH];
   strcpy(string,(char *)&rq->rq_type);
-  strcat(string,(char *)&rq->rq_hop_count);
   strcat(string,(char *)&rq->rq_bcast_id);
   strcat(string,(char *)&rq->rq_dst);
   strcat(string,(char *)&rq->rq_dst_seqno);
