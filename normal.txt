@@ -1,14 +1,12 @@
 num_nodes is set 7
 channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
 highestAntennaZ_ = 1.5,  distCST_ = 550.0
-kirimdari[4][1] : 0
 forward_eval[0][4]: 1.000000
 backward_eval[0][4]: 1.000000
 eval_value[0][4]: 1.234571
 forward_eval[1][4]: 0.000000
 backward_eval[1][4]: 0.000000
 eval_value[1][4]: 0.000000
-kirimdari[4][1] : 0
 forward_eval[4][1]: 0.000000
 backward_eval[4][1]: 0.000000
 eval_value[4][1]: 0.000000
@@ -18,7 +16,6 @@ eval_value[2][1]: 0.000000
 forward_eval[0][1]: 1.000000
 backward_eval[0][1]: 1.000000
 eval_value[0][1]: 0.831745
-kirimdari[4][1] : 1
 forward_eval[5][2]: 0.000000
 backward_eval[5][2]: 0.000000
 eval_value[5][2]: 0.000000
@@ -31,7 +28,6 @@ eval_value[1][2]: 1.868425
 forward_eval[3][2]: 0.000000
 backward_eval[3][2]: 0.000000
 eval_value[3][2]: 0.000000
-kirimdari[4][1] : 1
 forward_eval[2][5]: 1.000000
 backward_eval[2][5]: 1.000000
 eval_value[2][5]: 0.748571
@@ -41,13 +37,12 @@ eval_value[3][5]: 0.000000
 forward_eval[6][5]: 0.000000
 backward_eval[6][5]: 0.000000
 eval_value[6][5]: 0.000000
-kirimdari[4][1] : 1
 forward_eval[3][6]: 0.000000
 backward_eval[3][6]: 0.000000
 eval_value[3][6]: 0.000000
 forward_eval[2][6]: 1.000000
 backward_eval[2][6]: 1.000000
-eval_value[2]*** !!! ***
-nam cannot recognize the trace file /home/tities/Documents/TA/skenario/testscenario.tr
-Please make sure that the file is not empty and it is a nam trace
-***********
+eval_value[2][6]: 0.238599
+forward_eval[5][6]: 0.000000
+backward_eval[5][6]: 0.000000
+eval_value[5][6]: 0.000000

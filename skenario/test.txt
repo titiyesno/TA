@@ -1,59 +1,6 @@
-num_nodes is set 10
+Loading connection pattern...
+Loading scenario file...
+end simulation
+num_nodes is set 30
 channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
 highestAntennaZ_ = 1.5,  distCST_ = 550.0
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 1.234571
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 1.581539
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 1.109199
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 1.103452
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 0.831745
-forward_eval[3][6]: 0.000000
-backward_eval[3][6]: 0.000000
-eval_value[3][6]: 0.000000
-forward_eval[6][3]: 1.000000
-backward_eval[6][3]: 1.000000
-eval_value[6][3]: 0.878185
-forward_eval[0][3]: 0.000000
-backward_eval[0][3]: 0.000000
-eval_value[0][3]: 0.000000
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 1.353009
-forward_eval[3][6]: 0.500000
-backward_eval[3][6]: 0.000000
-eval_value[3][6]: 0.070801
-forward_eval[6][3]: 0.500000
-backward_eval[6][3]: 1.000000
-eval_value[6][3]: 0.251037
-forward_eval[0][3]: 0.500000
-backward_eval[0][3]: 1.000000
-eval_value[0][3]: 0.872793
-forward_eval[0][3]: 0.666667
-backward_eval[0][3]: 1.000000
-eval_value[0][3]: 0.505397
-forward_eval[6][3]: 0.666667
-backward_eval[6][3]: 1.000000
-eval_value[6][3]: 0.195336
-forward_eval[0][6]: 1.000000
-backward_eval[0][6]: 1.000000
-eval_value[0][6]: 1.217181
-forward_eval[3][6]: 0.666667
-backward_eval[3][6]: 0.000000
-eval_value[3][6]: 0.341955
-forward_eval[0][3]: 0.750000
-backward_eval[0][3]: 1.000000
-eval_value[0][3]: 0.755511
-forward_eval[6][3]: 0.750000
-backward_eval[6][3]: 1.000000
-eval_value[6][3]: 1.002451
-Scheduler: Event UID not valid!
-
