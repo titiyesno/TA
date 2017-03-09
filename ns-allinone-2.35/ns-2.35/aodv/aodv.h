@@ -274,6 +274,7 @@ class AODV: public Agent {
 	
 	double 		PerHopTime(aodv_rt_entry *rt);
 	bool		malicious; // Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net
+    bool        worm;
 
 
         nsaddr_t        index;                  // IP Address of this node

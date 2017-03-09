@@ -21,8 +21,8 @@ set val(cp)             "traffic1"             ;# connection pattern file
 set val(sc)             "scenario.tcl"
 
 set ns_	[new Simulator]				
-set tracefd [open s-aodv2.tr w]
-set namtrace [open s-aodv2.nam w]
+set tracefd [open s-aodv2-black.tr w]
+set namtrace [open s-aodv2-black.nam w]
 
 #$ns_ use-newtrace	
 $ns_ trace-all $tracefd
@@ -88,6 +88,12 @@ $ns_ at 0.0 "$node_(0) label Source"
 $node_(1) color blue
 $ns_ at 0.0 "$node_(1) color blue"
 $ns_ at 0.0 "$node_(1) label Destination"
+
+$node_(9) color red
+$ns_ at 0.0 "$node_(9) color red"
+$ns_ at 0.0 "$node_(9) label Attacker"
+
+$ns_ at 0.0 "[$node_(9) set ragent_] hacker"
 
 # Telling nodes when the simulation ends
 

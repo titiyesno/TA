@@ -17,6 +17,8 @@ n -t 0 -s 0 -S COLOR -c green -o green -i green -I green
 n -t 0 -s 0 -S DLABEL -l "Source" -L ""
 n -t 0 -s 1 -S COLOR -c blue -o blue -i blue -I blue
 n -t 0 -s 1 -S DLABEL -l "Destination" -L ""
+n -t 0 -s 4 -S COLOR -c red -o red -i red -I red
+n -t 0 -s 4 -S DLABEL -l "Attacker" -L ""
 + -t 0.000000000 -s 0 -d -1 -p AODV -e 44 -c 2 -a 0 -i 0 -k RTR 
 - -t 0.000000000 -s 0 -d -1 -p AODV -e 44 -c 2 -a 0 -i 0 -k RTR
 h -t 0.000000000 -s 0 -d -1 -p AODV -e 44 -c 2 -a 0 -i 0 -k RTR

@@ -111,6 +111,11 @@ AODV::command(int argc, const char*const* argv) {
       return TCL_OK;
     }
 // Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net [Code Ends]
+
+    if(strncasecmp(argv[1], "wormhole", 6) == 0){
+      worm = true;
+      return TCL_OK;
+    }
   
     if(strncasecmp(argv[1], "start", 2) == 0) {
       btimer.handle((Event*) 0);
@@ -175,6 +180,7 @@ AODV::AODV(nsaddr_t id) : Agent(PT_AODV),
   bid = 1;
 
   malicious = false; // Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net
+  worm = false;
 
 LIST_INIT(&nbhead);
   LIST_INIT(&bihead);
