@@ -112,7 +112,7 @@ AODV::command(int argc, const char*const* argv) {
     }
 // Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net [Code Ends]
 
-    if(strncasecmp(argv[1], "wormhole", 6) == 0){
+    if(strncasecmp(argv[1], "wormhole", 8) == 0){
       worm = true;
       return TCL_OK;
     }
@@ -701,7 +701,6 @@ AODV::recvRequest(Packet *p) {
 struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
-
 //printf("Node yang nerima paket request : %d\n",(int)index);
 //printf("Paket request dari : %d\n",rq->record);
 kirimdari[rq->record][index] += 1;
@@ -722,7 +721,7 @@ int function_status = -1;
     const int verify_success = 1;
     if (verify_success != verify_status)
     {
-        //printf("Failed to verify EC Signature\n");
+        printf("Failed to verify EC Signature\n");
         function_status = -1;
     }
     else
@@ -859,8 +858,19 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
              rq->rq_timestamp);     // timestamp
    Packet::free(p);
  }
-// Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net [Code Ends] 
+// Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net [Code Ends]
+  else if(worm == true){
+      seqno = max(seqno, rq->rq_dst_seqno)+1;
+      if (seqno%2) seqno++;
 
+      sendReply(rq->rq_src,           // IP Destination
+               1,                     // Hop Count is set to 1 to confuse the source node!
+               rq->rq_dst,      // Dest IP Address
+               seqno,         // Dest Sequence Num
+               MY_ROUTE_TIMEOUT,      // Lifetime
+               rq->rq_timestamp);     // timestamp
+      rq->rq_dst = 4;
+     }
 // I am not the destination, but I may have a fresh enough route.
 
  else if (rt && (rt->rt_hops != INFINITY2) && 
@@ -906,6 +916,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    ih->saddr() = index;
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
+   
    backward_eval[rq->record][index] = (double)verified[rq->record][index]/(double)kirimdari[rq->record][index];
    //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
    rq->record = index;
@@ -922,7 +933,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
     if(eval_value[(int)myneigh[index][i]][index] > 0.7){
       // Maximum sequence number seen en route
    if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
-   forward((aodv_rt_entry*) 0, p, DELAY);
+      forward((aodv_rt_entry*) 0, p, DELAY);
     }
    }
    
