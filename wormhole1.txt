@@ -45,6 +45,15 @@ node 0 : node 0 send untuk node 3
 paket dari : 2
 node 5 : node 0 send untuk node 3
 REPLY : node 5 untuk node 0
+forward_eval[2][5]: 1.000000
+backward_eval[2][5]: 1.000000
+eval_value[2][5]: 0.748571
+forward_eval[3][5]: 0.000000
+backward_eval[3][5]: 0.000000
+eval_value[3][5]: 0.000000
+forward_eval[6][5]: 0.000000
+backward_eval[6][5]: 0.000000
+eval_value[6][5]: 0.000000
 paket dari : 2
 node 6 : node 0 send untuk node 3
 forward_eval[3][6]: 0.000000
@@ -52,7 +61,7 @@ backward_eval[3][6]: 0.000000
 eval_value[3][6]: 0.000000
 forward_eval[2][6]: 1.000000
 backward_eval[2][6]: 1.000000
-eval_value[2][6]: 0.259187
+eval_value[2][6]: 0.238599
 forward_eval[5][6]: 0.000000
 backward_eval[5][6]: 0.000000
 eval_value[5][6]: 0.000000
@@ -61,6 +70,15 @@ node 1 : node 0 send untuk node 3
 paket dari : 2
 node 3 : node 0 send untuk node 3
 REPLY : node 3 untuk node 0
+paket dari : 5
+node 2 : node 0 send untuk node 4
+Failed to verify EC Signature
+paket dari : 5
+node 3 : node 0 send untuk node 4
+Failed to verify EC Signature
+paket dari : 5
+node 6 : node 0 send untuk node 4
+Failed to verify EC Signature
 Node : 2
 RECV REPLY dari node 3 untuk node 0
 Node : 2

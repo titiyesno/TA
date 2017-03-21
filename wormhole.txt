@@ -1,39 +1,48 @@
 num_nodes is set 7
+node 0 : node 0 send untuk node 3
 channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
 highestAntennaZ_ = 1.5,  distCST_ = 550.0
-forward_eval[0][4]: 1.000000
-backward_eval[0][4]: 1.000000
-eval_value[0][4]: 1.234571
-forward_eval[1][4]: 0.000000
-backward_eval[1][4]: 0.000000
-eval_value[1][4]: 0.000000
-forward_eval[4][1]: 0.000000
-backward_eval[4][1]: 0.000000
-eval_value[4][1]: 0.000000
-forward_eval[2][1]: 0.000000
-backward_eval[2][1]: 0.000000
-eval_value[2][1]: 0.000000
-forward_eval[0][1]: 1.000000
-backward_eval[0][1]: 1.000000
-eval_value[0][1]: 0.831745
-forward_eval[5][2]: 0.000000
-backward_eval[5][2]: 0.000000
-eval_value[5][2]: 0.000000
-forward_eval[6][2]: 0.000000
-backward_eval[6][2]: 0.000000
-eval_value[6][2]: 0.000000
-forward_eval[1][2]: 1.000000
-backward_eval[1][2]: 1.000000
-eval_value[1][2]: 1.868425
-forward_eval[3][2]: 0.000000
-backward_eval[3][2]: 0.000000
-eval_value[3][2]: 0.000000
-forward_eval[3][6]: 0.000000
-backward_eval[3][6]: 0.000000
-eval_value[3][6]: 0.000000
-forward_eval[2][6]: 1.000000
-backward_eval[2][6]: 1.000000
-eval_value[2][6]: 0.259187
-forward_eval[5][6]: 0.000000
-backward_eval[5][6]: 0.000000
-eval_value[5][6]: 0.000000
+paket dari : 0
+node 4 : node 0 send untuk node 3
+paket dari : 0
+node 1 : node 0 send untuk node 3
+paket dari : 4
+node 0 : node 0 send untuk node 3
+paket dari : 4
+node 1 : node 0 send untuk node 3
+paket dari : 1
+node 4 : node 0 send untuk node 3
+paket dari : 1
+node 2 : node 0 send untuk node 3
+paket dari : 1
+node 0 : node 0 send untuk node 3
+paket dari : 2
+node 5 : node 0 send untuk node 3
+REPLY : node 5 untuk node 0
+paket dari : 2
+node 6 : node 0 send untuk node 3
+paket dari : 2
+node 1 : node 0 send untuk node 3
+paket dari : 2
+node 3 : node 0 send untuk node 3
+REPLY : node 3 untuk node 0
+paket dari : 6
+node 3 : node 0 send untuk node 3
+paket dari : 6
+node 2 : node 0 send untuk node 3
+paket dari : 6
+node 5 : node 0 send untuk node 3
+Node : 2
+RECV REPLY dari node 3 untuk node 0
+Node : 2
+RECV REPLY dari node 5 untuk node 0
+paket dari : 5
+node 2 : node 0 send untuk node 4
+paket dari : 5
+node 3 : node 0 send untuk node 4
+paket dari : 5
+node 6 : node 0 send untuk node 4
+Node : 1
+RECV REPLY dari node 2 untuk node 0
+Node : 0
+RECV REPLY dari node 1 untuk node 0

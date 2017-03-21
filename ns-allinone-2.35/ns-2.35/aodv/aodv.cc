@@ -701,6 +701,8 @@ AODV::recvRequest(Packet *p) {
 struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
+printf("paket dari : %d\n",rq->record);
+printf("node %d : node %d send untuk node %d\n",index,rq->rq_src, rq->rq_dst);
 //printf("Node yang nerima paket request : %d\n",(int)index);
 //printf("Paket request dari : %d\n",rq->record);
 kirimdari[rq->record][index] += 1;
@@ -859,18 +861,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    Packet::free(p);
  }
 // Added for Blackhole Attack - Mohit P. Tahiliani - Ref.: elmurod.net [Code Ends]
-  else if(worm == true){
-      seqno = max(seqno, rq->rq_dst_seqno)+1;
-      if (seqno%2) seqno++;
 
-      sendReply(rq->rq_src,           // IP Destination
-               1,                     // Hop Count is set to 1 to confuse the source node!
-               rq->rq_dst,      // Dest IP Address
-               seqno,         // Dest Sequence Num
-               MY_ROUTE_TIMEOUT,      // Lifetime
-               rq->rq_timestamp);     // timestamp
-      rq->rq_dst = 4;
-     }
 // I am not the destination, but I may have a fresh enough route.
 
  else if (rt && (rt->rt_hops != INFINITY2) && 
@@ -916,7 +907,20 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
    ih->saddr() = index;
    ih->daddr() = IP_BROADCAST;
    rq->rq_hop_count += 1;
-   
+
+   if(worm == true){
+      seqno = max(seqno, rq->rq_dst_seqno)+1;
+      if (seqno%2) seqno++;
+
+      sendReply(rq->rq_src,           // IP Destination
+               1,                     // Hop Count is set to 1 to confuse the source node!
+               rq->rq_dst,      // Dest IP Address
+               seqno,         // Dest Sequence Num
+               MY_ROUTE_TIMEOUT,      // Lifetime
+               rq->rq_timestamp);     // timestamp
+      rq->rq_dst = 4;
+     }
+
    backward_eval[rq->record][index] = (double)verified[rq->record][index]/(double)kirimdari[rq->record][index];
    //std::cout << "Tetangganya " << index << " ada " << myneigh[index].size() << "\n";
    rq->record = index;
@@ -951,6 +955,9 @@ struct hdr_aodv_reply *rp = HDR_AODV_REPLY(p);
 aodv_rt_entry *rt;
 char suppress_reply = 0;
 double delay = 0.0;
+
+printf("Node : %d\n",index);
+printf("RECV REPLY dari node %d untuk node %d\n",rp->rp_src,ih->daddr());
 	
 #ifdef DEBUG
  fprintf(stderr, "%d - %s: received a REPLY\n", index, __FUNCTION__);
@@ -1435,6 +1442,7 @@ fprintf(stderr, "sending Reply from %d at %.2f\n", index, Scheduler::instance().
 
  /*printf("Node yang reply : %d\n",(int)ih->saddr());
  printf("Node yang di-reply : %d\n",(int)ih->daddr());*/
+ printf("REPLY : node %d untuk node %d\n",ih->saddr(),ih->daddr());
 
  Scheduler::instance().schedule(target_, p, 0.);
 

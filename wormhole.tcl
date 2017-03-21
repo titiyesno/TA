@@ -105,8 +105,8 @@ $n6 set Y_ 200
 $n6 set Z_ 0.0
 $ns initial_node_pos $n6 20
 # set n7 [$ns node]
-# $n7 set X_ 499
-# $n7 set Y_ 350
+# $n7 set X_ 800
+# $n7 set Y_ 299
 # $n7 set Z_ 0.0
 # $ns initial_node_pos $n7 20
 

@@ -20,7 +20,7 @@ set val(ifq)    Queue/DropTail/PriQueue    ;# interface queue type
 set val(ll)     LL                         ;# link layer type
 set val(ant)    Antenna/OmniAntenna        ;# antenna model
 set val(ifqlen) 50                         ;# max packet in ifq
-set val(nn)     7                          ;# number of mobilenodes
+set val(nn)     8                          ;# number of mobilenodes
 set val(rp)     AODV                       ;# routing protocol
 set val(x)      800                        ;# X dimension of topography
 set val(y)      541                        ;# Y dimension of topography
@@ -104,6 +104,11 @@ $n6 set X_ 600
 $n6 set Y_ 200
 $n6 set Z_ 0.0
 $ns initial_node_pos $n6 20
+set n7 [$ns node]
+$n7 set X_ 800
+$n7 set Y_ 299
+$n7 set Z_ 0.0
+$ns initial_node_pos $n7 20
 
 
 # Node 5 is given RED Color and a label- indicating it is a Blackhole Attacker
@@ -117,9 +122,9 @@ $ns at 0.0 "$n0 color green"
 $ns at 0.0 "$n0 label Source"
 
 # Node 3 is given BLUE Color and a label- acts as a Destination Node
-$n3 color blue
-$ns at 0.0 "$n3 color blue"
-$ns at 0.0 "$n3 label Destination"
+$n7 color blue
+$ns at 0.0 "$n7 color blue"
+$ns at 0.0 "$n7 label Destination"
 
 #===================================
 #    	Set node 5 as attacker    	 
@@ -133,7 +138,7 @@ $ns at 0.0 "$n3 label Destination"
 set udp0 [new Agent/UDP]
 $ns attach-agent $n0 $udp0
 set null1 [new Agent/Null]
-$ns attach-agent $n3 $null1
+$ns attach-agent $n7 $null1
 $ns connect $udp0 $null1
 $udp0 set packetSize_ 1500
 
