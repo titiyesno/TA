@@ -452,27 +452,6 @@ paket dari : 29
 node 23 : node 28 send untuk node 4
 Failed to verify EC Signature
 REPLY : node 23 untuk node 28
-forward_eval[2][23]: 0.000000
-backward_eval[2][23]: 0.000000
-eval_value[2][23]: 0.000000
-forward_eval[9][23]: 0.000000
-backward_eval[9][23]: 0.000000
-eval_value[9][23]: 0.000000
-forward_eval[22][23]: 0.000000
-backward_eval[22][23]: 0.000000
-eval_value[22][23]: 0.000000
-forward_eval[4][23]: 0.000000
-backward_eval[4][23]: 0.000000
-eval_value[4][23]: 0.000000
-forward_eval[10][23]: 0.000000
-backward_eval[10][23]: 0.000000
-eval_value[10][23]: 0.000000
-forward_eval[3][23]: 0.000000
-backward_eval[3][23]: 0.000000
-eval_value[3][23]: 0.000000
-forward_eval[29][23]: 1.000000
-backward_eval[29][23]: 0.000000
-eval_value[29][23]: 0.700620
 paket dari : 29
 node 22 : node 28 send untuk node 4
 Failed to verify EC Signature
@@ -490,7 +469,7 @@ backward_eval[9][22]: 0.000000
 eval_value[9][22]: 0.000000
 forward_eval[29][22]: 1.000000
 backward_eval[29][22]: 0.000000
-eval_value[29][22]: 0.280042
+eval_value[29][22]: 0.649707
 paket dari : 29
 node 10 : node 28 send untuk node 4
 Failed to verify EC Signature
@@ -508,7 +487,7 @@ backward_eval[9][10]: 0.000000
 eval_value[9][10]: 0.000000
 forward_eval[29][10]: 1.000000
 backward_eval[29][10]: 0.000000
-eval_value[29][10]: 0.434513
+eval_value[29][10]: 0.223656
 paket dari : 25
 node 8 : node 28 send untuk node 9
 paket dari : 25
@@ -528,9 +507,29 @@ node 13 : node 28 send untuk node 9
 paket dari : 24
 node 25 : node 28 send untuk node 9
 paket dari : 24
-node 17 : node 28 send untuk node 9
-paket dari : 24
 node 8 : node 28 send untuk node 9
+paket dari : 18
+node 13 : node 28 send untuk node 9
+paket dari : 18
+node 25 : node 28 send untuk node 9
+paket dari : 18
+node 24 : node 28 send untuk node 9
+paket dari : 18
+node 8 : node 28 send untuk node 9
+paket dari : 18
+node 15 : node 28 send untuk node 9
+Node : 29
+RECV REPLY dari node 23 untuk node 28
+paket dari : 8
+node 25 : node 28 send untuk node 9
+paket dari : 8
+node 13 : node 28 send untuk node 9
+paket dari : 8
+node 18 : node 28 send untuk node 9
+paket dari : 8
+node 0 : node 28 send untuk node 9
+paket dari : 8
+node 24 : node 28 send untuk node 9
 paket dari : 2
 node 22 : node 28 send untuk node 4
 Failed to verify EC Signature
@@ -560,114 +559,10 @@ backward_eval[22][9]: 0.000000
 eval_value[22][9]: 0.000000
 forward_eval[2][9]: 1.000000
 backward_eval[2][9]: 0.000000
-eval_value[2][9]: 0.712087
+eval_value[2][9]: 0.944318
 forward_eval[4][9]: 0.000000
 backward_eval[4][9]: 0.000000
 eval_value[4][9]: 0.000000
-paket dari : 18
-node 13 : node 28 send untuk node 9
-paket dari : 18
-node 25 : node 28 send untuk node 9
-paket dari : 18
-node 24 : node 28 send untuk node 9
-paket dari : 18
-node 8 : node 28 send untuk node 9
-paket dari : 18
-node 15 : node 28 send untuk node 9
-paket dari : 10
-node 22 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 10
-node 2 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 10
-node 23 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 10
-node 9 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 10
-node 29 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 8
-node 25 : node 28 send untuk node 9
-paket dari : 8
-node 13 : node 28 send untuk node 9
-paket dari : 8
-node 18 : node 28 send untuk node 9
-paket dari : 8
-node 0 : node 28 send untuk node 9
-paket dari : 8
-node 24 : node 28 send untuk node 9
-Node : 29
-RECV REPLY dari node 23 untuk node 28
-paket dari : 9
-node 23 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 9
-node 3 : node 28 send untuk node 4
-Failed to verify EC Signature
-forward_eval[4][3]: 0.000000
-backward_eval[4][3]: 0.000000
-eval_value[4][3]: 0.000000
-forward_eval[9][3]: 1.000000
-backward_eval[9][3]: 0.000000
-eval_value[9][3]: 0.673936
-forward_eval[5][3]: 0.000000
-backward_eval[5][3]: 0.000000
-eval_value[5][3]: 0.000000
-forward_eval[23][3]: 0.000000
-backward_eval[23][3]: 0.000000
-eval_value[23][3]: 0.000000
-paket dari : 9
-node 10 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 9
-node 22 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 9
-node 2 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 9
-node 4 : node 28 send untuk node 4
-Failed to verify EC Signature
-REPLY : node 4 untuk node 28
-paket dari : 23
-node 2 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 9 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 22 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 4 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 10 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 3 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 29 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 22
-node 10 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 22
-node 2 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 22
-node 23 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 22
-node 9 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 22
-node 29 : node 28 send untuk node 4
-Failed to verify EC Signature
 paket dari : 26
 node 17 : node 28 send untuk node 9
 paket dari : 26
@@ -680,42 +575,112 @@ backward_eval[3][5]: 0.000000
 eval_value[3][5]: 0.000000
 forward_eval[26][5]: 1.000000
 backward_eval[26][5]: 1.000000
-eval_value[26][5]: 1.605671
+eval_value[26][5]: 1.067135
 paket dari : 26
 node 4 : node 28 send untuk node 9
-paket dari : 3
-node 4 : node 28 send untuk node 4
+forward_eval[3][4]: 0.000000
+backward_eval[3][4]: 0.000000
+eval_value[3][4]: 0.000000
+forward_eval[5][4]: 0.000000
+backward_eval[5][4]: 0.000000
+eval_value[5][4]: 0.000000
+forward_eval[23][4]: 0.000000
+backward_eval[23][4]: 0.000000
+eval_value[23][4]: 0.000000
+forward_eval[9][4]: 0.000000
+backward_eval[9][4]: 0.000000
+eval_value[9][4]: 0.000000
+forward_eval[26][4]: 1.000000
+backward_eval[26][4]: 1.000000
+eval_value[26][4]: 1.109968
+paket dari : 10
+node 22 : node 28 send untuk node 4
 Failed to verify EC Signature
-paket dari : 3
-node 9 : node 28 send untuk node 4
+paket dari : 10
+node 2 : node 28 send untuk node 4
 Failed to verify EC Signature
-paket dari : 3
-node 5 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 3
+paket dari : 10
 node 23 : node 28 send untuk node 4
 Failed to verify EC Signature
-Node : 9
-RECV REPLY dari node 4 untuk node 28
+paket dari : 10
+node 9 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 10
+node 29 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 22
+node 10 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 22
+node 2 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 22
+node 23 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 22
+node 9 : node 28 send untuk node 4
+Failed to verify EC Signature
+Node : 16
+RECV REPLY dari node 29 untuk node 28
+Node : 27
+RECV REPLY dari node 16 untuk node 28
+paket dari : 9
+node 10 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 9
+node 22 : node 28 send untuk node 4
+Failed to verify EC Signature
+Node : 1
+RECV REPLY dari node 27 untuk node 28
 paket dari : 5
 node 3 : node 28 send untuk node 9
+forward_eval[4][3]: 0.000000
+backward_eval[4][3]: 0.000000
+eval_value[4][3]: 0.000000
+forward_eval[9][3]: 0.000000
+backward_eval[9][3]: 0.000000
+eval_value[9][3]: 0.000000
+forward_eval[5][3]: 1.000000
+backward_eval[5][3]: 1.000000
+eval_value[5][3]: 1.236264
+forward_eval[23][3]: 0.000000
+backward_eval[23][3]: 0.000000
+eval_value[23][3]: 0.000000
 paket dari : 5
 node 4 : node 28 send untuk node 9
-Node : 2
-RECV REPLY dari node 9 untuk node 28
-Node : 29
-RECV REPLY dari node 2 untuk node 28
+paket dari : 5
+node 26 : node 28 send untuk node 9
+paket dari : 4
+node 3 : node 28 send untuk node 9
+paket dari : 4
+node 23 : node 28 send untuk node 9
+paket dari : 4
+node 5 : node 28 send untuk node 9
+paket dari : 4
+node 9 : node 28 send untuk node 9
+paket dari : 4
+node 26 : node 28 send untuk node 9
+paket dari : 3
+node 4 : node 28 send untuk node 9
+paket dari : 3
+node 9 : node 28 send untuk node 9
+paket dari : 3
+node 5 : node 28 send untuk node 9
+paket dari : 3
+node 23 : node 28 send untuk node 9
+Node : 28
+RECV REPLY dari node 1 untuk node 28
 paket dari : 28
 node 7 : node 28 send untuk node 9
 forward_eval[28][7]: 1.000000
 backward_eval[28][7]: 1.000000
-eval_value[28][7]: 0.910396
+eval_value[28][7]: 0.942651
 forward_eval[21][7]: 0.500000
 backward_eval[21][7]: 0.000000
-eval_value[21][7]: 0.266220
+eval_value[21][7]: 0.460457
 forward_eval[19][7]: 0.500000
 backward_eval[19][7]: 0.000000
-eval_value[19][7]: 0.130248
+eval_value[19][7]: 0.326565
 forward_eval[18][7]: 0.000000
 backward_eval[18][7]: 0.000000
 eval_value[18][7]: 0.000000
@@ -726,16 +691,30 @@ backward_eval[18][19]: 0.000000
 eval_value[18][19]: 0.000000
 forward_eval[28][19]: 1.000000
 backward_eval[28][19]: 1.000000
-eval_value[28][19]: 1.169902
+eval_value[28][19]: 0.779865
 forward_eval[7][19]: 0.500000
 backward_eval[7][19]: 0.000000
-eval_value[7][19]: 0.333278
+eval_value[7][19]: 0.055638
 forward_eval[21][19]: 0.500000
 backward_eval[21][19]: 0.000000
-eval_value[21][19]: 0.387884
+eval_value[21][19]: 0.288345
 forward_eval[1][19]: 0.000000
 backward_eval[1][19]: 0.000000
 eval_value[1][19]: 0.000000
+paket dari : 28
+node 21 : node 28 send untuk node 9
+forward_eval[7][21]: 0.500000
+backward_eval[7][21]: 1.000000
+eval_value[7][21]: 0.676263
+forward_eval[28][21]: 1.000000
+backward_eval[28][21]: 1.000000
+eval_value[28][21]: 0.519393
+forward_eval[19][21]: 0.500000
+backward_eval[19][21]: 0.000000
+eval_value[19][21]: 0.492182
+forward_eval[18][21]: 0.000000
+backward_eval[18][21]: 0.000000
+eval_value[18][21]: 0.000000
 paket dari : 28
 node 18 : node 28 send untuk node 9
 forward_eval[19][18]: 0.000000
@@ -743,27 +722,21 @@ backward_eval[19][18]: 0.000000
 eval_value[19][18]: 0.000000
 forward_eval[28][18]: 1.000000
 backward_eval[28][18]: 1.000000
-eval_value[28][18]: 1.158870
+eval_value[28][18]: 1.877567
 forward_eval[7][18]: 0.000000
 backward_eval[7][18]: 0.000000
 eval_value[7][18]: 0.000000
 forward_eval[21][18]: 0.000000
 backward_eval[21][18]: 0.000000
 eval_value[21][18]: 0.000000
-paket dari : 28
+paket dari : 18
+node 19 : node 28 send untuk node 9
+paket dari : 18
+node 28 : node 28 send untuk node 9
+paket dari : 18
+node 7 : node 28 send untuk node 9
+paket dari : 18
 node 21 : node 28 send untuk node 9
-forward_eval[7][21]: 0.500000
-backward_eval[7][21]: 1.000000
-eval_value[7][21]: 1.081511
-forward_eval[28][21]: 1.000000
-backward_eval[28][21]: 1.000000
-eval_value[28][21]: 0.806929
-forward_eval[19][21]: 0.500000
-backward_eval[19][21]: 0.000000
-eval_value[19][21]: 0.191916
-forward_eval[18][21]: 0.000000
-backward_eval[18][21]: 0.000000
-eval_value[18][21]: 0.000000
 paket dari : 21
 node 7 : node 28 send untuk node 9
 paket dari : 21
@@ -780,14 +753,6 @@ paket dari : 7
 node 19 : node 28 send untuk node 9
 paket dari : 7
 node 18 : node 28 send untuk node 9
-paket dari : 18
-node 19 : node 28 send untuk node 9
-paket dari : 18
-node 28 : node 28 send untuk node 9
-paket dari : 18
-node 7 : node 28 send untuk node 9
-paket dari : 18
-node 21 : node 28 send untuk node 9
 paket dari : 19
 node 18 : node 28 send untuk node 9
 paket dari : 19
@@ -800,7 +765,7 @@ paket dari : 19
 node 1 : node 28 send untuk node 9
 forward_eval[27][1]: 0.500000
 backward_eval[27][1]: 0.000000
-eval_value[27][1]: 0.430959
+eval_value[27][1]: 0.191916
 forward_eval[12][1]: 0.000000
 backward_eval[12][1]: 0.000000
 eval_value[12][1]: 0.000000
@@ -812,25 +777,28 @@ backward_eval[8][1]: 0.000000
 eval_value[8][1]: 0.000000
 forward_eval[19][1]: 1.000000
 backward_eval[19][1]: 1.000000
-eval_value[19][1]: 1.074343
+eval_value[19][1]: 1.202221
 forward_eval[26][1]: 0.000000
 backward_eval[26][1]: 0.000000
 eval_value[26][1]: 0.000000
 paket dari : 1
 node 27 : node 28 send untuk node 9
 REPLY : node 27 untuk node 28
-forward_eval[1][27]: 1.000000
-backward_eval[1][27]: 1.000000
-eval_value[1][27]: 1.356978
 forward_eval[12][27]: 0.000000
 backward_eval[12][27]: 0.000000
 eval_value[12][27]: 0.000000
+forward_eval[1][27]: 1.000000
+backward_eval[1][27]: 1.000000
+eval_value[1][27]: 0.436668
 forward_eval[10][27]: 0.000000
 backward_eval[10][27]: 0.000000
 eval_value[10][27]: 0.000000
 forward_eval[8][27]: 0.000000
 backward_eval[8][27]: 0.000000
 eval_value[8][27]: 0.000000
+forward_eval[15][27]: 0.000000
+backward_eval[15][27]: 0.000000
+eval_value[15][27]: 0.000000
 forward_eval[26][27]: 0.000000
 backward_eval[26][27]: 0.000000
 eval_value[26][27]: 0.000000
@@ -844,19 +812,13 @@ backward_eval[10][12]: 0.000000
 eval_value[10][12]: 0.000000
 forward_eval[1][12]: 1.000000
 backward_eval[1][12]: 1.000000
-eval_value[1][12]: 0.400173
+eval_value[1][12]: 1.562386
 forward_eval[15][12]: 0.000000
 backward_eval[15][12]: 0.000000
 eval_value[15][12]: 0.000000
 forward_eval[8][12]: 0.000000
 backward_eval[8][12]: 0.000000
 eval_value[8][12]: 0.000000
-forward_eval[9][12]: 0.000000
-backward_eval[9][12]: 0.000000
-eval_value[9][12]: 0.000000
-forward_eval[16][12]: 0.000000
-backward_eval[16][12]: 0.000000
-eval_value[16][12]: 0.000000
 paket dari : 1
 node 10 : node 28 send untuk node 9
 forward_eval[12][10]: 0.000000
@@ -873,7 +835,7 @@ backward_eval[16][10]: 0.000000
 eval_value[16][10]: 0.000000
 forward_eval[1][10]: 1.000000
 backward_eval[1][10]: 1.000000
-eval_value[1][10]: 0.223775
+eval_value[1][10]: 0.831046
 forward_eval[9][10]: 0.000000
 backward_eval[9][10]: 0.000000
 eval_value[9][10]: 0.000000
@@ -890,16 +852,18 @@ backward_eval[27][8]: 0.000000
 eval_value[27][8]: 0.000000
 forward_eval[13][8]: 0.500000
 backward_eval[13][8]: 1.000000
-eval_value[13][8]: 0.557246
+eval_value[13][8]: 0.470069
 forward_eval[1][8]: 1.000000
 backward_eval[1][8]: 1.000000
-eval_value[1][8]: 1.420524
+eval_value[1][8]: 0.422534
 forward_eval[17][8]: 0.000000
 backward_eval[17][8]: 0.000000
 eval_value[17][8]: 0.000000
 forward_eval[12][8]: 0.000000
 backward_eval[12][8]: 0.000000
 eval_value[12][8]: 0.000000
+paket dari : 1
+node 19 : node 28 send untuk node 9
 paket dari : 1
 node 26 : node 28 send untuk node 9
 forward_eval[13][26]: 0.000000
@@ -910,7 +874,7 @@ backward_eval[8][26]: 0.000000
 eval_value[8][26]: 0.000000
 forward_eval[17][26]: 0.500000
 backward_eval[17][26]: 1.000000
-eval_value[17][26]: 0.809358
+eval_value[17][26]: 1.067184
 forward_eval[25][26]: 0.000000
 backward_eval[25][26]: 0.000000
 eval_value[25][26]: 0.000000
@@ -922,107 +886,64 @@ backward_eval[27][26]: 0.000000
 eval_value[27][26]: 0.000000
 forward_eval[1][26]: 1.000000
 backward_eval[1][26]: 1.000000
-eval_value[1][26]: 1.033635
-paket dari : 1
-node 19 : node 28 send untuk node 9
+eval_value[1][26]: 0.570340
 Node : 1
 RECV REPLY dari node 27 untuk node 28
-paket dari : 8
-node 26 : node 28 send untuk node 9
-paket dari : 8
-node 23 : node 28 send untuk node 9
-REPLY : node 23 untuk node 28
-forward_eval[6][23]: 0.000000
-backward_eval[6][23]: 0.000000
-eval_value[6][23]: 0.000000
-forward_eval[8][23]: 1.000000
-backward_eval[8][23]: 1.000000
-eval_value[8][23]: 1.557668
-forward_eval[20][23]: 0.000000
-backward_eval[20][23]: 0.000000
-eval_value[20][23]: 0.000000
-forward_eval[4][23]: 0.000000
-backward_eval[4][23]: 0.000000
-eval_value[4][23]: 0.000000
-forward_eval[5][23]: 0.000000
-backward_eval[5][23]: 0.000000
-eval_value[5][23]: 0.000000
-forward_eval[26][23]: 0.000000
-backward_eval[26][23]: 0.000000
-eval_value[26][23]: 0.000000
-paket dari : 8
-node 27 : node 28 send untuk node 9
-paket dari : 8
-node 13 : node 28 send untuk node 9
-forward_eval[17][13]: 0.000000
-backward_eval[17][13]: 0.000000
-eval_value[17][13]: 0.000000
-forward_eval[26][13]: 0.000000
-backward_eval[26][13]: 0.000000
-eval_value[26][13]: 0.000000
-forward_eval[25][13]: 0.500000
-backward_eval[25][13]: 0.000000
-eval_value[25][13]: 0.049780
-forward_eval[8][13]: 1.000000
-backward_eval[8][13]: 1.000000
-eval_value[8][13]: 0.958883
-forward_eval[24][13]: 0.500000
-backward_eval[24][13]: 0.000000
-eval_value[24][13]: 0.404548
-paket dari : 8
-node 1 : node 28 send untuk node 9
-paket dari : 8
+paket dari : 10
 node 12 : node 28 send untuk node 9
-paket dari : 8
-node 17 : node 28 send untuk node 9
-forward_eval[13][17]: 0.000000
-backward_eval[13][17]: 0.000000
-eval_value[13][17]: 0.000000
-forward_eval[26][17]: 0.500000
-backward_eval[26][17]: 0.000000
-eval_value[26][17]: 0.228858
-forward_eval[25][17]: 0.000000
-backward_eval[25][17]: 0.000000
-eval_value[25][17]: 0.000000
-forward_eval[24][17]: 0.500000
-backward_eval[24][17]: 0.000000
-eval_value[24][17]: 0.059556
-forward_eval[8][17]: 1.000000
-backward_eval[8][17]: 1.000000
-eval_value[8][17]: 1.108534
-paket dari : 26
-node 13 : node 28 send untuk node 9
-paket dari : 26
-node 8 : node 28 send untuk node 9
-paket dari : 26
-node 17 : node 28 send untuk node 9
-paket dari : 26
-node 25 : node 28 send untuk node 9
-forward_eval[17][25]: 0.000000
-backward_eval[17][25]: 0.000000
-eval_value[17][25]: 0.000000
-forward_eval[13][25]: 0.500000
-backward_eval[13][25]: 1.000000
-eval_value[13][25]: 1.040866
-forward_eval[24][25]: 0.500000
-backward_eval[24][25]: 0.000000
-eval_value[24][25]: 0.238292
-forward_eval[26][25]: 1.000000
-backward_eval[26][25]: 1.000000
-eval_value[26][25]: 1.135476
-forward_eval[0][25]: 0.000000
-backward_eval[0][25]: 0.000000
-eval_value[0][25]: 0.000000
-paket dari : 26
-node 23 : node 28 send untuk node 9
-paket dari : 26
+paket dari : 10
 node 27 : node 28 send untuk node 9
-paket dari : 26
+paket dari : 10
+node 15 : node 28 send untuk node 9
+forward_eval[9][15]: 0.000000
+backward_eval[9][15]: 0.000000
+eval_value[9][15]: 0.000000
+forward_eval[5][15]: 0.000000
+backward_eval[5][15]: 0.000000
+eval_value[5][15]: 0.000000
+forward_eval[10][15]: 1.000000
+backward_eval[10][15]: 1.000000
+eval_value[10][15]: 1.033635
+forward_eval[12][15]: 0.000000
+backward_eval[12][15]: 0.000000
+eval_value[12][15]: 0.000000
+forward_eval[16][15]: 0.000000
+backward_eval[16][15]: 0.000000
+eval_value[16][15]: 0.000000
+forward_eval[3][15]: 0.000000
+backward_eval[3][15]: 0.000000
+eval_value[3][15]: 0.000000
+forward_eval[2][15]: 0.000000
+backward_eval[2][15]: 0.000000
+eval_value[2][15]: 0.000000
+forward_eval[27][15]: 0.000000
+backward_eval[27][15]: 0.000000
+eval_value[27][15]: 0.000000
+forward_eval[23][15]: 0.000000
+backward_eval[23][15]: 0.000000
+eval_value[23][15]: 0.000000
+paket dari : 10
+node 16 : node 28 send untuk node 9
+forward_eval[9][16]: 0.000000
+backward_eval[9][16]: 0.000000
+eval_value[9][16]: 0.000000
+forward_eval[10][16]: 1.000000
+backward_eval[10][16]: 1.000000
+eval_value[10][16]: 0.959101
+forward_eval[15][16]: 0.000000
+backward_eval[15][16]: 0.000000
+eval_value[15][16]: 0.000000
+forward_eval[2][16]: 0.000000
+backward_eval[2][16]: 0.000000
+eval_value[2][16]: 0.000000
+forward_eval[12][16]: 0.000000
+backward_eval[12][16]: 0.000000
+eval_value[12][16]: 0.000000
+paket dari : 10
 node 1 : node 28 send untuk node 9
-Node : 19
-RECV REPLY dari node 1 untuk node 28
-Node : 28
-RECV REPLY dari node 19 untuk node 28
+paket dari : 10
+node 9 : node 28 send untuk node 9
+REPLY : node 9 untuk node 28
 paket dari : 12
 node 10 : node 28 send untuk node 9
 paket dari : 12
@@ -1031,49 +952,16 @@ paket dari : 12
 node 1 : node 28 send untuk node 9
 paket dari : 12
 node 15 : node 28 send untuk node 9
-forward_eval[9][15]: 0.000000
-backward_eval[9][15]: 0.000000
-eval_value[9][15]: 0.000000
-forward_eval[5][15]: 0.000000
-backward_eval[5][15]: 0.000000
-eval_value[5][15]: 0.000000
-forward_eval[10][15]: 0.000000
-backward_eval[10][15]: 0.000000
-eval_value[10][15]: 0.000000
-forward_eval[16][15]: 0.000000
-backward_eval[16][15]: 0.000000
-eval_value[16][15]: 0.000000
-forward_eval[12][15]: 1.000000
-backward_eval[12][15]: 1.000000
-eval_value[12][15]: 1.117598
-forward_eval[3][15]: 0.000000
-backward_eval[3][15]: 0.000000
-eval_value[3][15]: 0.000000
-forward_eval[2][15]: 0.000000
-backward_eval[2][15]: 0.000000
-eval_value[2][15]: 0.000000
-paket dari : 12
-node 16 : node 28 send untuk node 9
-forward_eval[9][16]: 0.000000
-backward_eval[9][16]: 0.000000
-eval_value[9][16]: 0.000000
-forward_eval[10][16]: 0.000000
-backward_eval[10][16]: 0.000000
-eval_value[10][16]: 0.000000
-forward_eval[15][16]: 0.000000
-backward_eval[15][16]: 0.000000
-eval_value[15][16]: 0.000000
-forward_eval[2][16]: 0.000000
-backward_eval[2][16]: 0.000000
-eval_value[2][16]: 0.000000
-forward_eval[12][16]: 1.000000
-backward_eval[12][16]: 1.000000
-eval_value[12][16]: 0.810463
 paket dari : 12
 node 8 : node 28 send untuk node 9
 paket dari : 12
+node 16 : node 28 send untuk node 9
+paket dari : 12
 node 9 : node 28 send untuk node 9
-REPLY : node 9 untuk node 28
+Node : 10
+RECV REPLY dari node 9 untuk node 28
+Node : 1
+RECV REPLY dari node 10 untuk node 28
 paket dari : 27
 node 1 : node 28 send untuk node 4
 Failed to verify EC Signature
@@ -1089,166 +977,132 @@ Failed to verify EC Signature
 paket dari : 27
 node 26 : node 28 send untuk node 4
 Failed to verify EC Signature
-paket dari : 10
-node 12 : node 28 send untuk node 9
-paket dari : 10
+paket dari : 8
+node 26 : node 28 send untuk node 9
+paket dari : 8
+node 23 : node 28 send untuk node 9
+REPLY : node 23 untuk node 28
+paket dari : 8
 node 27 : node 28 send untuk node 9
-paket dari : 10
+paket dari : 8
+node 13 : node 28 send untuk node 9
+forward_eval[17][13]: 0.000000
+backward_eval[17][13]: 0.000000
+eval_value[17][13]: 0.000000
+forward_eval[26][13]: 0.000000
+backward_eval[26][13]: 0.000000
+eval_value[26][13]: 0.000000
+forward_eval[25][13]: 0.500000
+backward_eval[25][13]: 0.000000
+eval_value[25][13]: 0.346038
+forward_eval[8][13]: 1.000000
+backward_eval[8][13]: 1.000000
+eval_value[8][13]: 0.708748
+forward_eval[24][13]: 0.500000
+backward_eval[24][13]: 0.000000
+eval_value[24][13]: 0.289317
+paket dari : 8
 node 1 : node 28 send untuk node 9
-paket dari : 10
-node 16 : node 28 send untuk node 9
-paket dari : 10
-node 15 : node 28 send untuk node 9
-paket dari : 10
-node 9 : node 28 send untuk node 9
-Node : 12
-RECV REPLY dari node 9 untuk node 28
-Node : 1
-RECV REPLY dari node 12 untuk node 28
+paket dari : 8
+node 17 : node 28 send untuk node 9
+forward_eval[13][17]: 0.000000
+backward_eval[13][17]: 0.000000
+eval_value[13][17]: 0.000000
+forward_eval[26][17]: 0.500000
+backward_eval[26][17]: 0.000000
+eval_value[26][17]: 0.152143
+forward_eval[25][17]: 0.000000
+backward_eval[25][17]: 0.000000
+eval_value[25][17]: 0.000000
+forward_eval[8][17]: 1.000000
+backward_eval[8][17]: 1.000000
+eval_value[8][17]: 1.135476
+forward_eval[24][17]: 0.000000
+backward_eval[24][17]: 0.000000
+eval_value[24][17]: 0.000000
+paket dari : 8
+node 12 : node 28 send untuk node 9
+paket dari : 26
+node 13 : node 28 send untuk node 9
+paket dari : 26
+node 8 : node 28 send untuk node 9
+paket dari : 26
+node 17 : node 28 send untuk node 9
+paket dari : 26
+node 25 : node 28 send untuk node 9
+forward_eval[17][25]: 0.000000
+backward_eval[17][25]: 0.000000
+eval_value[17][25]: 0.000000
+forward_eval[13][25]: 0.500000
+backward_eval[13][25]: 1.000000
+eval_value[13][25]: 0.133883
+forward_eval[24][25]: 0.500000
+backward_eval[24][25]: 0.000000
+eval_value[24][25]: 0.461864
+forward_eval[26][25]: 1.000000
+backward_eval[26][25]: 1.000000
+eval_value[26][25]: 0.707224
+forward_eval[0][25]: 0.000000
+backward_eval[0][25]: 0.000000
+eval_value[0][25]: 0.000000
+paket dari : 26
+node 23 : node 28 send untuk node 9
+paket dari : 26
+node 27 : node 28 send untuk node 9
+paket dari : 26
+node 1 : node 28 send untuk node 9
 Node : 19
 RECV REPLY dari node 1 untuk node 28
 Node : 28
 RECV REPLY dari node 19 untuk node 28
-paket dari : 28
-node 19 : node 28 send untuk node 9
-forward_eval[1][19]: 0.500000
-backward_eval[1][19]: 0.000000
-eval_value[1][19]: 0.054866
-forward_eval[10][19]: 0.000000
-backward_eval[10][19]: 0.000000
-eval_value[10][19]: 0.000000
-forward_eval[28][19]: 1.000000
-backward_eval[28][19]: 1.000000
-eval_value[28][19]: 0.601540
-forward_eval[18][19]: 0.500000
-backward_eval[18][19]: 0.000000
-eval_value[18][19]: 0.157829
-forward_eval[27][19]: 0.000000
-backward_eval[27][19]: 0.000000
-eval_value[27][19]: 0.000000
-paket dari : 28
-node 18 : node 28 send untuk node 9
-forward_eval[7][18]: 0.500000
-backward_eval[7][18]: 0.000000
-eval_value[7][18]: 0.266423
-forward_eval[21][18]: 0.500000
-backward_eval[21][18]: 0.000000
-eval_value[21][18]: 0.277699
-forward_eval[19][18]: 0.500000
-backward_eval[19][18]: 0.000000
-eval_value[19][18]: 0.190107
-forward_eval[28][18]: 1.000000
-backward_eval[28][18]: 1.000000
-eval_value[28][18]: 1.042816
-paket dari : 18
-node 7 : node 28 send untuk node 9
-forward_eval[21][7]: 0.666667
-backward_eval[21][7]: 0.000000
-eval_value[21][7]: 0.173630
-forward_eval[18][7]: 1.000000
-backward_eval[18][7]: 1.000000
-eval_value[18][7]: 1.471907
-paket dari : 18
-node 21 : node 28 send untuk node 9
-forward_eval[7][21]: 0.666667
-backward_eval[7][21]: 1.000000
-eval_value[7][21]: 1.267110
-forward_eval[18][21]: 1.000000
-backward_eval[18][21]: 1.000000
-eval_value[18][21]: 1.009799
-paket dari : 18
-node 19 : node 28 send untuk node 9
-paket dari : 18
-node 28 : node 28 send untuk node 9
-paket dari : 7
-node 21 : node 28 send untuk node 9
-paket dari : 7
-node 18 : node 28 send untuk node 9
-paket dari : 19
-node 1 : node 28 send untuk node 9
-forward_eval[10][1]: 0.500000
-backward_eval[10][1]: 0.000000
-eval_value[10][1]: 0.322945
-forward_eval[27][1]: 0.666667
-backward_eval[27][1]: 0.000000
-eval_value[27][1]: 0.355307
-forward_eval[19][1]: 1.000000
-backward_eval[19][1]: 1.000000
-eval_value[19][1]: 1.261139
-forward_eval[13][1]: 0.000000
-backward_eval[13][1]: 0.000000
-eval_value[13][1]: 0.000000
-forward_eval[8][1]: 0.500000
-backward_eval[8][1]: 0.000000
-eval_value[8][1]: 0.181077
-forward_eval[16][1]: 0.000000
-backward_eval[16][1]: 0.000000
-eval_value[16][1]: 0.000000
-forward_eval[26][1]: 0.500000
-backward_eval[26][1]: 0.000000
-eval_value[26][1]: 0.076438
-paket dari : 19
-node 10 : node 28 send untuk node 9
+Node : 8
+RECV REPLY dari node 23 untuk node 28
+Node : 1
+RECV REPLY dari node 8 untuk node 28
+Node : 19
+RECV REPLY dari node 1 untuk node 28
+Node : 28
+RECV REPLY dari node 19 untuk node 28
+paket dari : 8
+node 10 : node 8 send untuk node 9
 forward_eval[1][10]: 0.500000
 backward_eval[1][10]: 1.000000
-eval_value[1][10]: 0.717502
+eval_value[1][10]: 1.056874
 forward_eval[27][10]: 0.500000
 backward_eval[27][10]: 0.000000
-eval_value[27][10]: 0.093808
-forward_eval[19][10]: 1.000000
-backward_eval[19][10]: 1.000000
-eval_value[19][10]: 1.268132
+eval_value[27][10]: 0.172125
+forward_eval[19][10]: 0.000000
+backward_eval[19][10]: 0.000000
+eval_value[19][10]: 0.000000
+forward_eval[8][10]: 1.000000
+backward_eval[8][10]: 1.000000
+eval_value[8][10]: 1.035726
 forward_eval[16][10]: 0.000000
 backward_eval[16][10]: 0.000000
 eval_value[16][10]: 0.000000
-forward_eval[8][10]: 0.000000
-backward_eval[8][10]: 0.000000
-eval_value[8][10]: 0.000000
 forward_eval[13][10]: 0.000000
 backward_eval[13][10]: 0.000000
 eval_value[13][10]: 0.000000
+forward_eval[12][10]: 0.500000
+backward_eval[12][10]: 0.000000
+eval_value[12][10]: 0.099010
 forward_eval[26][10]: 0.000000
 backward_eval[26][10]: 0.000000
 eval_value[26][10]: 0.000000
-forward_eval[12][10]: 0.500000
-backward_eval[12][10]: 0.000000
-eval_value[12][10]: 0.333670
-paket dari : 19
-node 28 : node 28 send untuk node 9
-paket dari : 19
-node 18 : node 28 send untuk node 9
-paket dari : 19
-node 27 : node 28 send untuk node 9
-REPLY : node 27 untuk node 28
-forward_eval[1][27]: 0.666667
-backward_eval[1][27]: 1.000000
-eval_value[1][27]: 0.748766
-forward_eval[10][27]: 0.500000
-backward_eval[10][27]: 0.000000
-eval_value[10][27]: 0.442507
-forward_eval[26][27]: 0.500000
-backward_eval[26][27]: 0.000000
-eval_value[26][27]: 0.078570
-forward_eval[13][27]: 0.000000
-backward_eval[13][27]: 0.000000
-eval_value[13][27]: 0.000000
-forward_eval[19][27]: 1.000000
-backward_eval[19][27]: 1.000000
-eval_value[19][27]: 1.095282
-paket dari : 19
-node 16 : node 28 send untuk node 9
+paket dari : 8
+node 16 : node 8 send untuk node 9
 forward_eval[12][16]: 0.500000
-backward_eval[12][16]: 1.000000
-eval_value[12][16]: 0.903327
+backward_eval[12][16]: 0.000000
+eval_value[12][16]: 0.391131
 forward_eval[10][16]: 0.500000
-backward_eval[10][16]: 0.000000
-eval_value[10][16]: 0.434462
+backward_eval[10][16]: 1.000000
+eval_value[10][16]: 0.501364
 forward_eval[9][16]: 0.000000
 backward_eval[9][16]: 0.000000
 eval_value[9][16]: 0.000000
-forward_eval[8][16]: 0.000000
-backward_eval[8][16]: 0.000000
-eval_value[8][16]: 0.000000
+forward_eval[8][16]: 1.000000
+backward_eval[8][16]: 1.000000
+eval_value[8][16]: 0.616744
 forward_eval[1][16]: 0.000000
 backward_eval[1][16]: 0.000000
 eval_value[1][16]: 0.000000
@@ -1258,72 +1112,11 @@ eval_value[15][16]: 0.000000
 forward_eval[2][16]: 0.000000
 backward_eval[2][16]: 0.000000
 eval_value[2][16]: 0.000000
-paket dari : 16
-node 12 : node 28 send untuk node 9
-forward_eval[16][12]: 0.500000
-backward_eval[16][12]: 1.000000
-eval_value[16][12]: 1.001567
-forward_eval[9][12]: 0.000000
-backward_eval[9][12]: 0.000000
-eval_value[9][12]: 0.000000
-forward_eval[2][12]: 0.000000
-backward_eval[2][12]: 0.000000
-eval_value[2][12]: 0.000000
-forward_eval[15][12]: 0.000000
-backward_eval[15][12]: 0.000000
-eval_value[15][12]: 0.000000
-forward_eval[8][12]: 0.500000
-backward_eval[8][12]: 0.000000
-eval_value[8][12]: 0.318885
-forward_eval[10][12]: 0.500000
-backward_eval[10][12]: 0.000000
-eval_value[10][12]: 0.387711
-paket dari : 16
-node 10 : node 28 send untuk node 9
-paket dari : 16
-node 8 : node 28 send untuk node 9
-forward_eval[16][8]: 1.000000
-backward_eval[16][8]: 1.000000
-eval_value[16][8]: 0.867163
-forward_eval[10][8]: 0.000000
-backward_eval[10][8]: 0.000000
-eval_value[10][8]: 0.000000
-forward_eval[13][8]: 0.333333
-backward_eval[13][8]: 1.000000
-eval_value[13][8]: 1.130249
-forward_eval[9][8]: 0.000000
-backward_eval[9][8]: 0.000000
-eval_value[9][8]: 0.000000
-forward_eval[1][8]: 0.500000
-backward_eval[1][8]: 1.000000
-eval_value[1][8]: 0.818222
-forward_eval[12][8]: 0.500000
-backward_eval[12][8]: 0.000000
-eval_value[12][8]: 0.298450
-paket dari : 16
-node 1 : node 28 send untuk node 9
-paket dari : 16
-node 9 : node 28 send untuk node 9
-REPLY : node 9 untuk node 28
-paket dari : 16
-node 19 : node 28 send untuk node 9
-Node : 19
-RECV REPLY dari node 27 untuk node 28
-Node : 28
-RECV REPLY dari node 19 untuk node 28
-paket dari : 10
-node 1 : node 28 send untuk node 9
-paket dari : 10
-node 27 : node 28 send untuk node 9
-paket dari : 10
-node 19 : node 28 send untuk node 9
-paket dari : 10
-node 16 : node 28 send untuk node 9
-paket dari : 10
-node 13 : node 28 send untuk node 9
+paket dari : 8
+node 13 : node 8 send untuk node 9
 forward_eval[26][13]: 0.500000
 backward_eval[26][13]: 0.000000
-eval_value[26][13]: 0.269278
+eval_value[26][13]: 0.152704
 forward_eval[23][13]: 0.000000
 backward_eval[23][13]: 0.000000
 eval_value[23][13]: 0.000000
@@ -1333,104 +1126,56 @@ eval_value[27][13]: 0.000000
 forward_eval[1][13]: 0.000000
 backward_eval[1][13]: 0.000000
 eval_value[1][13]: 0.000000
-forward_eval[8][13]: 0.666667
+forward_eval[8][13]: 1.000000
 backward_eval[8][13]: 1.000000
-eval_value[8][13]: 0.564909
-forward_eval[10][13]: 1.000000
-backward_eval[10][13]: 1.000000
-eval_value[10][13]: 0.558849
-paket dari : 10
-node 8 : node 28 send untuk node 9
-paket dari : 10
-node 26 : node 28 send untuk node 9
-forward_eval[13][26]: 0.000000
-backward_eval[13][26]: 0.000000
-eval_value[13][26]: 0.000000
-forward_eval[23][26]: 0.000000
-backward_eval[23][26]: 0.000000
-eval_value[23][26]: 0.000000
-forward_eval[27][26]: 0.500000
-backward_eval[27][26]: 0.000000
-eval_value[27][26]: 0.071991
-forward_eval[1][26]: 0.500000
-backward_eval[1][26]: 1.000000
-eval_value[1][26]: 0.530283
-forward_eval[25][26]: 0.000000
-backward_eval[25][26]: 0.000000
-eval_value[25][26]: 0.000000
-forward_eval[10][26]: 1.000000
-backward_eval[10][26]: 1.000000
-eval_value[10][26]: 1.386668
-forward_eval[8][26]: 0.500000
-backward_eval[8][26]: 0.000000
-eval_value[8][26]: 0.291341
-paket dari : 27
-node 1 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 27
-node 10 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 27
-node 26 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 27
-node 13 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 27
-node 19 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 1
-node 10 : node 28 send untuk node 9
-paket dari : 1
-node 27 : node 28 send untuk node 9
-paket dari : 1
-node 19 : node 28 send untuk node 9
-paket dari : 1
-node 13 : node 28 send untuk node 9
-paket dari : 1
-node 16 : node 28 send untuk node 9
-paket dari : 1
-node 8 : node 28 send untuk node 9
-paket dari : 1
-node 26 : node 28 send untuk node 9
+eval_value[8][13]: 1.009799
+forward_eval[10][13]: 0.000000
+backward_eval[10][13]: 0.000000
+eval_value[10][13]: 0.000000
 paket dari : 8
-node 16 : node 28 send untuk node 9
+node 9 : node 8 send untuk node 9
+REPLY : node 9 untuk node 8
 paket dari : 8
-node 13 : node 28 send untuk node 9
+node 1 : node 8 send untuk node 9
+REPLY : node 1 untuk node 8
 paket dari : 8
-node 10 : node 28 send untuk node 9
-paket dari : 8
-node 9 : node 28 send untuk node 9
-paket dari : 8
-node 1 : node 28 send untuk node 9
-paket dari : 8
-node 12 : node 28 send untuk node 9
-paket dari : 12
-node 16 : node 28 send untuk node 9
-paket dari : 12
-node 9 : node 28 send untuk node 9
-paket dari : 12
-node 2 : node 28 send untuk node 9
-forward_eval[15][2]: 0.000000
-backward_eval[15][2]: 0.000000
-eval_value[15][2]: 0.000000
-forward_eval[22][2]: 0.500000
-backward_eval[22][2]: 0.000000
-eval_value[22][2]: 0.029362
-forward_eval[12][2]: 1.000000
-backward_eval[12][2]: 1.000000
-eval_value[12][2]: 1.238046
-forward_eval[9][2]: 0.000000
-backward_eval[9][2]: 0.000000
-eval_value[9][2]: 0.000000
-paket dari : 12
-node 15 : node 28 send untuk node 9
-forward_eval[22][15]: 0.000000
-backward_eval[22][15]: 0.000000
-eval_value[22][15]: 0.000000
+node 12 : node 8 send untuk node 9
+forward_eval[16][12]: 0.000000
+backward_eval[16][12]: 0.000000
+eval_value[16][12]: 0.000000
+forward_eval[9][12]: 0.000000
+backward_eval[9][12]: 0.000000
+eval_value[9][12]: 0.000000
+forward_eval[15][12]: 0.000000
+backward_eval[15][12]: 0.000000
+eval_value[15][12]: 0.000000
+forward_eval[10][12]: 0.500000
+backward_eval[10][12]: 0.000000
+eval_value[10][12]: 0.181077
+forward_eval[2][12]: 0.000000
+backward_eval[2][12]: 0.000000
+eval_value[2][12]: 0.000000
+forward_eval[8][12]: 1.000000
+backward_eval[8][12]: 1.000000
+eval_value[8][12]: 0.185768
+paket dari : 16
+node 12 : node 8 send untuk node 9
+paket dari : 16
+node 10 : node 8 send untuk node 9
+paket dari : 16
+node 8 : node 8 send untuk node 9
+paket dari : 16
+node 9 : node 8 send untuk node 9
+paket dari : 16
+node 1 : node 8 send untuk node 9
+paket dari : 16
+node 15 : node 8 send untuk node 9
 forward_eval[9][15]: 0.000000
 backward_eval[9][15]: 0.000000
 eval_value[9][15]: 0.000000
+forward_eval[22][15]: 0.000000
+backward_eval[22][15]: 0.000000
+eval_value[22][15]: 0.000000
 forward_eval[2][15]: 0.000000
 backward_eval[2][15]: 0.000000
 eval_value[2][15]: 0.000000
@@ -1440,16 +1185,102 @@ eval_value[5][15]: 0.000000
 forward_eval[3][15]: 0.000000
 backward_eval[3][15]: 0.000000
 eval_value[3][15]: 0.000000
-forward_eval[12][15]: 1.000000
-backward_eval[12][15]: 1.000000
-eval_value[12][15]: 0.870312
+forward_eval[12][15]: 0.500000
+backward_eval[12][15]: 0.000000
+eval_value[12][15]: 0.327684
+forward_eval[16][15]: 0.500000
+backward_eval[16][15]: 1.000000
+eval_value[16][15]: 0.431935
+Node : 8
+RECV REPLY dari node 9 untuk node 8
+Node : 8
+RECV REPLY dari node 1 untuk node 8
+paket dari : 10
+node 1 : node 8 send untuk node 9
+paket dari : 10
+node 27 : node 8 send untuk node 9
+REPLY : node 27 untuk node 8
+forward_eval[1][27]: 0.666667
+backward_eval[1][27]: 1.000000
+eval_value[1][27]: 1.323903
+forward_eval[10][27]: 1.000000
+backward_eval[10][27]: 1.000000
+eval_value[10][27]: 0.966534
+forward_eval[26][27]: 0.500000
+backward_eval[26][27]: 0.000000
+eval_value[26][27]: 0.442507
+forward_eval[13][27]: 0.000000
+backward_eval[13][27]: 0.000000
+eval_value[13][27]: 0.000000
+forward_eval[19][27]: 0.000000
+backward_eval[19][27]: 0.000000
+eval_value[19][27]: 0.000000
+paket dari : 10
+node 19 : node 8 send untuk node 9
+REPLY : node 19 untuk node 8
+paket dari : 10
+node 16 : node 8 send untuk node 9
+paket dari : 10
+node 8 : node 8 send untuk node 9
+paket dari : 10
+node 13 : node 8 send untuk node 9
+paket dari : 10
+node 26 : node 8 send untuk node 9
+forward_eval[13][26]: 0.000000
+backward_eval[13][26]: 0.000000
+eval_value[13][26]: 0.000000
+forward_eval[23][26]: 0.000000
+backward_eval[23][26]: 0.000000
+eval_value[23][26]: 0.000000
+forward_eval[27][26]: 0.500000
+backward_eval[27][26]: 0.000000
+eval_value[27][26]: 0.434462
+forward_eval[1][26]: 0.500000
+backward_eval[1][26]: 1.000000
+eval_value[1][26]: 1.301964
+forward_eval[25][26]: 0.000000
+backward_eval[25][26]: 0.000000
+eval_value[25][26]: 0.000000
+forward_eval[10][26]: 1.000000
+backward_eval[10][26]: 1.000000
+eval_value[10][26]: 1.484863
+forward_eval[8][26]: 0.500000
+backward_eval[8][26]: 0.000000
+eval_value[8][26]: 0.247203
+paket dari : 10
+node 12 : node 8 send untuk node 9
 paket dari : 12
-node 8 : node 28 send untuk node 9
+node 16 : node 8 send untuk node 9
+paket dari : 12
+node 9 : node 8 send untuk node 9
+paket dari : 12
+node 2 : node 8 send untuk node 9
+forward_eval[15][2]: 0.000000
+backward_eval[15][2]: 0.000000
+eval_value[15][2]: 0.000000
+forward_eval[22][2]: 0.500000
+backward_eval[22][2]: 0.000000
+eval_value[22][2]: 0.407069
+forward_eval[9][2]: 0.000000
+backward_eval[9][2]: 0.000000
+eval_value[9][2]: 0.000000
+forward_eval[12][2]: 1.000000
+backward_eval[12][2]: 1.000000
+eval_value[12][2]: 1.260393
+forward_eval[16][2]: 0.000000
+backward_eval[16][2]: 0.000000
+eval_value[16][2]: 0.000000
+paket dari : 12
+node 15 : node 8 send untuk node 9
+paket dari : 12
+node 8 : node 8 send untuk node 9
+paket dari : 12
+node 10 : node 8 send untuk node 9
 paket dari : 15
-node 22 : node 28 send untuk node 9
+node 22 : node 8 send untuk node 9
 forward_eval[15][22]: 1.000000
 backward_eval[15][22]: 1.000000
-eval_value[15][22]: 0.696687
+eval_value[15][22]: 1.397095
 forward_eval[3][22]: 0.000000
 backward_eval[3][22]: 0.000000
 eval_value[3][22]: 0.000000
@@ -1461,22 +1292,22 @@ backward_eval[9][22]: 0.000000
 eval_value[9][22]: 0.000000
 forward_eval[2][22]: 0.500000
 backward_eval[2][22]: 0.000000
-eval_value[2][22]: 0.390112
+eval_value[2][22]: 0.397745
 paket dari : 15
-node 9 : node 28 send untuk node 9
+node 9 : node 8 send untuk node 9
 paket dari : 15
-node 2 : node 28 send untuk node 9
+node 2 : node 8 send untuk node 9
 paket dari : 15
-node 5 : node 28 send untuk node 9
+node 5 : node 8 send untuk node 9
 forward_eval[3][5]: 0.500000
 backward_eval[3][5]: 0.000000
-eval_value[3][5]: 0.452391
+eval_value[3][5]: 0.436511
 forward_eval[22][5]: 0.000000
 backward_eval[22][5]: 0.000000
 eval_value[22][5]: 0.000000
 forward_eval[15][5]: 1.000000
 backward_eval[15][5]: 1.000000
-eval_value[15][5]: 0.734225
+eval_value[15][5]: 1.242500
 forward_eval[11][5]: 0.000000
 backward_eval[11][5]: 0.000000
 eval_value[11][5]: 0.000000
@@ -1484,88 +1315,59 @@ forward_eval[9][5]: 0.000000
 backward_eval[9][5]: 0.000000
 eval_value[9][5]: 0.000000
 paket dari : 15
-node 3 : node 28 send untuk node 9
+node 3 : node 8 send untuk node 9
 forward_eval[5][3]: 0.500000
-backward_eval[5][3]: 0.000000
-eval_value[5][3]: 0.238980
+backward_eval[5][3]: 1.000000
+eval_value[5][3]: 0.868606
 forward_eval[22][3]: 0.000000
 backward_eval[22][3]: 0.000000
 eval_value[22][3]: 0.000000
 forward_eval[15][3]: 1.000000
 backward_eval[15][3]: 1.000000
-eval_value[15][3]: 0.817234
+eval_value[15][3]: 0.602458
 forward_eval[11][3]: 0.000000
 backward_eval[11][3]: 0.000000
 eval_value[11][3]: 0.000000
-forward_eval[9][3]: 1.000000
+forward_eval[9][3]: 0.000000
 backward_eval[9][3]: 0.000000
-eval_value[9][3]: 0.373556
+eval_value[9][3]: 0.000000
 paket dari : 15
-node 12 : node 28 send untuk node 9
-paket dari : 2
-node 15 : node 28 send untuk node 9
-paket dari : 2
-node 22 : node 28 send untuk node 9
-paket dari : 2
-node 9 : node 28 send untuk node 9
-paket dari : 5
-node 3 : node 28 send untuk node 9
-paket dari : 5
-node 22 : node 28 send untuk node 9
-paket dari : 5
-node 15 : node 28 send untuk node 9
-paket dari : 5
-node 11 : node 28 send untuk node 9
+node 12 : node 8 send untuk node 9
+paket dari : 15
+node 16 : node 8 send untuk node 9
+paket dari : 3
+node 5 : node 8 send untuk node 9
+paket dari : 3
+node 22 : node 8 send untuk node 9
+paket dari : 3
+node 15 : node 8 send untuk node 9
+paket dari : 3
+node 11 : node 8 send untuk node 9
 forward_eval[20][11]: 0.000000
 backward_eval[20][11]: 0.000000
 eval_value[20][11]: 0.000000
-forward_eval[5][11]: 1.000000
-backward_eval[5][11]: 1.000000
-eval_value[5][11]: 1.272894
-forward_eval[3][11]: 0.000000
-backward_eval[3][11]: 0.000000
-eval_value[3][11]: 0.000000
+forward_eval[5][11]: 0.000000
+backward_eval[5][11]: 0.000000
+eval_value[5][11]: 0.000000
+forward_eval[3][11]: 1.000000
+backward_eval[3][11]: 1.000000
+eval_value[3][11]: 0.653799
 forward_eval[29][11]: 0.000000
 backward_eval[29][11]: 0.000000
 eval_value[29][11]: 0.000000
-paket dari : 5
-node 9 : node 28 send untuk node 9
 paket dari : 3
-node 5 : node 28 send untuk node 9
-paket dari : 3
-node 22 : node 28 send untuk node 9
-paket dari : 3
-node 11 : node 28 send untuk node 9
-paket dari : 22
-node 3 : node 28 send untuk node 9
-paket dari : 22
-node 5 : node 28 send untuk node 9
+node 9 : node 8 send untuk node 9
 paket dari : 26
-node 13 : node 28 send untuk node 9
+node 13 : node 8 send untuk node 9
 paket dari : 26
-node 23 : node 28 send untuk node 9
-REPLY : node 23 untuk node 28
-forward_eval[26][23]: 1.000000
-backward_eval[26][23]: 1.000000
-eval_value[26][23]: 0.362752
-forward_eval[13][23]: 0.000000
-backward_eval[13][23]: 0.000000
-eval_value[13][23]: 0.000000
-forward_eval[25][23]: 0.000000
-backward_eval[25][23]: 0.000000
-eval_value[25][23]: 0.000000
-forward_eval[6][23]: 0.000000
-backward_eval[6][23]: 0.000000
-eval_value[6][23]: 0.000000
-forward_eval[4][23]: 0.000000
-backward_eval[4][23]: 0.000000
-eval_value[4][23]: 0.000000
+node 23 : node 8 send untuk node 9
+REPLY : node 23 untuk node 8
 paket dari : 26
-node 27 : node 28 send untuk node 9
+node 27 : node 8 send untuk node 9
 paket dari : 26
-node 1 : node 28 send untuk node 9
+node 1 : node 8 send untuk node 9
 paket dari : 26
-node 25 : node 28 send untuk node 9
+node 25 : node 8 send untuk node 9
 forward_eval[4][25]: 0.000000
 backward_eval[4][25]: 0.000000
 eval_value[4][25]: 0.000000
@@ -1577,662 +1379,303 @@ backward_eval[23][25]: 0.000000
 eval_value[23][25]: 0.000000
 forward_eval[24][25]: 0.333333
 backward_eval[24][25]: 0.000000
-eval_value[24][25]: 0.294068
+eval_value[24][25]: 0.019574
 forward_eval[0][25]: 0.000000
 backward_eval[0][25]: 0.000000
 eval_value[0][25]: 0.000000
 forward_eval[26][25]: 1.000000
 backward_eval[26][25]: 1.000000
-eval_value[26][25]: 0.748793
-paket dari : 21
-node 7 : node 28 send untuk node 9
+eval_value[26][25]: 0.442390
+paket dari : 26
+node 10 : node 8 send untuk node 9
 paket dari : 13
-node 26 : node 28 send untuk node 9
+node 26 : node 8 send untuk node 9
 paket dari : 13
-node 23 : node 28 send untuk node 9
+node 23 : node 8 send untuk node 9
 paket dari : 13
-node 27 : node 28 send untuk node 9
+node 27 : node 8 send untuk node 9
 paket dari : 13
-node 1 : node 28 send untuk node 9
+node 1 : node 8 send untuk node 9
 paket dari : 13
-node 8 : node 28 send untuk node 9
+node 8 : node 8 send untuk node 9
+paket dari : 13
+node 10 : node 8 send untuk node 9
+paket dari : 27
+node 1 : node 8 send untuk node 4
+Failed to verify EC Signature
+paket dari : 27
+node 10 : node 8 send untuk node 4
+Failed to verify EC Signature
+paket dari : 27
+node 26 : node 8 send untuk node 4
+Failed to verify EC Signature
+paket dari : 27
+node 13 : node 8 send untuk node 4
+Failed to verify EC Signature
+paket dari : 27
+node 19 : node 8 send untuk node 4
+Failed to verify EC Signature
+paket dari : 5
+node 3 : node 8 send untuk node 9
+paket dari : 5
+node 22 : node 8 send untuk node 9
+paket dari : 5
+node 11 : node 8 send untuk node 9
+Node : 10
+RECV REPLY dari node 27 untuk node 8
+paket dari : 2
+node 22 : node 8 send untuk node 9
+paket dari : 22
+node 3 : node 8 send untuk node 9
+paket dari : 22
+node 2 : node 8 send untuk node 9
 Node : 26
-RECV REPLY dari node 23 untuk node 28
+RECV REPLY dari node 23 untuk node 8
 paket dari : 25
-node 4 : node 28 send untuk node 9
+node 4 : node 8 send untuk node 9
 forward_eval[25][4]: 1.000000
 backward_eval[25][4]: 1.000000
-eval_value[25][4]: 1.068966
+eval_value[25][4]: 1.553756
 forward_eval[14][4]: 0.000000
 backward_eval[14][4]: 0.000000
 eval_value[14][4]: 0.000000
 forward_eval[0][4]: 0.000000
 backward_eval[0][4]: 0.000000
 eval_value[0][4]: 0.000000
-forward_eval[23][4]: 1.000000
+forward_eval[23][4]: 0.000000
 backward_eval[23][4]: 0.000000
-eval_value[23][4]: 0.184066
+eval_value[23][4]: 0.000000
 paket dari : 25
-node 23 : node 28 send untuk node 9
+node 23 : node 8 send untuk node 9
 paket dari : 25
-node 17 : node 28 send untuk node 9
-forward_eval[24][17]: 0.333333
+node 17 : node 8 send untuk node 9
+forward_eval[24][17]: 0.000000
 backward_eval[24][17]: 0.000000
-eval_value[24][17]: 0.055722
+eval_value[24][17]: 0.000000
 forward_eval[25][17]: 0.500000
 backward_eval[25][17]: 1.000000
-eval_value[25][17]: 0.489301
+eval_value[25][17]: 0.703527
 paket dari : 25
-node 24 : node 28 send untuk node 9
+node 24 : node 8 send untuk node 9
 forward_eval[17][24]: 0.500000
 backward_eval[17][24]: 1.000000
-eval_value[17][24]: 0.290887
+eval_value[17][24]: 0.587119
 forward_eval[25][24]: 1.000000
 backward_eval[25][24]: 1.000000
-eval_value[25][24]: 0.960791
+eval_value[25][24]: 1.415989
 paket dari : 25
-node 0 : node 28 send untuk node 9
+node 0 : node 8 send untuk node 9
 forward_eval[4][0]: 0.000000
 backward_eval[4][0]: 0.000000
 eval_value[4][0]: 0.000000
 forward_eval[25][0]: 1.000000
 backward_eval[25][0]: 1.000000
-eval_value[25][0]: 1.110393
+eval_value[25][0]: 0.641804
 paket dari : 25
-node 26 : node 28 send untuk node 9
-paket dari : 23
-node 26 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 13 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 25 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 4 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 6 : node 28 send untuk node 4
-Failed to verify EC Signature
+node 26 : node 8 send untuk node 9
+paket dari : 11
+node 5 : node 8 send untuk node 9
+paket dari : 11
+node 3 : node 8 send untuk node 9
+paket dari : 11
+node 29 : node 8 send untuk node 9
+forward_eval[11][29]: 1.000000
+backward_eval[11][29]: 1.000000
+eval_value[11][29]: 1.546672
+paket dari : 24
+node 17 : node 8 send untuk node 9
+paket dari : 24
+node 25 : node 8 send untuk node 9
+paket dari : 29
+node 11 : node 8 send untuk node 9
+paket dari : 4
+node 14 : node 8 send untuk node 9
+forward_eval[4][14]: 1.000000
+backward_eval[4][14]: 1.000000
+eval_value[4][14]: 1.162367
+forward_eval[6][14]: 0.500000
+backward_eval[6][14]: 0.000000
+eval_value[6][14]: 0.380806
+paket dari : 4
+node 0 : node 8 send untuk node 9
+paket dari : 17
+node 24 : node 8 send untuk node 9
+paket dari : 17
+node 25 : node 8 send untuk node 9
+paket dari : 0
+node 4 : node 8 send untuk node 9
+paket dari : 0
+node 25 : node 8 send untuk node 9
+Node : 10
+RECV REPLY dari node 19 untuk node 8
+paket dari : 14
+node 4 : node 8 send untuk node 9
+paket dari : 14
+node 6 : node 8 send untuk node 9
 forward_eval[20][6]: 0.000000
 backward_eval[20][6]: 0.000000
 eval_value[20][6]: 0.000000
-forward_eval[23][6]: 1.000000
+forward_eval[23][6]: 0.000000
 backward_eval[23][6]: 0.000000
-eval_value[23][6]: 0.614227
-forward_eval[14][6]: 0.500000
+eval_value[23][6]: 0.000000
+forward_eval[14][6]: 1.000000
 backward_eval[14][6]: 1.000000
-eval_value[14][6]: 0.693304
-Node : 10
-RECV REPLY dari node 26 untuk node 28
-paket dari : 4
-node 0 : node 28 send untuk node 9
-paket dari : 4
-node 14 : node 28 send untuk node 9
-forward_eval[4][14]: 1.000000
-backward_eval[4][14]: 1.000000
-eval_value[4][14]: 0.729762
-forward_eval[6][14]: 0.500000
-backward_eval[6][14]: 0.000000
-eval_value[6][14]: 0.122034
-paket dari : 17
-node 24 : node 28 send untuk node 9
-paket dari : 17
-node 25 : node 28 send untuk node 9
-paket dari : 24
-node 17 : node 28 send untuk node 9
-paket dari : 24
-node 25 : node 28 send untuk node 9
+eval_value[14][6]: 0.813194
 paket dari : 6
-node 20 : node 28 send untuk node 4
-Failed to verify EC Signature
+node 20 : node 8 send untuk node 9
 forward_eval[11][20]: 0.000000
 backward_eval[11][20]: 0.000000
 eval_value[11][20]: 0.000000
 forward_eval[6][20]: 1.000000
-backward_eval[6][20]: 0.000000
-eval_value[6][20]: 0.034716
+backward_eval[6][20]: 1.000000
+eval_value[6][20]: 1.570403
 paket dari : 6
-node 23 : node 28 send untuk node 4
-Failed to verify EC Signature
+node 23 : node 8 send untuk node 9
 paket dari : 6
-node 14 : node 28 send untuk node 4
-Failed to verify EC Signature
-Node : 19
-RECV REPLY dari node 10 untuk node 28
-Node : 28
-RECV REPLY dari node 19 untuk node 28
+node 14 : node 8 send untuk node 9
+paket dari : 20
+node 11 : node 8 send untuk node 9
+paket dari : 20
+node 6 : node 8 send untuk node 9
 paket dari : 28
 node 19 : node 28 send untuk node 9
-forward_eval[1][19]: 0.666667
+forward_eval[1][19]: 0.500000
 backward_eval[1][19]: 0.000000
-eval_value[1][19]: 0.542602
-forward_eval[16][19]: 1.000000
-backward_eval[16][19]: 0.000000
-eval_value[16][19]: 0.356383
-forward_eval[10][19]: 0.500000
+eval_value[1][19]: 0.105346
+forward_eval[10][19]: 1.000000
 backward_eval[10][19]: 0.000000
-eval_value[10][19]: 0.017833
-forward_eval[18][19]: 0.666667
+eval_value[10][19]: 0.865434
+forward_eval[16][19]: 0.000000
+backward_eval[16][19]: 0.000000
+eval_value[16][19]: 0.000000
+forward_eval[18][19]: 0.500000
 backward_eval[18][19]: 0.000000
-eval_value[18][19]: 0.133965
+eval_value[18][19]: 0.323260
 forward_eval[28][19]: 1.000000
 backward_eval[28][19]: 1.000000
-eval_value[28][19]: 1.027403
-forward_eval[27][19]: 0.500000
+eval_value[28][19]: 1.272894
+forward_eval[27][19]: 1.000000
 backward_eval[27][19]: 0.000000
-eval_value[27][19]: 0.444672
-paket dari : 28
-node 18 : node 28 send untuk node 9
-forward_eval[21][18]: 0.333333
-backward_eval[21][18]: 0.000000
-eval_value[21][18]: 0.113827
-forward_eval[19][18]: 0.666667
-backward_eval[19][18]: 0.000000
-eval_value[19][18]: 0.511134
-forward_eval[7][18]: 0.666667
-backward_eval[7][18]: 0.000000
-eval_value[7][18]: 0.465809
+eval_value[27][19]: 0.058860
 paket dari : 19
 node 1 : node 28 send untuk node 9
-forward_eval[16][1]: 0.500000
-backward_eval[16][1]: 0.000000
-eval_value[16][1]: 0.452094
-forward_eval[10][1]: 0.666667
+forward_eval[10][1]: 1.000000
 backward_eval[10][1]: 0.000000
-eval_value[10][1]: 0.501652
+eval_value[10][1]: 0.563617
+forward_eval[16][1]: 1.000000
+backward_eval[16][1]: 0.000000
+eval_value[16][1]: 0.018911
 forward_eval[19][1]: 1.000000
 backward_eval[19][1]: 1.000000
-eval_value[19][1]: 0.998434
-forward_eval[27][1]: 0.750000
+eval_value[19][1]: 0.932766
+forward_eval[27][1]: 1.000000
 backward_eval[27][1]: 0.000000
-eval_value[27][1]: 0.443333
-forward_eval[26][1]: 0.666667
+eval_value[27][1]: 0.601427
+forward_eval[13][1]: 1.000000
+backward_eval[13][1]: 0.000000
+eval_value[13][1]: 0.887197
+forward_eval[26][1]: 1.000000
 backward_eval[26][1]: 0.000000
-eval_value[26][1]: 0.067636
+eval_value[26][1]: 0.173065
+paket dari : 19
+node 10 : node 28 send untuk node 9
+REPLY : node 10 untuk node 28
 paket dari : 19
 node 16 : node 28 send untuk node 9
 forward_eval[10][16]: 0.666667
-backward_eval[10][16]: 0.000000
-eval_value[10][16]: 0.162766
-forward_eval[1][16]: 0.500000
+backward_eval[10][16]: 1.000000
+eval_value[10][16]: 1.120378
+forward_eval[1][16]: 0.000000
 backward_eval[1][16]: 0.000000
-eval_value[1][16]: 0.294559
-forward_eval[19][16]: 2.000000
-backward_eval[19][16]: 1.000000
-eval_value[19][16]: 2.724608
-forward_eval[27][16]: 0.500000
-backward_eval[27][16]: 0.000000
-eval_value[27][16]: 0.028011
-forward_eval[26][16]: 0.000000
-backward_eval[26][16]: 0.000000
-eval_value[26][16]: 0.000000
+eval_value[1][16]: 0.000000
 forward_eval[12][16]: 0.666667
-backward_eval[12][16]: 1.000000
-eval_value[12][16]: 0.560178
+backward_eval[12][16]: 0.000000
+eval_value[12][16]: 0.103558
+forward_eval[19][16]: 1.000000
+backward_eval[19][16]: 1.000000
+eval_value[19][16]: 1.248232
+forward_eval[8][16]: 0.500000
+backward_eval[8][16]: 1.000000
+eval_value[8][16]: 1.197353
 forward_eval[13][16]: 0.000000
 backward_eval[13][16]: 0.000000
 eval_value[13][16]: 0.000000
+forward_eval[27][16]: 0.500000
+backward_eval[27][16]: 0.000000
+eval_value[27][16]: 0.473320
 paket dari : 19
 node 18 : node 28 send untuk node 9
+forward_eval[7][18]: 0.500000
+backward_eval[7][18]: 0.000000
+eval_value[7][18]: 0.432840
+forward_eval[21][18]: 0.500000
+backward_eval[21][18]: 0.000000
+eval_value[21][18]: 0.359333
+forward_eval[19][18]: 1.000000
+backward_eval[19][18]: 1.000000
+eval_value[19][18]: 0.466350
 paket dari : 19
 node 28 : node 28 send untuk node 9
 paket dari : 19
-node 10 : node 28 send untuk node 9
-forward_eval[16][10]: 0.333333
-backward_eval[16][10]: 0.000000
-eval_value[16][10]: 0.271850
-forward_eval[1][10]: 0.666667
-backward_eval[1][10]: 1.000000
-eval_value[1][10]: 0.933265
-forward_eval[19][10]: 1.000000
-backward_eval[19][10]: 1.000000
-eval_value[19][10]: 0.954633
-forward_eval[12][10]: 0.333333
-backward_eval[12][10]: 0.000000
-eval_value[12][10]: 0.088057
-forward_eval[27][10]: 0.666667
-backward_eval[27][10]: 0.000000
-eval_value[27][10]: 0.358784
-forward_eval[8][10]: 0.500000
-backward_eval[8][10]: 0.000000
-eval_value[8][10]: 0.465759
-paket dari : 16
-node 1 : node 28 send untuk node 9
-paket dari : 16
-node 10 : node 28 send untuk node 9
-paket dari : 16
-node 19 : node 28 send untuk node 9
-paket dari : 16
 node 27 : node 28 send untuk node 9
 REPLY : node 27 untuk node 28
 forward_eval[26][27]: 0.666667
 backward_eval[26][27]: 0.000000
-eval_value[26][27]: 0.137143
-forward_eval[1][27]: 0.750000
+eval_value[26][27]: 0.111444
+forward_eval[1][27]: 0.500000
 backward_eval[1][27]: 1.000000
-eval_value[1][27]: 0.607907
-forward_eval[16][27]: 0.500000
-backward_eval[16][27]: 1.000000
-eval_value[16][27]: 0.985086
+eval_value[1][27]: 0.489301
 forward_eval[10][27]: 0.666667
-backward_eval[10][27]: 0.000000
-eval_value[10][27]: 0.295559
-paket dari : 16
-node 26 : node 28 send untuk node 9
-forward_eval[27][26]: 0.666667
-backward_eval[27][26]: 0.000000
-eval_value[27][26]: 0.468791
-forward_eval[13][26]: 0.333333
-backward_eval[13][26]: 0.000000
-eval_value[13][26]: 0.071508
-forward_eval[1][26]: 0.666667
-backward_eval[1][26]: 1.000000
-eval_value[1][26]: 0.855648
-forward_eval[23][26]: 0.333333
-backward_eval[23][26]: 0.000000
-eval_value[23][26]: 0.005392
-forward_eval[25][26]: 0.333333
-backward_eval[25][26]: 0.000000
-eval_value[25][26]: 0.284137
-forward_eval[16][26]: 1.000000
-backward_eval[16][26]: 1.000000
-eval_value[16][26]: 0.989438
-paket dari : 1
-node 16 : node 28 send untuk node 9
-paket dari : 1
-node 10 : node 28 send untuk node 9
-paket dari : 1
-node 19 : node 28 send untuk node 9
-paket dari : 1
-node 27 : node 28 send untuk node 9
-paket dari : 1
-node 26 : node 28 send untuk node 9
-paket dari : 10
-node 16 : node 28 send untuk node 9
-paket dari : 10
-node 1 : node 28 send untuk node 9
-paket dari : 10
-node 19 : node 28 send untuk node 9
-paket dari : 10
-node 12 : node 28 send untuk node 9
-forward_eval[8][12]: 0.666667
-backward_eval[8][12]: 0.000000
-eval_value[8][12]: 0.351220
-forward_eval[9][12]: 0.000000
-backward_eval[9][12]: 0.000000
-eval_value[9][12]: 0.000000
-forward_eval[22][12]: 0.000000
-backward_eval[22][12]: 0.000000
-eval_value[22][12]: 0.000000
-forward_eval[10][12]: 0.666667
-backward_eval[10][12]: 1.000000
-eval_value[10][12]: 1.204619
-forward_eval[2][12]: 0.000000
-backward_eval[2][12]: 0.000000
-eval_value[2][12]: 0.000000
-forward_eval[15][12]: 0.333333
-backward_eval[15][12]: 0.000000
-eval_value[15][12]: 0.319652
-forward_eval[16][12]: 0.333333
-backward_eval[16][12]: 1.000000
-eval_value[16][12]: 0.474595
-paket dari : 10
-node 27 : node 28 send untuk node 9
-paket dari : 10
-node 8 : node 28 send untuk node 9
-forward_eval[9][8]: 0.000000
-backward_eval[9][8]: 0.000000
-eval_value[9][8]: 0.000000
-forward_eval[12][8]: 0.666667
-backward_eval[12][8]: 0.000000
-eval_value[12][8]: 0.003384
-forward_eval[15][8]: 0.000000
-backward_eval[15][8]: 0.000000
-eval_value[15][8]: 0.000000
-forward_eval[22][8]: 0.000000
-backward_eval[22][8]: 0.000000
-eval_value[22][8]: 0.000000
-forward_eval[3][8]: 0.000000
-backward_eval[3][8]: 0.000000
-eval_value[3][8]: 0.000000
-forward_eval[5][8]: 0.000000
-backward_eval[5][8]: 0.000000
-eval_value[5][8]: 0.000000
-forward_eval[10][8]: 1.000000
-backward_eval[10][8]: 1.000000
-eval_value[10][8]: 0.966775
-paket dari : 8
-node 9 : node 28 send untuk node 9
-REPLY : node 9 untuk node 28
-paket dari : 8
-node 12 : node 28 send untuk node 9
-paket dari : 8
-node 15 : node 28 send untuk node 9
-forward_eval[22][15]: 0.000000
-backward_eval[22][15]: 0.000000
-eval_value[22][15]: 0.000000
-forward_eval[9][15]: 0.000000
-backward_eval[9][15]: 0.000000
-eval_value[9][15]: 0.000000
-forward_eval[5][15]: 0.333333
-backward_eval[5][15]: 0.000000
-eval_value[5][15]: 0.030953
-forward_eval[3][15]: 0.000000
-backward_eval[3][15]: 0.000000
-eval_value[3][15]: 0.000000
-forward_eval[8][15]: 1.000000
-backward_eval[8][15]: 1.000000
-eval_value[8][15]: 1.233229
-forward_eval[12][15]: 0.666667
-backward_eval[12][15]: 1.000000
-eval_value[12][15]: 0.525317
-paket dari : 8
-node 22 : node 28 send untuk node 9
-forward_eval[15][22]: 0.500000
-backward_eval[15][22]: 1.000000
-eval_value[15][22]: 1.025768
-forward_eval[2][22]: 0.666667
-backward_eval[2][22]: 0.000000
-eval_value[2][22]: 0.495818
-forward_eval[12][22]: 0.000000
-backward_eval[12][22]: 0.000000
-eval_value[12][22]: 0.000000
-forward_eval[9][22]: 0.000000
-backward_eval[9][22]: 0.000000
-eval_value[9][22]: 0.000000
-forward_eval[8][22]: 1.000000
-backward_eval[8][22]: 1.000000
-eval_value[8][22]: 0.514217
-paket dari : 8
-node 3 : node 28 send untuk node 9
-forward_eval[5][3]: 0.666667
-backward_eval[5][3]: 0.000000
-eval_value[5][3]: 0.539829
-forward_eval[15][3]: 0.500000
-backward_eval[15][3]: 1.000000
-eval_value[15][3]: 0.650579
-forward_eval[11][3]: 0.000000
-backward_eval[11][3]: 0.000000
-eval_value[11][3]: 0.000000
-forward_eval[9][3]: 1.000000
-backward_eval[9][3]: 0.000000
-eval_value[9][3]: 0.760862
-forward_eval[8][3]: 1.000000
-backward_eval[8][3]: 1.000000
-eval_value[8][3]: 1.826382
-paket dari : 8
-node 5 : node 28 send untuk node 9
-forward_eval[3][5]: 0.666667
-backward_eval[3][5]: 0.000000
-eval_value[3][5]: 0.227693
-forward_eval[15][5]: 0.500000
-backward_eval[15][5]: 1.000000
-eval_value[15][5]: 0.662655
-forward_eval[11][5]: 0.000000
-backward_eval[11][5]: 0.000000
-eval_value[11][5]: 0.000000
-forward_eval[9][5]: 0.000000
-backward_eval[9][5]: 0.000000
-eval_value[9][5]: 0.000000
-forward_eval[8][5]: 1.000000
-backward_eval[8][5]: 1.000000
-eval_value[8][5]: 0.459262
-paket dari : 8
-node 10 : node 28 send untuk node 9
-paket dari : 3
-node 5 : node 28 send untuk node 9
-paket dari : 3
-node 15 : node 28 send untuk node 9
-paket dari : 3
-node 11 : node 28 send untuk node 9
-forward_eval[20][11]: 0.000000
-backward_eval[20][11]: 0.000000
-eval_value[20][11]: 0.000000
-forward_eval[3][11]: 1.000000
-backward_eval[3][11]: 1.000000
-eval_value[3][11]: 0.995142
-forward_eval[5][11]: 0.500000
-backward_eval[5][11]: 1.000000
-eval_value[5][11]: 0.502088
-forward_eval[29][11]: 0.000000
-backward_eval[29][11]: 0.000000
-eval_value[29][11]: 0.000000
-paket dari : 3
-node 9 : node 28 send untuk node 9
-paket dari : 3
-node 8 : node 28 send untuk node 9
-paket dari : 26
-node 27 : node 28 send untuk node 9
-paket dari : 26
-node 23 : node 28 send untuk node 9
-REPLY : node 23 untuk node 28
-forward_eval[25][23]: 0.500000
-backward_eval[25][23]: 0.000000
-eval_value[25][23]: 0.156172
-forward_eval[4][23]: 0.000000
-backward_eval[4][23]: 0.000000
-eval_value[4][23]: 0.000000
-forward_eval[26][23]: 1.000000
-backward_eval[26][23]: 1.000000
-eval_value[26][23]: 0.553201
-forward_eval[24][23]: 0.000000
-backward_eval[24][23]: 0.000000
-eval_value[24][23]: 0.000000
-forward_eval[0][23]: 0.000000
-backward_eval[0][23]: 0.000000
-eval_value[0][23]: 0.000000
-forward_eval[17][23]: 0.000000
-backward_eval[17][23]: 0.000000
-eval_value[17][23]: 0.000000
-paket dari : 18
-node 21 : node 28 send untuk node 9
-forward_eval[7][21]: 0.750000
-backward_eval[7][21]: 1.000000
-eval_value[7][21]: 0.653863
-forward_eval[18][21]: 1.000000
-backward_eval[18][21]: 1.000000
-eval_value[18][21]: 0.588171
-paket dari : 26
-node 25 : node 28 send untuk node 9
-forward_eval[23][25]: 0.500000
-backward_eval[23][25]: 0.000000
-eval_value[23][25]: 0.042092
-forward_eval[24][25]: 0.500000
-backward_eval[24][25]: 0.000000
-eval_value[24][25]: 0.392966
-forward_eval[4][25]: 0.000000
-backward_eval[4][25]: 0.000000
-eval_value[4][25]: 0.000000
-forward_eval[17][25]: 0.333333
-backward_eval[17][25]: 0.000000
-eval_value[17][25]: 0.020891
-forward_eval[0][25]: 0.000000
-backward_eval[0][25]: 0.000000
-eval_value[0][25]: 0.000000
-forward_eval[26][25]: 1.000000
-backward_eval[26][25]: 1.000000
-eval_value[26][25]: 1.037390
-paket dari : 18
-node 19 : node 28 send untuk node 9
-paket dari : 18
-node 7 : node 28 send untuk node 9
-forward_eval[21][7]: 0.750000
-backward_eval[21][7]: 0.000000
-eval_value[21][7]: 0.290997
-forward_eval[2][7]: 0.000000
-backward_eval[2][7]: 0.000000
-eval_value[2][7]: 0.000000
-forward_eval[18][7]: 1.000000
-backward_eval[18][7]: 1.000000
-eval_value[18][7]: 0.946028
-Node : 8
-RECV REPLY dari node 9 untuk node 28
-paket dari : 22
-node 15 : node 28 send untuk node 9
-paket dari : 22
-node 2 : node 28 send untuk node 9
-forward_eval[22][2]: 0.666667
-backward_eval[22][2]: 0.500000
-eval_value[22][2]: 0.837123
-forward_eval[7][2]: 0.000000
-backward_eval[7][2]: 0.000000
-eval_value[7][2]: 0.000000
-forward_eval[12][2]: 0.500000
-backward_eval[12][2]: 1.000000
-eval_value[12][2]: 0.768823
-paket dari : 22
-node 12 : node 28 send untuk node 9
-paket dari : 22
-node 9 : node 28 send untuk node 9
-paket dari : 22
-node 8 : node 28 send untuk node 9
-paket dari : 5
-node 3 : node 28 send untuk node 9
-paket dari : 5
-node 15 : node 28 send untuk node 9
-paket dari : 5
-node 11 : node 28 send untuk node 9
-paket dari : 7
-node 21 : node 28 send untuk node 9
-paket dari : 7
-node 18 : node 28 send untuk node 9
-paket dari : 25
-node 23 : node 28 send untuk node 9
-paket dari : 25
-node 24 : node 28 send untuk node 9
-forward_eval[17][24]: 0.666667
-backward_eval[17][24]: 1.000000
-eval_value[17][24]: 0.352082
-forward_eval[25][24]: 1.000000
-backward_eval[25][24]: 1.000000
-eval_value[25][24]: 1.195282
-forward_eval[23][24]: 0.000000
-backward_eval[23][24]: 0.000000
-eval_value[23][24]: 0.000000
-paket dari : 25
-node 17 : node 28 send untuk node 9
-forward_eval[24][17]: 0.500000
-backward_eval[24][17]: 0.000000
-eval_value[24][17]: 0.424636
-forward_eval[25][17]: 0.666667
-backward_eval[25][17]: 1.000000
-eval_value[25][17]: 1.111492
-forward_eval[23][17]: 0.000000
-backward_eval[23][17]: 0.000000
-eval_value[23][17]: 0.000000
-paket dari : 25
-node 0 : node 28 send untuk node 9
-forward_eval[4][0]: 0.500000
-backward_eval[4][0]: 0.000000
-eval_value[4][0]: 0.251201
-forward_eval[25][0]: 1.000000
-backward_eval[25][0]: 1.000000
-eval_value[25][0]: 0.701317
-forward_eval[23][0]: 0.000000
-backward_eval[23][0]: 0.000000
-eval_value[23][0]: 0.000000
-paket dari : 25
-node 4 : node 28 send untuk node 9
-forward_eval[0][4]: 0.000000
-backward_eval[0][4]: 0.000000
-eval_value[0][4]: 0.000000
-forward_eval[14][4]: 0.000000
-backward_eval[14][4]: 0.000000
-eval_value[14][4]: 0.000000
-forward_eval[23][4]: 1.000000
-backward_eval[23][4]: 0.000000
-eval_value[23][4]: 0.844281
-forward_eval[25][4]: 1.000000
-backward_eval[25][4]: 1.000000
-eval_value[25][4]: 0.850732
-paket dari : 25
-node 26 : node 28 send untuk node 9
-paket dari : 11
-node 3 : node 28 send untuk node 9
-paket dari : 11
-node 5 : node 28 send untuk node 9
-paket dari : 11
-node 29 : node 28 send untuk node 9
-forward_eval[11][29]: 1.000000
-backward_eval[11][29]: 1.000000
-eval_value[11][29]: 0.418566
-Node : 16
+backward_eval[10][27]: 1.000000
+eval_value[10][27]: 0.311998
+forward_eval[19][27]: 0.500000
+backward_eval[19][27]: 1.000000
+eval_value[19][27]: 0.487329
+forward_eval[13][27]: 0.500000
+backward_eval[13][27]: 0.000000
+eval_value[13][27]: 0.080412
+Node : 19
 RECV REPLY dari node 27 untuk node 28
-paket dari : 15
-node 22 : node 28 send untuk node 9
-paket dari : 15
-node 5 : node 28 send untuk node 9
-paket dari : 15
-node 3 : node 28 send untuk node 9
-paket dari : 4
-node 0 : node 28 send untuk node 9
-paket dari : 4
-node 14 : node 28 send untuk node 9
-forward_eval[4][14]: 1.000000
-backward_eval[4][14]: 1.000000
-eval_value[4][14]: 0.990666
-paket dari : 4
-node 25 : node 28 send untuk node 9
-paket dari : 4
-node 23 : node 28 send untuk node 9
-Node : 10
-RECV REPLY dari node 8 untuk node 28
-paket dari : 17
-node 24 : node 28 send untuk node 9
-paket dari : 17
-node 25 : node 28 send untuk node 9
-paket dari : 17
-node 23 : node 28 send untuk node 9
-paket dari : 12
-node 8 : node 28 send untuk node 9
-paket dari : 12
-node 9 : node 28 send untuk node 9
-paket dari : 12
-node 22 : node 28 send untuk node 9
-paket dari : 12
+paket dari : 1
 node 10 : node 28 send untuk node 9
-paket dari : 12
-node 2 : node 28 send untuk node 9
-paket dari : 12
-node 15 : node 28 send untuk node 9
-paket dari : 24
-node 17 : node 28 send untuk node 9
-paket dari : 24
-node 25 : node 28 send untuk node 9
-paket dari : 24
-node 23 : node 28 send untuk node 9
-paket dari : 2
-node 22 : node 28 send untuk node 9
-paket dari : 2
-node 7 : node 28 send untuk node 9
-paket dari : 2
-node 12 : node 28 send untuk node 9
-Node : 26
-RECV REPLY dari node 23 untuk node 28
-paket dari : 21
-node 7 : node 28 send untuk node 9
-paket dari : 21
-node 18 : node 28 send untuk node 9
-paket dari : 23
-node 25 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 24 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 4 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 17 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 0 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 26 : node 28 send untuk node 4
-Failed to verify EC Signature
+paket dari : 1
+node 16 : node 28 send untuk node 9
+paket dari : 1
+node 19 : node 28 send untuk node 9
+paket dari : 1
+node 27 : node 28 send untuk node 9
+paket dari : 1
+node 13 : node 28 send untuk node 9
+forward_eval[26][13]: 0.666667
+backward_eval[26][13]: 0.000000
+eval_value[26][13]: 0.307899
+forward_eval[10][13]: 0.500000
+backward_eval[10][13]: 0.000000
+eval_value[10][13]: 0.457610
+forward_eval[1][13]: 0.500000
+backward_eval[1][13]: 1.000000
+eval_value[1][13]: 0.377670
+forward_eval[8][13]: 0.750000
+backward_eval[8][13]: 1.000000
+eval_value[8][13]: 0.791741
+forward_eval[16][13]: 0.000000
+backward_eval[16][13]: 0.000000
+eval_value[16][13]: 0.000000
+forward_eval[27][13]: 0.500000
+backward_eval[27][13]: 0.000000
+eval_value[27][13]: 0.122034
+forward_eval[23][13]: 0.000000
+backward_eval[23][13]: 0.000000
+eval_value[23][13]: 0.000000
+paket dari : 1
+node 26 : node 28 send untuk node 9
+REPLY : node 26 untuk node 28
+Node : 28
+RECV REPLY dari node 19 untuk node 28
+Node : 1
+RECV REPLY dari node 26 untuk node 28
+Node : 19
+RECV REPLY dari node 1 untuk node 28
 paket dari : 27
 node 26 : node 28 send untuk node 4
 Failed to verify EC Signature
@@ -2240,154 +1683,368 @@ paket dari : 27
 node 1 : node 28 send untuk node 4
 Failed to verify EC Signature
 paket dari : 27
-node 16 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 27
 node 10 : node 28 send untuk node 4
 Failed to verify EC Signature
-paket dari : 0
-node 4 : node 28 send untuk node 9
-Node : 16
-RECV REPLY dari node 26 untuk node 28
-Node : 19
-RECV REPLY dari node 16 untuk node 28
+paket dari : 27
+node 19 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 27
+node 13 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 27
+node 16 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 13
+node 26 : node 28 send untuk node 9
+paket dari : 13
+node 10 : node 28 send untuk node 9
+paket dari : 13
+node 1 : node 28 send untuk node 9
+paket dari : 13
+node 16 : node 28 send untuk node 9
+paket dari : 13
+node 8 : node 28 send untuk node 9
+REPLY : node 8 untuk node 28
+paket dari : 13
+node 27 : node 28 send untuk node 9
+paket dari : 16
+node 10 : node 28 send untuk node 9
+paket dari : 16
+node 1 : node 28 send untuk node 9
+paket dari : 16
+node 19 : node 28 send untuk node 9
+paket dari : 16
+node 12 : node 28 send untuk node 9
+forward_eval[9][12]: 0.000000
+backward_eval[9][12]: 0.000000
+eval_value[9][12]: 0.000000
+forward_eval[8][12]: 0.666667
+backward_eval[8][12]: 1.000000
+eval_value[8][12]: 1.295985
+forward_eval[16][12]: 1.000000
+backward_eval[16][12]: 1.000000
+eval_value[16][12]: 1.354353
+forward_eval[2][12]: 0.000000
+backward_eval[2][12]: 0.000000
+eval_value[2][12]: 0.000000
+forward_eval[22][12]: 0.000000
+backward_eval[22][12]: 0.000000
+eval_value[22][12]: 0.000000
+forward_eval[15][12]: 0.333333
+backward_eval[15][12]: 0.000000
+eval_value[15][12]: 0.233262
+paket dari : 16
+node 8 : node 28 send untuk node 9
+paket dari : 16
+node 13 : node 28 send untuk node 9
+paket dari : 16
+node 27 : node 28 send untuk node 9
+Node : 8
+RECV REPLY dari node 10 untuk node 8
+paket dari : 18
+node 21 : node 28 send untuk node 9
+forward_eval[7][21]: 0.666667
+backward_eval[7][21]: 1.000000
+eval_value[7][21]: 1.239607
+forward_eval[18][21]: 1.000000
+backward_eval[18][21]: 1.000000
+eval_value[18][21]: 0.391650
+paket dari : 18
+node 7 : node 28 send untuk node 9
+forward_eval[21][7]: 0.666667
+backward_eval[21][7]: 0.000000
+eval_value[21][7]: 0.511134
+forward_eval[18][7]: 1.000000
+backward_eval[18][7]: 1.000000
+eval_value[18][7]: 1.380635
+paket dari : 18
+node 19 : node 28 send untuk node 9
 Node : 28
 RECV REPLY dari node 19 untuk node 28
+Node : 13
+RECV REPLY dari node 8 untuk node 28
+Node : 1
+RECV REPLY dari node 13 untuk node 28
+paket dari : 12
+node 9 : node 28 send untuk node 9
+REPLY : node 9 untuk node 28
+paket dari : 12
+node 8 : node 28 send untuk node 9
+paket dari : 12
+node 16 : node 28 send untuk node 9
+paket dari : 12
+node 2 : node 28 send untuk node 9
+forward_eval[22][2]: 0.666667
+backward_eval[22][2]: 0.000000
+eval_value[22][2]: 0.602791
+forward_eval[12][2]: 1.000000
+backward_eval[12][2]: 1.000000
+eval_value[12][2]: 1.050412
+forward_eval[15][2]: 0.500000
+backward_eval[15][2]: 0.000000
+eval_value[15][2]: 0.404685
+paket dari : 12
+node 22 : node 28 send untuk node 9
+forward_eval[15][22]: 0.500000
+backward_eval[15][22]: 1.000000
+eval_value[15][22]: 0.348995
+forward_eval[2][22]: 0.666667
+backward_eval[2][22]: 0.000000
+eval_value[2][22]: 0.067636
+forward_eval[9][22]: 0.000000
+backward_eval[9][22]: 0.000000
+eval_value[9][22]: 0.000000
+forward_eval[12][22]: 1.000000
+backward_eval[12][22]: 1.000000
+eval_value[12][22]: 0.647171
+forward_eval[5][22]: 0.500000
+backward_eval[5][22]: 0.000000
+eval_value[5][22]: 0.444777
+forward_eval[3][22]: 0.500000
+backward_eval[3][22]: 0.000000
+eval_value[3][22]: 0.028011
+paket dari : 12
+node 15 : node 28 send untuk node 9
+forward_eval[22][15]: 0.000000
+backward_eval[22][15]: 0.000000
+eval_value[22][15]: 0.000000
+forward_eval[9][15]: 0.000000
+backward_eval[9][15]: 0.000000
+eval_value[9][15]: 0.000000
+forward_eval[5][15]: 0.000000
+backward_eval[5][15]: 0.000000
+eval_value[5][15]: 0.000000
+forward_eval[3][15]: 0.333333
+backward_eval[3][15]: 0.000000
+eval_value[3][15]: 0.271850
+forward_eval[2][15]: 0.000000
+backward_eval[2][15]: 0.000000
+eval_value[2][15]: 0.000000
+forward_eval[12][15]: 1.000000
+backward_eval[12][15]: 1.000000
+eval_value[12][15]: 0.954633
+forward_eval[8][15]: 0.000000
+backward_eval[8][15]: 0.000000
+eval_value[8][15]: 0.000000
+Node : 12
+RECV REPLY dari node 9 untuk node 28
+paket dari : 15
+node 22 : node 28 send untuk node 9
+paket dari : 15
+node 9 : node 28 send untuk node 9
+paket dari : 15
+node 5 : node 28 send untuk node 9
+forward_eval[3][5]: 0.666667
+backward_eval[3][5]: 0.000000
+eval_value[3][5]: 0.358784
+forward_eval[15][5]: 1.000000
+backward_eval[15][5]: 1.000000
+eval_value[15][5]: 1.279064
+forward_eval[11][5]: 0.500000
+backward_eval[11][5]: 0.000000
+eval_value[11][5]: 0.102857
+forward_eval[22][5]: 0.000000
+backward_eval[22][5]: 0.000000
+eval_value[22][5]: 0.000000
+paket dari : 15
+node 3 : node 28 send untuk node 9
+forward_eval[5][3]: 0.666667
+backward_eval[5][3]: 1.000000
+eval_value[5][3]: 1.098403
+forward_eval[15][3]: 1.000000
+backward_eval[15][3]: 1.000000
+eval_value[15][3]: 0.712361
+forward_eval[11][3]: 0.500000
+backward_eval[11][3]: 0.000000
+eval_value[11][3]: 0.351593
+forward_eval[9][3]: 0.000000
+backward_eval[9][3]: 0.000000
+eval_value[9][3]: 0.000000
+forward_eval[22][3]: 0.500000
+backward_eval[22][3]: 0.000000
+eval_value[22][3]: 0.129056
+paket dari : 15
+node 12 : node 28 send untuk node 9
+paket dari : 15
+node 2 : node 28 send untuk node 9
+paket dari : 15
+node 8 : node 28 send untuk node 9
+paket dari : 2
+node 22 : node 28 send untuk node 9
+paket dari : 2
+node 12 : node 28 send untuk node 9
+paket dari : 2
+node 15 : node 28 send untuk node 9
+paket dari : 22
+node 15 : node 28 send untuk node 9
+paket dari : 22
+node 2 : node 28 send untuk node 9
+paket dari : 22
+node 9 : node 28 send untuk node 9
+paket dari : 22
+node 12 : node 28 send untuk node 9
+paket dari : 22
+node 5 : node 28 send untuk node 9
+paket dari : 22
+node 3 : node 28 send untuk node 9
+paket dari : 22
+node 8 : node 28 send untuk node 9
+paket dari : 5
+node 3 : node 28 send untuk node 9
+paket dari : 5
+node 15 : node 28 send untuk node 9
+paket dari : 5
+node 11 : node 28 send untuk node 9
+forward_eval[20][11]: 0.500000
+backward_eval[20][11]: 0.000000
+eval_value[20][11]: 0.008089
+forward_eval[3][11]: 0.500000
+backward_eval[3][11]: 1.000000
+eval_value[3][11]: 1.026968
+forward_eval[5][11]: 1.000000
+backward_eval[5][11]: 1.000000
+eval_value[5][11]: 0.989438
+forward_eval[29][11]: 0.500000
+backward_eval[29][11]: 0.000000
+eval_value[29][11]: 0.263415
+paket dari : 5
+node 9 : node 28 send untuk node 9
+paket dari : 5
+node 22 : node 28 send untuk node 9
+paket dari : 7
+node 21 : node 28 send untuk node 9
+paket dari : 7
+node 18 : node 28 send untuk node 9
+paket dari : 3
+node 5 : node 28 send untuk node 9
+paket dari : 3
+node 15 : node 28 send untuk node 9
+paket dari : 3
+node 11 : node 28 send untuk node 9
+paket dari : 3
+node 9 : node 28 send untuk node 9
+paket dari : 3
+node 22 : node 28 send untuk node 9
+paket dari : 21
+node 7 : node 28 send untuk node 9
+paket dari : 21
+node 18 : node 28 send untuk node 9
+Node : 16
+RECV REPLY dari node 12 untuk node 28
 Node : 19
-RECV REPLY dari node 10 untuk node 28
+RECV REPLY dari node 16 untuk node 28
 paket dari : 28
 node 16 : node 28 send untuk node 9
+forward_eval[19][16]: 0.500000
+backward_eval[19][16]: 1.000000
+eval_value[19][16]: 0.381333
 forward_eval[26][16]: 0.000000
 backward_eval[26][16]: 0.000000
 eval_value[26][16]: 0.000000
+forward_eval[1][16]: 0.333333
+backward_eval[1][16]: 0.000000
+eval_value[1][16]: 0.296604
+forward_eval[27][16]: 0.666667
+backward_eval[27][16]: 0.000000
+eval_value[27][16]: 0.354022
 forward_eval[28][16]: 1.000000
 backward_eval[28][16]: 1.000000
-eval_value[28][16]: 0.487460
+eval_value[28][16]: 1.695704
 forward_eval[23][16]: 0.000000
 backward_eval[23][16]: 0.000000
 eval_value[23][16]: 0.000000
 paket dari : 16
 node 19 : node 28 send untuk node 9
-forward_eval[10][19]: 0.666667
+forward_eval[10][19]: 0.500000
 backward_eval[10][19]: 0.000000
-eval_value[10][19]: 0.147945
-forward_eval[16][19]: 1.500000
+eval_value[10][19]: 0.021958
+forward_eval[16][19]: 1.000000
 backward_eval[16][19]: 1.000000
-eval_value[16][19]: 2.104043
-forward_eval[1][19]: 0.750000
+eval_value[16][19]: 0.492330
+forward_eval[1][19]: 0.666667
 backward_eval[1][19]: 0.000000
-eval_value[1][19]: 0.106589
-forward_eval[27][19]: 0.333333
+eval_value[1][19]: 0.195257
+forward_eval[27][19]: 1.000000
 backward_eval[27][19]: 0.000000
-eval_value[27][19]: 0.187002
+eval_value[27][19]: 0.820146
 forward_eval[26][19]: 0.000000
 backward_eval[26][19]: 0.000000
 eval_value[26][19]: 0.000000
 paket dari : 16
 node 26 : node 28 send untuk node 9
-forward_eval[27][26]: 0.750000
+forward_eval[27][26]: 1.000000
 backward_eval[27][26]: 0.000000
-eval_value[27][26]: 0.505497
-forward_eval[1][26]: 0.750000
+eval_value[27][26]: 0.190984
+forward_eval[1][26]: 0.666667
 backward_eval[1][26]: 1.000000
-eval_value[1][26]: 1.437413
+eval_value[1][26]: 0.658982
 forward_eval[16][26]: 1.000000
 backward_eval[16][26]: 1.000000
-eval_value[16][26]: 0.801753
-forward_eval[23][26]: 0.500000
+eval_value[16][26]: 0.329269
+forward_eval[23][26]: 0.000000
 backward_eval[23][26]: 0.000000
-eval_value[23][26]: 0.295204
+eval_value[23][26]: 0.000000
 forward_eval[19][26]: 0.000000
 backward_eval[19][26]: 0.000000
 eval_value[19][26]: 0.000000
 paket dari : 16
 node 1 : node 28 send untuk node 9
-forward_eval[27][1]: 0.800000
+forward_eval[27][1]: 1.000000
 backward_eval[27][1]: 0.000000
-eval_value[27][1]: 0.227431
-forward_eval[26][1]: 0.500000
+eval_value[27][1]: 0.867469
+forward_eval[26][1]: 0.666667
 backward_eval[26][1]: 0.000000
-eval_value[26][1]: 0.440004
-forward_eval[19][1]: 0.750000
+eval_value[26][1]: 0.317298
+forward_eval[19][1]: 0.666667
 backward_eval[19][1]: 1.000000
-eval_value[19][1]: 0.494026
-forward_eval[10][1]: 0.750000
+eval_value[19][1]: 0.525317
+forward_eval[10][1]: 0.666667
 backward_eval[10][1]: 0.000000
-eval_value[10][1]: 0.332282
-forward_eval[16][1]: 1.000000
+eval_value[10][1]: 0.385742
+forward_eval[16][1]: 1.500000
 backward_eval[16][1]: 1.000000
-eval_value[16][1]: 0.748208
-forward_eval[13][1]: 0.500000
+eval_value[16][1]: 2.038163
+forward_eval[13][1]: 1.000000
 backward_eval[13][1]: 0.000000
-eval_value[13][1]: 0.162856
+eval_value[13][1]: 0.096404
 paket dari : 16
 node 27 : node 28 send untuk node 9
 REPLY : node 27 untuk node 28
-forward_eval[1][27]: 0.800000
+forward_eval[1][27]: 0.600000
 backward_eval[1][27]: 1.000000
-eval_value[1][27]: 0.590254
-forward_eval[26][27]: 0.750000
+eval_value[1][27]: 0.669341
+forward_eval[26][27]: 0.500000
 backward_eval[26][27]: 0.000000
-eval_value[26][27]: 0.604342
-forward_eval[16][27]: 0.666667
-backward_eval[16][27]: 1.000000
-eval_value[16][27]: 0.632647
-forward_eval[19][27]: 0.500000
+eval_value[26][27]: 0.137448
+forward_eval[19][27]: 0.333333
 backward_eval[19][27]: 1.000000
-eval_value[19][27]: 0.469309
-forward_eval[13][27]: 0.500000
+eval_value[19][27]: 0.364957
+forward_eval[16][27]: 1.000000
+backward_eval[16][27]: 1.000000
+eval_value[16][27]: 1.023944
+forward_eval[13][27]: 0.666667
 backward_eval[13][27]: 0.000000
-eval_value[13][27]: 0.299822
-forward_eval[10][27]: 0.750000
-backward_eval[10][27]: 0.000000
-eval_value[10][27]: 0.676161
+eval_value[13][27]: 0.115534
+forward_eval[10][27]: 0.500000
+backward_eval[10][27]: 1.000000
+eval_value[10][27]: 0.477112
 paket dari : 16
 node 28 : node 28 send untuk node 9
 paket dari : 16
 node 23 : node 28 send untuk node 9
 REPLY : node 23 untuk node 28
-forward_eval[24][23]: 0.500000
-backward_eval[24][23]: 0.000000
-eval_value[24][23]: 0.440616
-forward_eval[17][23]: 0.500000
-backward_eval[17][23]: 0.000000
-eval_value[17][23]: 0.230326
-forward_eval[26][23]: 0.750000
-backward_eval[26][23]: 1.000000
-eval_value[26][23]: 0.443739
-forward_eval[16][23]: 1.000000
-backward_eval[16][23]: 1.000000
-eval_value[16][23]: 0.822792
-paket dari : 23
-node 24 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 17 : node 28 send untuk node 4
-Failed to verify EC Signature
-forward_eval[24][17]: 0.600000
-backward_eval[24][17]: 0.000000
-eval_value[24][17]: 0.180701
-forward_eval[23][17]: 1.000000
-backward_eval[23][17]: 0.000000
-eval_value[23][17]: 0.749443
-paket dari : 23
-node 26 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 23
-node 16 : node 28 send untuk node 4
-Failed to verify EC Signature
-Node : 16
-RECV REPLY dari node 23 untuk node 28
 Node : 16
 RECV REPLY dari node 27 untuk node 28
+Node : 16
+RECV REPLY dari node 23 untuk node 28
 paket dari : 19
 node 10 : node 28 send untuk node 9
-forward_eval[12][10]: 0.500000
+forward_eval[12][10]: 0.666667
 backward_eval[12][10]: 0.000000
-eval_value[12][10]: 0.242933
+eval_value[12][10]: 0.654072
 forward_eval[19][10]: 1.000000
 backward_eval[19][10]: 1.000000
-eval_value[19][10]: 0.992254
+eval_value[19][10]: 1.034003
 forward_eval[7][10]: 0.000000
 backward_eval[7][10]: 0.000000
 eval_value[7][10]: 0.000000
@@ -2396,16 +2053,16 @@ backward_eval[9][10]: 0.000000
 eval_value[9][10]: 0.000000
 forward_eval[22][10]: 0.500000
 backward_eval[22][10]: 0.000000
-eval_value[22][10]: 0.144376
-forward_eval[1][10]: 0.750000
+eval_value[22][10]: 0.300246
+forward_eval[1][10]: 0.666667
 backward_eval[1][10]: 1.000000
-eval_value[1][10]: 1.175395
-forward_eval[27][10]: 0.750000
+eval_value[1][10]: 0.432174
+forward_eval[27][10]: 1.000000
 backward_eval[27][10]: 0.000000
-eval_value[27][10]: 0.131560
+eval_value[27][10]: 0.136956
 forward_eval[2][10]: 0.500000
 backward_eval[2][10]: 0.000000
-eval_value[2][10]: 0.479858
+eval_value[2][10]: 0.057230
 paket dari : 19
 node 16 : node 28 send untuk node 9
 paket dari : 19
@@ -2437,13 +2094,23 @@ backward_eval[6][13]: 0.000000
 eval_value[6][13]: 0.000000
 forward_eval[27][13]: 1.000000
 backward_eval[27][13]: 0.000000
-eval_value[27][13]: 0.536115
-forward_eval[1][13]: 0.500000
-backward_eval[1][13]: 0.000000
-eval_value[1][13]: 0.232917
+eval_value[27][13]: 0.312343
+forward_eval[1][13]: 0.333333
+backward_eval[1][13]: 1.000000
+eval_value[1][13]: 0.378155
 paket dari : 27
 node 10 : node 28 send untuk node 4
 Failed to verify EC Signature
+paket dari : 26
+node 27 : node 28 send untuk node 9
+paket dari : 26
+node 1 : node 28 send untuk node 9
+paket dari : 26
+node 16 : node 28 send untuk node 9
+paket dari : 26
+node 23 : node 28 send untuk node 9
+paket dari : 26
+node 19 : node 28 send untuk node 9
 paket dari : 1
 node 27 : node 28 send untuk node 9
 paket dari : 1
@@ -2456,66 +2123,206 @@ paket dari : 1
 node 16 : node 28 send untuk node 9
 paket dari : 1
 node 13 : node 28 send untuk node 9
-paket dari : 26
-node 27 : node 28 send untuk node 9
-paket dari : 26
-node 1 : node 28 send untuk node 9
-paket dari : 26
-node 16 : node 28 send untuk node 9
-paket dari : 26
-node 23 : node 28 send untuk node 9
-paket dari : 26
-node 19 : node 28 send untuk node 9
-paket dari : 17
-node 24 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 17
-node 23 : node 28 send untuk node 4
-Failed to verify EC Signature
+paket dari : 10
+node 12 : node 28 send untuk node 9
+forward_eval[22][12]: 0.500000
+backward_eval[22][12]: 0.000000
+eval_value[22][12]: 0.019132
+forward_eval[9][12]: 0.000000
+backward_eval[9][12]: 0.000000
+eval_value[9][12]: 0.000000
+forward_eval[7][12]: 0.500000
+backward_eval[7][12]: 0.000000
+eval_value[7][12]: 0.226325
+forward_eval[10][12]: 1.000000
+backward_eval[10][12]: 1.000000
+eval_value[10][12]: 0.742005
+forward_eval[2][12]: 0.333333
+backward_eval[2][12]: 0.000000
+eval_value[2][12]: 0.001812
+forward_eval[8][12]: 0.500000
+backward_eval[8][12]: 1.000000
+eval_value[8][12]: 0.525060
+forward_eval[15][12]: 0.500000
+backward_eval[15][12]: 0.000000
+eval_value[15][12]: 0.042092
+paket dari : 10
+node 7 : node 28 send untuk node 9
+forward_eval[22][7]: 0.000000
+backward_eval[22][7]: 0.000000
+eval_value[22][7]: 0.000000
+forward_eval[12][7]: 0.500000
+backward_eval[12][7]: 0.000000
+eval_value[12][7]: 0.455113
+forward_eval[9][7]: 0.000000
+backward_eval[9][7]: 0.000000
+eval_value[9][7]: 0.000000
+forward_eval[2][7]: 0.000000
+backward_eval[2][7]: 0.000000
+eval_value[2][7]: 0.000000
+forward_eval[10][7]: 1.000000
+backward_eval[10][7]: 1.000000
+eval_value[10][7]: 1.037390
+forward_eval[8][7]: 0.000000
+backward_eval[8][7]: 0.000000
+eval_value[8][7]: 0.000000
+paket dari : 10
+node 9 : node 28 send untuk node 9
+REPLY : node 9 untuk node 28
+paket dari : 10
+node 22 : node 28 send untuk node 9
+forward_eval[12][22]: 0.500000
+backward_eval[12][22]: 1.000000
+eval_value[12][22]: 1.019544
+forward_eval[7][22]: 0.000000
+backward_eval[7][22]: 0.000000
+eval_value[7][22]: 0.000000
+forward_eval[9][22]: 0.000000
+backward_eval[9][22]: 0.000000
+eval_value[9][22]: 0.000000
+forward_eval[2][22]: 0.750000
+backward_eval[2][22]: 0.000000
+eval_value[2][22]: 0.691163
+forward_eval[10][22]: 1.000000
+backward_eval[10][22]: 0.500000
+eval_value[10][22]: 0.976344
+forward_eval[8][22]: 0.000000
+backward_eval[8][22]: 0.000000
+eval_value[8][22]: 0.000000
+forward_eval[15][22]: 0.666667
+backward_eval[15][22]: 1.000000
+eval_value[15][22]: 0.925962
+paket dari : 10
+node 2 : node 28 send untuk node 9
+forward_eval[7][2]: 0.000000
+backward_eval[7][2]: 0.000000
+eval_value[7][2]: 0.000000
+forward_eval[22][2]: 0.750000
+backward_eval[22][2]: 0.000000
+eval_value[22][2]: 0.636954
+forward_eval[12][2]: 0.666667
+backward_eval[12][2]: 1.000000
+eval_value[12][2]: 1.111492
+forward_eval[9][2]: 0.000000
+backward_eval[9][2]: 0.000000
+eval_value[9][2]: 0.000000
+forward_eval[21][2]: 0.000000
+backward_eval[21][2]: 0.000000
+eval_value[21][2]: 0.000000
+forward_eval[10][2]: 1.000000
+backward_eval[10][2]: 0.500000
+eval_value[10][2]: 0.686579
 paket dari : 13
 node 20 : node 28 send untuk node 4
 Failed to verify EC Signature
 forward_eval[6][20]: 0.500000
-backward_eval[6][20]: 0.000000
-eval_value[6][20]: 0.446162
+backward_eval[6][20]: 1.000000
+eval_value[6][20]: 0.977679
 forward_eval[13][20]: 1.000000
 backward_eval[13][20]: 0.000000
-eval_value[13][20]: 0.405267
+eval_value[13][20]: 0.139001
 forward_eval[11][20]: 0.000000
 backward_eval[11][20]: 0.000000
 eval_value[11][20]: 0.000000
-paket dari : 24
-node 17 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 24
-node 23 : node 28 send untuk node 4
-Failed to verify EC Signature
-Node : 28
-RECV REPLY dari node 16 untuk node 28
-paket dari : 20
-node 13 : node 28 send untuk node 4
-Failed to verify EC Signature
-paket dari : 20
+paket dari : 13
 node 6 : node 28 send untuk node 4
 Failed to verify EC Signature
 forward_eval[20][6]: 0.500000
 backward_eval[20][6]: 0.000000
-eval_value[20][6]: 0.336824
-forward_eval[13][6]: 0.000000
+eval_value[20][6]: 0.422141
+forward_eval[13][6]: 1.000000
 backward_eval[13][6]: 0.000000
-eval_value[13][6]: 0.000000
-forward_eval[14][6]: 0.333333
+eval_value[13][6]: 0.184025
+forward_eval[14][6]: 0.666667
 backward_eval[14][6]: 1.000000
-eval_value[14][6]: 0.792781
-paket dari : 20
-node 11 : node 28 send untuk node 4
+eval_value[14][6]: 0.314236
+paket dari : 13
+node 27 : node 28 send untuk node 4
 Failed to verify EC Signature
-forward_eval[29][11]: 0.000000
-backward_eval[29][11]: 0.000000
-eval_value[29][11]: 0.000000
-forward_eval[20][11]: 0.333333
-backward_eval[20][11]: 0.000000
-eval_value[20][11]: 0.180380
+paket dari : 13
+node 1 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 2
+node 7 : node 28 send untuk node 9
+paket dari : 2
+node 22 : node 28 send untuk node 9
+paket dari : 2
+node 12 : node 28 send untuk node 9
+paket dari : 2
+node 9 : node 28 send untuk node 9
+paket dari : 2
+node 21 : node 28 send untuk node 9
+forward_eval[18][21]: 0.666667
+backward_eval[18][21]: 1.000000
+eval_value[18][21]: 0.694522
+forward_eval[2][21]: 1.000000
+backward_eval[2][21]: 1.000000
+eval_value[2][21]: 0.750098
+paket dari : 2
+node 10 : node 28 send untuk node 9
+paket dari : 22
+node 9 : node 28 send untuk node 9
+paket dari : 22
+node 7 : node 28 send untuk node 9
+paket dari : 22
+node 12 : node 28 send untuk node 9
+paket dari : 22
+node 2 : node 28 send untuk node 9
+paket dari : 22
+node 10 : node 28 send untuk node 9
+paket dari : 22
+node 8 : node 28 send untuk node 9
+forward_eval[15][8]: 1.000000
+backward_eval[15][8]: 0.000000
+eval_value[15][8]: 0.199724
+forward_eval[3][8]: 0.000000
+backward_eval[3][8]: 0.000000
+eval_value[3][8]: 0.000000
+forward_eval[5][8]: 0.000000
+backward_eval[5][8]: 0.000000
+eval_value[5][8]: 0.000000
+forward_eval[9][8]: 0.000000
+backward_eval[9][8]: 0.000000
+eval_value[9][8]: 0.000000
+forward_eval[22][8]: 2.000000
+backward_eval[22][8]: 1.000000
+eval_value[22][8]: 0.578838
+forward_eval[12][8]: 1.000000
+backward_eval[12][8]: 0.000000
+eval_value[12][8]: 0.561007
+forward_eval[7][8]: 0.000000
+backward_eval[7][8]: 0.000000
+eval_value[7][8]: 0.000000
+paket dari : 22
+node 15 : node 28 send untuk node 9
+forward_eval[8][15]: 0.000000
+backward_eval[8][15]: 0.000000
+eval_value[8][15]: 0.000000
+forward_eval[3][15]: 0.500000
+backward_eval[3][15]: 0.000000
+eval_value[3][15]: 0.416277
+forward_eval[5][15]: 0.250000
+backward_eval[5][15]: 0.000000
+eval_value[5][15]: 0.193325
+forward_eval[9][15]: 0.000000
+backward_eval[9][15]: 0.000000
+eval_value[9][15]: 0.000000
+forward_eval[22][15]: 0.666667
+backward_eval[22][15]: 1.000000
+eval_value[22][15]: 1.283608
+forward_eval[12][15]: 0.750000
+backward_eval[12][15]: 1.000000
+eval_value[12][15]: 0.289970
+paket dari : 7
+node 22 : node 28 send untuk node 9
+paket dari : 7
+node 12 : node 28 send untuk node 9
+paket dari : 7
+node 9 : node 28 send untuk node 9
+paket dari : 7
+node 2 : node 28 send untuk node 9
+paket dari : 7
+node 8 : node 28 send untuk node 9
 paket dari : 6
 node 20 : node 28 send untuk node 4
 Failed to verify EC Signature
@@ -2527,229 +2334,132 @@ node 14 : node 28 send untuk node 4
 Failed to verify EC Signature
 forward_eval[4][14]: 1.000000
 backward_eval[4][14]: 1.000000
-eval_value[4][14]: 0.460315
+eval_value[4][14]: 1.052731
 forward_eval[25][14]: 0.000000
 backward_eval[25][14]: 0.000000
 eval_value[25][14]: 0.000000
 forward_eval[6][14]: 1.000000
-backward_eval[6][14]: 0.333333
-eval_value[6][14]: 0.454055
+backward_eval[6][14]: 0.666667
+eval_value[6][14]: 0.695516
+paket dari : 20
+node 13 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 20
+node 6 : node 28 send untuk node 4
+Failed to verify EC Signature
+paket dari : 20
+node 11 : node 28 send untuk node 4
+Failed to verify EC Signature
+forward_eval[29][11]: 0.333333
+backward_eval[29][11]: 0.000000
+eval_value[29][11]: 0.215841
+forward_eval[20][11]: 0.666667
+backward_eval[20][11]: 0.500000
+eval_value[20][11]: 0.651861
+paket dari : 12
+node 9 : node 28 send untuk node 9
+paket dari : 12
+node 7 : node 28 send untuk node 9
+paket dari : 12
+node 22 : node 28 send untuk node 9
+paket dari : 12
+node 10 : node 28 send untuk node 9
+paket dari : 12
+node 2 : node 28 send untuk node 9
+paket dari : 12
+node 8 : node 28 send untuk node 9
 paket dari : 11
 node 29 : node 28 send untuk node 4
 Failed to verify EC Signature
 forward_eval[11][29]: 1.000000
 backward_eval[11][29]: 0.500000
-eval_value[11][29]: 0.393817
-paket dari : 10
-node 12 : node 28 send untuk node 9
-forward_eval[22][12]: 0.500000
-backward_eval[22][12]: 0.000000
-eval_value[22][12]: 0.257176
-forward_eval[9][12]: 0.000000
-backward_eval[9][12]: 0.000000
-eval_value[9][12]: 0.000000
-forward_eval[7][12]: 0.500000
-backward_eval[7][12]: 0.000000
-eval_value[7][12]: 0.047160
-forward_eval[10][12]: 0.750000
-backward_eval[10][12]: 1.000000
-eval_value[10][12]: 1.645903
-forward_eval[2][12]: 0.333333
-backward_eval[2][12]: 0.000000
-eval_value[2][12]: 0.173754
-forward_eval[8][12]: 0.750000
-backward_eval[8][12]: 0.000000
-eval_value[8][12]: 0.135102
-forward_eval[15][12]: 0.250000
-backward_eval[15][12]: 0.000000
-eval_value[15][12]: 0.109748
-paket dari : 10
-node 19 : node 28 send untuk node 9
-paket dari : 10
-node 7 : node 28 send untuk node 9
-forward_eval[22][7]: 0.000000
-backward_eval[22][7]: 0.000000
-eval_value[22][7]: 0.000000
-forward_eval[12][7]: 0.500000
-backward_eval[12][7]: 0.000000
-eval_value[12][7]: 0.193149
-forward_eval[9][7]: 0.000000
-backward_eval[9][7]: 0.000000
-eval_value[9][7]: 0.000000
-forward_eval[2][7]: 0.500000
-backward_eval[2][7]: 0.000000
-eval_value[2][7]: 0.300203
-forward_eval[10][7]: 1.000000
-backward_eval[10][7]: 1.000000
-eval_value[10][7]: 0.978323
-forward_eval[8][7]: 0.000000
-backward_eval[8][7]: 0.000000
-eval_value[8][7]: 0.000000
-paket dari : 10
-node 9 : node 28 send untuk node 9
-REPLY : node 9 untuk node 28
-paket dari : 10
-node 22 : node 28 send untuk node 9
-forward_eval[12][22]: 0.500000
-backward_eval[12][22]: 0.000000
-eval_value[12][22]: 0.156594
-forward_eval[7][22]: 0.000000
-backward_eval[7][22]: 0.000000
-eval_value[7][22]: 0.000000
-forward_eval[9][22]: 0.000000
-backward_eval[9][22]: 0.000000
-eval_value[9][22]: 0.000000
-forward_eval[2][22]: 0.750000
-backward_eval[2][22]: 0.000000
-eval_value[2][22]: 0.719065
-forward_eval[10][22]: 1.000000
-backward_eval[10][22]: 0.500000
-eval_value[10][22]: 0.047045
-forward_eval[8][22]: 0.500000
-backward_eval[8][22]: 1.000000
-eval_value[8][22]: 1.348462
-forward_eval[15][22]: 0.666667
-backward_eval[15][22]: 1.000000
-eval_value[15][22]: 0.445622
-paket dari : 10
-node 1 : node 28 send untuk node 9
-paket dari : 10
-node 27 : node 28 send untuk node 9
-paket dari : 10
-node 2 : node 28 send untuk node 9
-forward_eval[7][2]: 0.000000
-backward_eval[7][2]: 0.000000
-eval_value[7][2]: 0.000000
-forward_eval[22][2]: 0.500000
-backward_eval[22][2]: 0.500000
-eval_value[22][2]: 0.700591
-forward_eval[12][2]: 0.666667
-backward_eval[12][2]: 1.000000
-eval_value[12][2]: 0.510581
-forward_eval[9][2]: 0.000000
-backward_eval[9][2]: 0.000000
-eval_value[9][2]: 0.000000
-forward_eval[21][2]: 0.000000
-backward_eval[21][2]: 0.000000
-eval_value[21][2]: 0.000000
-forward_eval[10][2]: 1.000000
-backward_eval[10][2]: 0.500000
-eval_value[10][2]: 0.664443
-paket dari : 22
-node 12 : node 28 send untuk node 9
-paket dari : 22
-node 7 : node 28 send untuk node 9
-paket dari : 22
-node 9 : node 28 send untuk node 9
-paket dari : 22
-node 2 : node 28 send untuk node 9
-paket dari : 22
-node 10 : node 28 send untuk node 9
-paket dari : 22
-node 8 : node 28 send untuk node 9
-forward_eval[15][8]: 0.000000
-backward_eval[15][8]: 0.000000
-eval_value[15][8]: 0.000000
-forward_eval[3][8]: 0.500000
-backward_eval[3][8]: 0.000000
-eval_value[3][8]: 0.035661
-forward_eval[5][8]: 0.000000
-backward_eval[5][8]: 0.000000
-eval_value[5][8]: 0.000000
-forward_eval[9][8]: 0.000000
-backward_eval[9][8]: 0.000000
-eval_value[9][8]: 0.000000
-forward_eval[22][8]: 1.000000
-backward_eval[22][8]: 1.000000
-eval_value[22][8]: 1.020094
-forward_eval[12][8]: 0.750000
-backward_eval[12][8]: 0.000000
-eval_value[12][8]: 0.675672
-forward_eval[7][8]: 0.000000
-backward_eval[7][8]: 0.000000
-eval_value[7][8]: 0.000000
-paket dari : 22
-node 15 : node 28 send untuk node 9
-forward_eval[8][15]: 0.500000
-backward_eval[8][15]: 1.000000
-eval_value[8][15]: 0.553994
-forward_eval[3][15]: 0.250000
-backward_eval[3][15]: 0.000000
-eval_value[3][15]: 0.205231
-forward_eval[5][15]: 0.500000
-backward_eval[5][15]: 0.000000
-eval_value[5][15]: 0.254399
-forward_eval[9][15]: 0.000000
-backward_eval[9][15]: 0.000000
-eval_value[9][15]: 0.000000
-forward_eval[22][15]: 0.666667
-backward_eval[22][15]: 1.000000
-eval_value[22][15]: 0.680231
-Node : 10
-RECV REPLY dari node 9 untuk node 28
-paket dari : 2
-node 7 : node 28 send untuk node 9
-paket dari : 2
-node 22 : node 28 send untuk node 9
-paket dari : 2
-node 12 : node 28 send untuk node 9
-paket dari : 2
-node 9 : node 28 send untuk node 9
-paket dari : 2
-node 21 : node 28 send untuk node 9
-forward_eval[18][21]: 0.750000
-backward_eval[18][21]: 1.000000
-eval_value[18][21]: 0.598005
-forward_eval[2][21]: 1.000000
-backward_eval[2][21]: 1.000000
-eval_value[2][21]: 1.072328
-paket dari : 2
-node 10 : node 28 send untuk node 9
-Node : 19
-RECV REPLY dari node 10 untuk node 28
-Node : 16
-RECV REPLY dari node 19 untuk node 28
+eval_value[11][29]: 0.659687
+paket dari : 14
+node 4 : node 28 send untuk node 4
+Failed to verify EC Signature
+REPLY : node 4 untuk node 28
+paket dari : 14
+node 25 : node 28 send untuk node 4
+Failed to verify EC Signature
+forward_eval[0][25]: 0.250000
+backward_eval[0][25]: 0.000000
+eval_value[0][25]: 0.201447
+forward_eval[4][25]: 0.000000
+backward_eval[4][25]: 0.000000
+eval_value[4][25]: 0.000000
+forward_eval[14][25]: 1.000000
+backward_eval[14][25]: 0.000000
+eval_value[14][25]: 0.394239
+paket dari : 14
+node 6 : node 28 send untuk node 4
+Failed to verify EC Signature
 paket dari : 8
 node 15 : node 28 send untuk node 9
 paket dari : 8
 node 3 : node 28 send untuk node 9
 forward_eval[5][3]: 0.750000
-backward_eval[5][3]: 0.000000
-eval_value[5][3]: 0.654021
+backward_eval[5][3]: 1.000000
+eval_value[5][3]: 0.517968
 forward_eval[15][3]: 0.666667
 backward_eval[15][3]: 1.000000
-eval_value[15][3]: 1.043747
+eval_value[15][3]: 1.033232
 forward_eval[8][3]: 1.000000
 backward_eval[8][3]: 1.000000
-eval_value[8][3]: 1.581769
+eval_value[8][3]: 1.556081
 paket dari : 8
 node 5 : node 28 send untuk node 9
 forward_eval[3][5]: 0.750000
 backward_eval[3][5]: 0.000000
-eval_value[3][5]: 0.478355
+eval_value[3][5]: 0.345489
 forward_eval[15][5]: 0.666667
 backward_eval[15][5]: 1.000000
-eval_value[15][5]: 1.001754
+eval_value[15][5]: 0.419370
 forward_eval[8][5]: 1.000000
 backward_eval[8][5]: 1.000000
-eval_value[8][5]: 1.289147
+eval_value[8][5]: 0.822792
 paket dari : 8
-noend simulation
-de 9 : node 28 send untuk node 9
+node 9 : node 28 send untuk node 9
 paket dari : 8
 node 22 : node 28 send untuk node 9
 paket dari : 8
-node 12 : node 28 send untuk node 9
-paket dari : 8
 node 7 : node 28 send untuk node 9
+paket dari : 8
+node 12 : node 28 send untuk node 9
 paket dari : 15
 node 8 : node 28 send untuk node 9
 paket dari : 15
 node 3 : node 28 send untuk node 9
 paket dari : 15
 node 5 : node 28 send untuk node 9
+paket dari : 15
+node 9 : node 28 send untuk node 9
+paket dari : 15
+node 22 : node 28 send untuk node 9
+Node : 14
+RECV REPLY dari node 4 untuk node 28
+Node : 28
+RECV REPLY dari node 16 untuk node 28
 paket dari : 21
 node 18 : node 28 send untuk node 9
-forward_eval[21][18]: 0.750000
+forward_eval[21][18]: 1.000000
 backward_eval[21][18]: 1.000000
-eval_value[21][18]: 0.339088
+eval_value[21][18]: 0.427249
+paket dari : 21
+node 2 : node 28 send untuk node 9
+Node : 6
+RECV REPLY dari node 14 untuk node 28
+Node : 13
+RECV REPLY dari node 6 untuk node 28
+Node : 27
+RECV REPLY dari node 13 untuk node 28
+Node : 16
+RECV REPLY dari node 27 untuk node 28
+Node : 28
+RECV REPLY dari node 16 untuk node 28
+Node : 10
+RECV REPLY dari node 9 untuk node 28
+Node : 19
+RECV REPLY dari node 10 untuk node 28
+Node : 16
+RECV REPLY dariend simulation
+ node 19 untuk node 28

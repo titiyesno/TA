@@ -936,6 +936,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
     if(eval_value[(int)myneigh[index][i]][index] > 0.7){
       // Maximum sequence number seen en route
        if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
+
           
     }
    }
