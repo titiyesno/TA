@@ -706,7 +706,6 @@ printf("node %d : node %d send untuk node %d\n",index,rq->rq_src, rq->rq_dst);
 //printf("Node yang nerima paket request : %d\n",(int)index);
 //printf("Paket request dari : %d\n",rq->record);
 kirimdari[rq->record][index] += 1;
-//printf("kirimdari[%d][%d] : %d\n",rq->record,index,kirimdari[rq->record][index]);
 int function_status = -1;
     char string[SHA256_DIGEST_LENGTH];
     strcpy(string,(char *)&rq->rq_type);
@@ -936,11 +935,11 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
 
     if(eval_value[(int)myneigh[index][i]][index] > 0.7){
       // Maximum sequence number seen en route
-   if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
-      forward((aodv_rt_entry*) 0, p, DELAY);
+       if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
+          
     }
    }
-   
+   forward((aodv_rt_entry*) 0, p, DELAY);
 
  }
 

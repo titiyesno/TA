@@ -17,7 +17,7 @@ set val(lm)		"off"				;	# log movement
 set val(x)	    1700				;	# X Dimension of Topography
 set val(y)		1700				;	# Y Dimension of Topography
 set val(stop)		200				; 	# Time of Simulation end
-set val(cp)             "traffic1"             ;# connection pattern file
+set val(cp)             "traffic2"             ;# connection pattern file
 set val(sc)             "scenario30.tcl"
 
 set ns_	[new Simulator]				
@@ -81,13 +81,13 @@ for {set i 0} {$i < $val(nn)} {incr i} {
 $ns_ initial_node_pos $node_($i) 100
 }
 
-$node_(0) color green
-$ns_ at 0.0 "$node_(0) color green"
-$ns_ at 0.0 "$node_(0) label Source"
+$node_(28) color green
+$ns_ at 0.0 "$node_(28) color green"
+$ns_ at 0.0 "$node_(28) label Source"
 
-$node_(1) color blue
-$ns_ at 0.0 "$node_(1) color blue"
-$ns_ at 0.0 "$node_(1) label Destination"
+$node_(9) color blue
+$ns_ at 0.0 "$node_(9) color blue"
+$ns_ at 0.0 "$node_(9) label Destination"
 
 # Telling nodes when the simulation ends
 
