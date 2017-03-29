@@ -3,7 +3,10 @@ BEGIN {
 }
  
 $0 ~/^s.* RTR/ {
-        ro++ ;
+	if($23 != "(HELLO)"){
+		ro++ ;
+	}
+    
 }
  
 END {

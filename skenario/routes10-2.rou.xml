@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Mar 30 02:43:56 2017 by SUMO duarouter Version 0.29.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="map10-2.net.xml"/>
+        <trip-files value="trip10-2.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="routes10-2.rou.xml"/>
+    </output>
+
+    <processing>
+        <ignore-errors value="true"/>
+        <repair value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0" depart="0.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="1/2to1/3 1/3to1/2 1/2to1/1 1/1to1/0 1/0to0/0"/>
+    </vehicle>
+    <vehicle id="1" depart="1.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="0/0to1/0 1/0to0/0 0/0to0/1"/>
+    </vehicle>
+    <vehicle id="2" depart="2.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="1/3to2/3 2/3to2/2 2/2to2/1 2/1to3/1"/>
+    </vehicle>
+    <vehicle id="3" depart="3.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="2/3to3/3 3/3to2/3 2/3to1/3 1/3to1/2 1/2to0/2 0/2to1/2"/>
+    </vehicle>
+    <vehicle id="4" depart="4.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="2/0to2/1 2/1to2/2 2/2to3/2 3/2to3/3"/>
+    </vehicle>
+    <vehicle id="5" depart="5.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="1/1to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to3/0 3/0to3/1"/>
+    </vehicle>
+    <vehicle id="6" depart="6.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="3/3to2/3 2/3to2/2 2/2to2/1 2/1to2/0"/>
+    </vehicle>
+    <vehicle id="7" depart="7.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="1/3to0/3 0/3to0/2 0/2to0/1 0/1to0/0"/>
+    </vehicle>
+    <vehicle id="8" depart="8.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="2/1to2/2 2/2to1/2 1/2to1/1 1/1to1/0 1/0to1/1"/>
+    </vehicle>
+    <vehicle id="9" depart="9.00" departLane="best" departPos="random_free" departSpeed="max">
+        <route edges="1/1to1/2 1/2to0/2 0/2to0/3 0/3to0/2"/>
+    </vehicle>
+</routes>

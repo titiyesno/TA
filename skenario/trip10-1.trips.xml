@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- generated on 2017-03-30 01:28:35.617785 by $Id: randomTrips.py 22929 2017-02-13 14:38:39Z behrisch $
+  options: -n map10-1.net.xml -e 10 -l <doubleminus>trip-attributes=departLane="best" departSpeed="max" departPos="random_free" -o trip10-1.trips.xml
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="0" depart="0.00" from="3/4to2/4" to="3/3to3/4" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="1" depart="1.00" from="2/2to2/3" to="4/3to3/3" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="2" depart="2.00" from="1/1to0/1" to="3/0to2/0" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="3" depart="3.00" from="4/3to3/3" to="0/1to0/2" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="4" depart="4.00" from="3/0to2/0" to="0/1to0/2" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="5" depart="5.00" from="2/0to2/1" to="0/3to0/2" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="6" depart="6.00" from="0/3to0/4" to="2/2to2/1" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="7" depart="7.00" from="1/2to0/2" to="3/0to3/1" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="8" depart="8.00" from="0/2to0/3" to="3/3to3/4" departLane="best" departSpeed="max" departPos="random_free"/>
+    <trip id="9" depart="9.00" from="3/4to2/4" to="1/3to1/2" departLane="best" departSpeed="max" departPos="random_free"/>
+</routes>

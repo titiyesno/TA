@@ -940,6 +940,7 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
           
     }
    }
+
    forward((aodv_rt_entry*) 0, p, DELAY);
 
  }

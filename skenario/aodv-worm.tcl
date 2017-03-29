@@ -14,11 +14,11 @@ set val(rp)		AODV				;	# AODV Routing Protocol
 set val(energymodel)	EnergyModel			;	# For Energy 
 set val(initialenergy)	100				; 	# Initial Energy of node
 set val(lm)		"off"				;	# log movement
-set val(x)	    1700				;	# X Dimension of Topography
-set val(y)		1700				;	# Y Dimension of Topography
+set val(x)	    500				;	# X Dimension of Topography
+set val(y)		500				;	# Y Dimension of Topography
 set val(stop)		200				; 	# Time of Simulation end
 set val(cp)             "traffic1"             ;# connection pattern file
-set val(sc)             "scenario.tcl"
+set val(sc)             "scenario10.tcl"
 
 set ns_	[new Simulator]				
 set tracefd [open s-aodv2-worm.tr w]
@@ -85,15 +85,15 @@ $node_(0) color green
 $ns_ at 0.0 "$node_(0) color green"
 $ns_ at 0.0 "$node_(0) label Source"
 
-$node_(1) color blue
-$ns_ at 0.0 "$node_(1) color blue"
-$ns_ at 0.0 "$node_(1) label Destination"
+$node_(8) color blue
+$ns_ at 0.0 "$node_(8) color blue"
+$ns_ at 0.0 "$node_(8) label Destination"
 
-$node_(3) color red
-$ns_ at 0.0 "$node_(3) color red"
-$ns_ at 0.0 "$node_(3) label Attacker"
+$node_(6) color red
+$ns_ at 0.0 "$node_(6) color red"
+$ns_ at 0.0 "$node_(6) label Attacker"
 
-$ns_ at 0.0 "[$node_(9) set ragent_] wormhole"
+$ns_ at 0.0 "[$node_(6) set ragent_] wormhole"
 #$ns_ at 0.0 "[$node_(9) set ragent_] hacker"
 
 # Telling nodes when the simulation ends

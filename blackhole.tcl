@@ -2,11 +2,11 @@
 # <http://wushoupong.googlepages.com/nsg>
 
 ##################################################################
-# Modified by Mohit P. Tahiliani and Gaurav Gupta		 #
-# Department of Computer Science and Engineering		 #
-# N.I.T.K., Surathkal				 		 #
-# tahiliani.nitk@gmail.com					 #
-# www.mohittahiliani.blogspot.com				 #
+# Modified by Mohit P. Tahiliani and Gaurav Gupta        #
+# Department of Computer Science and Engineering         #
+# N.I.T.K., Surathkal                        #
+# tahiliani.nitk@gmail.com                   #
+# www.mohittahiliani.blogspot.com                #
 ##################################################################
 
 #===================================
@@ -104,11 +104,7 @@ $n6 set X_ 600
 $n6 set Y_ 200
 $n6 set Z_ 0.0
 $ns initial_node_pos $n6 20
-# set n7 [$ns node]
-# $n7 set X_ 499
-# $n7 set Y_ 350
-# $n7 set Z_ 0.0
-# $ns initial_node_pos $n7 20
+
 
 # Node 5 is given RED Color and a label- indicating it is a Blackhole Attacker
 $n5 color red
@@ -125,15 +121,10 @@ $n3 color blue
 $ns at 0.0 "$n3 color blue"
 $ns at 0.0 "$n3 label Destination"
 
-# $n2 color red
-# $ns at 0.0 "$n2 color red"
-# $ns at 0.0 "$n2 label Attacker"
-
 #===================================
-#    	Set node 5 as attacker    	 
+#       Set node 5 as attacker       
 #===================================
 $ns at 0.0 "[$n5 set ragent_] hacker"
-#$ns at 0.0 "[$n5 set ragent_] wormhole"
 
 #===================================
 #        Agents Definition        
