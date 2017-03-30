@@ -81,19 +81,33 @@ for {set i 0} {$i < $val(nn)} {incr i} {
 $ns_ initial_node_pos $node_($i) 100
 }
 
-$node_(0) color green
-$ns_ at 0.0 "$node_(0) color green"
-$ns_ at 0.0 "$node_(0) label Source"
+# $node_(0) color green
+# $ns_ at 0.0 "$node_(0) color green"
+# $ns_ at 0.0 "$node_(0) label Source"
+
+# $node_(8) color blue
+# $ns_ at 0.0 "$node_(8) color blue"
+# $ns_ at 0.0 "$node_(8) label Destination"
+
+# $node_(6) color red
+# $ns_ at 0.0 "$node_(6) color red"
+# $ns_ at 0.0 "$node_(6) label Attacker"
+
+# $ns_ at 0.0 "[$node_(6) set ragent_] hacker"
+
+$node_(5) color green
+$ns_ at 0.0 "$node_(5) color green"
+$ns_ at 0.0 "$node_(5) label Source"
 
 $node_(8) color blue
 $ns_ at 0.0 "$node_(8) color blue"
 $ns_ at 0.0 "$node_(8) label Destination"
 
-$node_(6) color red
-$ns_ at 0.0 "$node_(6) color red"
-$ns_ at 0.0 "$node_(6) label Attacker"
+$node_(4) color red
+$ns_ at 0.0 "$node_(4) color red"
+$ns_ at 0.0 "$node_(4) label Attacker"
 
-$ns_ at 0.0 "[$node_(6) set ragent_] hacker"
+$ns_ at 0.0 "[$node_(4) set ragent_] hacker"
 
 # Telling nodes when the simulation ends
 

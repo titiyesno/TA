@@ -81,9 +81,17 @@ for {set i 0} {$i < $val(nn)} {incr i} {
 $ns_ initial_node_pos $node_($i) 100
 }
 
-$node_(0) color green
-$ns_ at 0.0 "$node_(0) color green"
-$ns_ at 0.0 "$node_(0) label Source"
+# $node_(0) color green
+# $ns_ at 0.0 "$node_(0) color green"
+# $ns_ at 0.0 "$node_(0) label Source"
+
+# $node_(8) color blue
+# $ns_ at 0.0 "$node_(8) color blue"
+# $ns_ at 0.0 "$node_(8) label Destination"
+
+$node_(5) color green
+$ns_ at 0.0 "$node_(5) color green"
+$ns_ at 0.0 "$node_(5) label Source"
 
 $node_(8) color blue
 $ns_ at 0.0 "$node_(8) color blue"

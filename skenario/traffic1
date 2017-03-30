@@ -5,7 +5,8 @@
 # 1 connecting to 2 at time 2.5568388786897245
 #
 set udp_(0) [new Agent/UDP]
-$ns_ attach-agent $node_(0) $udp_(0)
+#$ns_ attach-agent $node_(0) $udp_(0)
+$ns_ attach-agent $node_(5) $udp_(0)
 set null_(0) [new Agent/Null]
 $ns_ attach-agent $node_(8) $null_(0)
 set cbr_(0) [new Application/Traffic/CBR]

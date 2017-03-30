@@ -85,9 +85,9 @@ $node_(0) color green
 $ns_ at 0.0 "$node_(0) color green"
 $ns_ at 0.0 "$node_(0) label Source"
 
-$node_(6) color blue
-$ns_ at 0.0 "$node_(6) color blue"
-$ns_ at 0.0 "$node_(6) label Destination"
+$node_(1) color blue
+$ns_ at 0.0 "$node_(1) color blue"
+$ns_ at 0.0 "$node_(1) label Destination"
 
 # Telling nodes when the simulation ends
 
