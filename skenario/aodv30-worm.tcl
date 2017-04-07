@@ -93,13 +93,16 @@ $node_(27) color red
 $ns_ at 0.0 "$node_(27) color red"
 $ns_ at 0.0 "$node_(27) label Attacker"
 
-$ns_ at 0.0 "[$node_(27) set ragent_] wormhole"
+#$ns_ at 0.0 "[$node_(24) set ragent_] wormhole"
+$ns_ at 0.0 "[$node_(13) set ragent_] wormhole"
+#$ns_ at 0.0 "[$node_(16) set ragent_] wormhole"
 
-$node_(23) color red
-$ns_ at 0.0 "$node_(23) color red"
-$ns_ at 0.0 "$node_(23) label Attacker"
-
-$ns_ at 0.0 "[$node_(23) set ragent_] wormhole"
+# $node_(23) color red
+# $ns_ at 0.0 "$node_(23) color red"
+# $ns_ at 0.0 "$node_(23) label Attacker"
+#$ns_ at 0.0 "[$node_(20) set ragent_] wormhole"
+#$ns_ at 0.0 "[$node_(5) set ragent_] wormhole"
+$ns_ at 0.0 "[$node_(15) set ragent_] wormhole"
 
 # Telling nodes when the simulation ends
 
