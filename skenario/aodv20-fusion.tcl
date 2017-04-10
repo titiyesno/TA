@@ -98,9 +98,9 @@ $ns_ at 0.0 "[$node_(2) set ragent_] hacker"
 #$ns_ at 0.0 "[$node_(8) set ragent_] hacker"
 
 #pasangannya node 2
-#$ns_ at 0.0 "[$node_(0) set ragent_] wormhole"
-#$ns_ at 0.0 "[$node_(5) set ragent_] wormhole"
-$ns_ at 0.0 "[$node_(1) set ragent_] wormhole"
+# $ns_ at 0.0 "[$node_(0) set ragent_] wormhole"
+$ns_ at 0.0 "[$node_(5) set ragent_] wormhole"
+# $ns_ at 0.0 "[$node_(1) set ragent_] wormhole"
 
 
 # Telling nodes when the simulation ends

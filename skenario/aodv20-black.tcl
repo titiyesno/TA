@@ -93,13 +93,13 @@ $ns_ at 0.0 "$node_(16) label Destination"
 # $ns_ at 0.0 "$node_(15) color red"
 # $ns_ at 0.0 "$node_(15) label Attacker"
 
-$ns_ at 0.0 "[$node_(1) set ragent_] hacker"
-#$ns_ at 0.0 "[$node_(2) set ragent_] hacker"
-#$ns_ at 0.0 "[$node_(8) set ragent_] hacker"
+# $ns_ at 0.0 "[$node_(1) set ragent_] hacker"
+# $ns_ at 0.0 "[$node_(2) set ragent_] hacker"
+$ns_ at 0.0 "[$node_(8) set ragent_] hacker"
 
-#$ns_ at 0.0 "[$node_(3) set ragent_] hacker"
-#$ns_ at 0.0 "[$node_(1) set ragent_] hacker"
-$ns_ at 0.0 "[$node_(0) set ragent_] hacker"
+$ns_ at 0.0 "[$node_(3) set ragent_] hacker"
+# $ns_ at 0.0 "[$node_(1) set ragent_] hacker"
+# $ns_ at 0.0 "[$node_(0) set ragent_] hacker"
 
 # Telling nodes when the simulation ends
 

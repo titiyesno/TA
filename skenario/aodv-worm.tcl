@@ -93,7 +93,7 @@ $ns_ initial_node_pos $node_($i) 100
 # $ns_ at 0.0 "$node_(6) color red"
 # $ns_ at 0.0 "$node_(6) label Attacker"
 
-# $ns_ at 0.0 "[$node_(6) set ragent_] wormhole"
+$ns_ at 0.0 "[$node_(6) set ragent_] wormhole"
 
 $node_(5) color green
 $ns_ at 0.0 "$node_(5) color green"
@@ -107,7 +107,7 @@ $node_(2) color red
 $ns_ at 0.0 "$node_(2) color red"
 $ns_ at 0.0 "$node_(2) label Attacker"
 
-$ns_ at 0.0 "[$node_(2) set ragent_] wormhole"
+# $ns_ at 0.0 "[$node_(2) set ragent_] wormhole"
 
 # Telling nodes when the simulation ends
 

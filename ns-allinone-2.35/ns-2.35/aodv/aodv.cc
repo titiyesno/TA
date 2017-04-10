@@ -45,6 +45,7 @@ The AODV code developed by the CMU/MONARCH group was optimized and tuned by Sami
 #include <openssl/obj_mac.h>
 #include <openssl/ecdsa.h>
 #include <string>
+#include <time.h>
 
 #define max(a,b)        ( (a) > (b) ? (a) : (b) )
 #define CURRENT_TIME    Scheduler::instance().clock()
@@ -64,6 +65,8 @@ int verified[50][50] = {0};
 double forward_eval[50][50] = {0.0};
 double backward_eval[50][50] = {0.0};
 double eval_value[50][50] = {0.0};
+
+clock_t t;
 
 unsigned char hash[SHA256_DIGEST_LENGTH];
 
@@ -97,6 +100,8 @@ public:
 
 int
 AODV::command(int argc, const char*const* argv) {
+
+  t = clock();
   if(argc == 2) {
   Tcl& tcl = Tcl::instance();
     
@@ -701,8 +706,8 @@ AODV::recvRequest(Packet *p) {
 struct hdr_ip *ih = HDR_IP(p);
 struct hdr_aodv_request *rq = HDR_AODV_REQUEST(p);
 aodv_rt_entry *rt;
-printf("paket dari : %d\n",rq->record);
-printf("node %d : node %d send untuk node %d\n",index,rq->rq_src, rq->rq_dst);
+/*printf("paket dari : %d\n",rq->record);
+printf("node %d : node %d send untuk node %d\n",index,rq->rq_src, rq->rq_dst);*/
 //printf("Node yang nerima paket request : %d\n",(int)index);
 //printf("Paket request dari : %d\n",rq->record);
 kirimdari[rq->record][index] += 1;
@@ -722,7 +727,7 @@ int function_status = -1;
     const int verify_success = 1;
     if (verify_success != verify_status)
     {
-        printf("Failed to verify EC Signature\n");
+        //printf("Failed to verify EC Signature\n");
         function_status = -1;
     }
     else
@@ -929,15 +934,23 @@ rt_update(rt0, rq->rq_src_seqno, rq->rq_hop_count, ih->saddr(),
       forward_eval[(int)myneigh[index][i]][index] = (double)kirimdari[(int)myneigh[index][i]][index]/(double)kirimke[(int)myneigh[index][i]][index];
     }
     eval_value[(int)myneigh[index][i]][index] = (double) rand()/(double) RAND_MAX * forward_eval[(int)myneigh[index][i]][index] + (double) rand()/(double) RAND_MAX * backward_eval[(int)myneigh[index][i]][index];
-    printf("forward_eval[%d][%d]: %lf\n",(int)myneigh[index][i],index,forward_eval[(int)myneigh[index][i]][index]);
+    /*printf("forward_eval[%d][%d]: %lf\n",(int)myneigh[index][i],index,forward_eval[(int)myneigh[index][i]][index]);
     printf("backward_eval[%d][%d]: %lf\n",(int)myneigh[index][i],index,backward_eval[(int)myneigh[index][i]][index]);
-    printf("eval_value[%d][%d]: %lf\n",(int)myneigh[index][i],index,eval_value[(int)myneigh[index][i]][index]);
+    printf("eval_value[%d][%d]: %lf\n",(int)myneigh[index][i],index,eval_value[(int)myneigh[index][i]][index]);*/
 
     if(eval_value[(int)myneigh[index][i]][index] > 0.7){
       // Maximum sequence number seen en route
        if (rt) rq->rq_dst_seqno = max(rt->rt_seqno, rq->rq_dst_seqno);
 
           
+    }
+    else{
+      if((int)myneigh[index][i] == 0 || (int)myneigh[index][i] == 10){
+        t = clock() - t;
+        double time_taken = ((double) t)/CLOCKS_PER_SEC;
+
+        printf("time taken : %lf\n",time_taken);
+      }
     }
    }
 
@@ -957,8 +970,8 @@ aodv_rt_entry *rt;
 char suppress_reply = 0;
 double delay = 0.0;
 
-printf("Node : %d\n",index);
-printf("RECV REPLY dari node %d untuk node %d\n",rp->rp_src,ih->daddr());
+/*printf("Node : %d\n",index);
+printf("RECV REPLY dari node %d untuk node %d\n",rp->rp_src,ih->daddr());*/
 	
 #ifdef DEBUG
  fprintf(stderr, "%d - %s: received a REPLY\n", index, __FUNCTION__);
@@ -1442,8 +1455,8 @@ fprintf(stderr, "sending Reply from %d at %.2f\n", index, Scheduler::instance().
  ih->ttl_ = NETWORK_DIAMETER;
 
  /*printf("Node yang reply : %d\n",(int)ih->saddr());
- printf("Node yang di-reply : %d\n",(int)ih->daddr());*/
- printf("REPLY : node %d untuk node %d\n",ih->saddr(),ih->daddr());
+ printf("Node yang di-reply : %d\n",(int)ih->daddr());
+ printf("REPLY : node %d untuk node %d\n",ih->saddr(),ih->daddr());*/
 
  Scheduler::instance().schedule(target_, p, 0.);
 
