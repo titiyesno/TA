@@ -99,9 +99,9 @@ $node_(23) color red
 $ns_ at 0.0 "$node_(23) color red"
 $ns_ at 0.0 "$node_(23) label Attacker"
 
-#$ns_ at 0.0 "[$node_(13) set ragent_] hacker"
+$ns_ at 0.0 "[$node_(13) set ragent_] hacker"
 #$ns_ at 0.0 "[$node_(0) set ragent_] hacker"
-$ns_ at 0.0 "[$node_(12) set ragent_] hacker"
+#$ns_ at 0.0 "[$node_(12) set ragent_] hacker"
 
 # Telling nodes when the simulation ends
 
